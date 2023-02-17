@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background:linear-gradient(to left, rgb(1, 1, 71), black, black, black, black, black, black,black);
+            background-attachment:local;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .one{
+            position: absolute;
+            width: 400px;
+            height:450px;
+            opacity: 0.5;
+            background: linear-gradient(to bottom, rgb(77, 240, 255), rgb(0, 72, 255), black);
+            transform: translate(0px,-220px) rotate(45deg);
+        }
+        .container{
+            height: 97vh;
+            width: 780px;
+            margin: auto;
+            background-color: rgb(2, 119, 119);
+            border-radius: 8px;
+            display: flex;
+            opacity: 0.8;
+            justify-content: center;
+            animation: show 2s;
+        }
+        @keyframes show {
+            0%{opacity: 0;}
+            100%{opacity: 0.8;}
+        }
+        .wel{
+            position: absolute;
+            margin-top: 30px;
+            font-size: 70px;
+        }
+        .conn{
+            position: absolute;
+            color: wheat;
+            font-size:xx-large;
+            margin-top: 150px;
+        }
+        .email{
+            position: absolute;
+            margin-top: 240px;
+            margin-right: 280px;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT';
+            font-size: x-large;
+        }
+        .in{
+            position: absolute;
+            margin-top: 280px;
+            width: 310px;
+            height: 35px;
+            margin-right: 25px;
+            border-radius: 4px;
+            padding: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT';
+            font-size: larger;
+        }
+        .pass{
+            position: absolute;
+            color: white;
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT';
+            margin-top: 370px;
+            margin-right: 210px;
+        }
+        .in2{
+            position: absolute;
+            font-family: 'Gill Sans', 'Gill Sans MT';
+            font-size: larger;
+            width: 310px;
+            height: 35px;
+            margin-right: 25px;
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 410px;
+        }
+        .sub{
+            position: absolute;
+            background-color: rgb(30, 152, 152);
+            color: white;
+            font-family: 'Gill sans MT';
+            border-radius: 10px;
+            padding: 4px;
+            width: 200px;
+            border-color: rgb(30, 152, 152);
+            margin-top: 550px;
+            transform: scale(3);
+        }
+        .ques{
+            position: absolute;
+            font-size: x-large;
+            font-family: 'Gill Sans MT';
+            color: grey;
+            margin-top: 630px;
+            margin-right: 240px;
+        }
+        a{
+            position: absolute;
+            text-decoration: none;
+            color: white;
+            font-family: 'Gill Sans MT';
+            font-size: x-large;
+            margin-top: 630px;
+            margin-left: 380px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="container">
+        <div class="wel">Bienvenue</div>
+        <div class="conn">Connectez-vous a votre compte</div>
+        <div class="email">E-mail</div>
+        <input class="in" type="email" placeholder=" Email">
+        <div class="pass">Mot de passe</div>
+        <input class="in2" type="password" placeholder=" Mot de Passe">
+        <button class="sub" type="submit" >Log in </button>
+        <span class="ques">Vous n'avez pas un compte?</span>
+        <a href="" target="_blank">Inscrez-Vous</a>
+    </div>
+</body>
+</html>
