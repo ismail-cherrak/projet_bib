@@ -1,0 +1,611 @@
+body{
+    background:linear-gradient(to left, rgb(1, 1, 71), black, black, black, black, black, black,black);
+    background-attachment:local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+ #one{
+    position: absolute;
+    width: 400px;
+    height:450px;
+    opacity: 0.9;
+    background: linear-gradient(to bottom, rgb(77, 240, 255), rgb(0, 72, 255), black);
+    transform: translate(0px,-225px) rotate(45deg);
+}
+#years{
+    position: relative;
+    border-radius: 3px;
+    width: 1500px;
+    height: 45px;
+    background-color: white;
+    animation: appear 2s;
+}
+@keyframes appear {
+    0%{opacity: 0;}
+}
+#show{
+    position: absolute;
+    margin-top: -4px;
+    margin-left: 9px;
+    transform: rotate(90deg);
+    font-size: xx-large;
+    cursor: pointer;
+}
+#ann{
+    display: flex;
+    gap: 125px;
+    margin-left: 100px;
+}
+li{
+    margin-top: 3px;
+    font-size: xx-large;
+    font-family: 'Gill Sans MT';
+    cursor: pointer;
+}
+#navbar{
+    position:absolute;
+    overflow: hidden;
+    width: 180px;
+    background-color: white;
+    border-radius: 2px;
+    height: 0vh;
+}
+a{
+    text-decoration: none;
+    font-family: 'Gill Sans MT';
+    font-size: xx-large;
+    color: black;
+    margin-left: 10px;
+}
+#mod1cpi{
+    border-radius: 3px;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    width: 110px;
+    background-color: white;
+    margin-left: 120px;
+}
+.cp1s1{
+    font-size: 20px;
+}
+.cp1s2{
+    font-size: 20px;
+}
+#mod2cpi{
+    border-radius: 3px;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    width: 110px;
+    background-color: white;
+    margin-left: 310px;
+}
+.cp2s1{
+    font-size: 20px;
+}
+.cp2s2{
+    font-size: 20px;
+}
+#mod3cpi{
+    border-radius: 3px;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    width: 110px;
+    background-color: white;
+    margin-left: 493px;
+}
+.cp3s1{
+    font-size: 20px;
+}
+.cp3s2{
+    font-size: 20px;
+}
+#mod4cpi{
+    border-radius: 3px;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    width: 110px;
+    background-color: white;
+    margin-left: 670px;
+}
+.cp4s1{
+    font-size: 20px;
+}
+.cp4s2{
+    font-size: 20px;
+}
+#mod5cpi{
+    border-radius: 3px;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    width: 110px;
+    background-color: white;
+    margin-left: 850px;
+}
+.cp5s1{
+    font-size: 20px;
+}
+.cp5s2{
+    font-size: 20px;
+}
+#search{
+    margin-top: 20px;
+    margin-left: 1075px;
+    height: 40px;
+    width: 280px;
+    position: absolute;
+    font-size: x-large;
+    font-family: 'Gill Sans MT';
+    border-radius: 17px;
+    border-color: rgb(14, 14, 14);
+    background:linear-gradient(to left, rgb(111, 111, 111), rgb(30, 30, 30));
+    color: wheat;
+}
+#sub{
+    background-color: orangered;
+    width: 130px;
+    height: 50px;
+    color: white;
+    padding: 5px;
+    margin-top: 17px;
+    margin-left: 1370px;
+    position:absolute;
+    border-radius: 22px;
+    font-size: large;
+    font-family: 'Gill Sans MT';
+}
+
+/* these are the states of each book (status, rating, title....), each has his own status so don't mix them up >:( */
+
+#book1{
+    position: absolute;
+    height: 355px;
+    width: 190px;
+    background-color: rgb(180, 180, 180);
+    margin-top: 100px;
+    margin-left: 190px;
+    border-radius: 10px;
+    animation: downtotop 1.4s;
+}
+ #book1 #the_average_ratingone{
+    position: absolute;
+    color: white;
+    font-size: larger;
+    font-family: 'Gill Sans MT';
+    margin-left: 10px;
+    margin-top: 13px;
+}
+#book1 #ratingone{
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 65px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 100px;
+    height: 25px;
+}
+#book1 #ratingone #barone{
+    overflow: hidden;
+    height: 25px;
+    border-radius: 10px;
+    background-color: green;
+}
+#book1 #imageone{
+    position: absolute;
+    width: 160px;
+    height: 190px;
+    background-color: gray;
+    margin-left: 10px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+#book1 #imageone img{
+    height: 190px;
+    width: 160px;
+}
+#book1 #titleone{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Gill Sans MT';
+    font-weight: bold;
+}
+#book1 #authorone{
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Gill Sans MT';
+    font-weight: 150;
+}
+#book1 #stateone{
+    position: absolute;
+    margin-top: 305px;
+    margin-left: 12px;
+    font-family: 'Gill Sans MT';
+    font-weight: 180;
+    color: green;
+}
+
+
+
+
+#book2{
+    position: absolute;
+    height: 355px;
+    width: 190px;
+    background-color: rgb(180, 180, 180);
+    margin-top: 100px;
+    margin-left: 490px;
+    border-radius: 10px;
+    animation: downtotop 1.4s;
+}
+ #book2 #the_average_ratingtwo{
+    position: absolute;
+    color: white;
+    font-size: larger;
+    font-family: 'Gill Sans MT';
+    margin-left: 10px;
+    margin-top: 13px;
+}
+#book2 #ratingtwo{
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 55px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 110px;
+    height: 25px;
+}
+#book2 #ratingtwo #bartwo{
+    height: 25px;
+    border-radius: 10px;
+    background-color: green;
+
+}
+#book2 #imagetwo{
+    position: absolute;
+    width: 160px;
+    height: 190px;
+    background-color: gray;
+    margin-left: 10px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+#book2 #imagetwo img{
+    height: 190px;
+    width: 160px;
+}
+#book2 #titletwo{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Gill Sans MT';
+    font-weight: bold;
+}
+#book2 #authortwo{
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Gill Sans MT';
+    font-weight: 150;
+}
+#book2 #statetwo{
+    position: absolute;
+    margin-top: 305px;
+    margin-left: 12px;
+    font-family: 'Gill Sans MT';
+    font-weight: 180;
+    color: green;
+}
+
+
+
+#book3{
+    position: absolute;
+    height: 355px;
+    width: 190px;
+    background-color: rgb(180, 180, 180);
+    margin-top: 100px;
+    margin-left: 800px;
+    border-radius: 10px;
+    animation: downtotop 1.4s;
+}
+ #book3 #the_average_ratingthree{
+    position: absolute;
+    color: white;
+    font-size: larger;
+    font-family: 'Gill Sans MT';
+    margin-left: 10px;
+    margin-top: 13px;
+}
+#book3 #ratingthree{
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 55px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 110px;
+    height: 25px;
+}
+#book3 #ratingthree #barthree{
+    height: 25px;
+    border-radius: 10px;
+    background-color: green;
+
+}
+#book3 #imagethree{
+    position: absolute;
+    width: 160px;
+    height: 190px;
+    background-color: gray;
+    margin-left: 10px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+#book3 #imagethree img{
+    height: 190px;
+    width: 160px;
+}
+#book3 #titlethree{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Gill Sans MT';
+    font-weight: bold;
+}
+#book3 #authorthree{
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Gill Sans MT';
+    font-weight: 150;
+}
+#book3 #statethree{
+    position: absolute;
+    margin-top: 305px;
+    margin-left: 12px;
+    font-family: 'Gill Sans MT';
+    font-weight: 180;
+    color: green;
+}
+
+
+
+#book4{
+    position: absolute;
+    height: 355px;
+    width: 190px;
+    background-color: rgb(180, 180, 180);
+    margin-top: 100px;
+    margin-left: 1100px;
+    border-radius: 10px;
+    animation: downtotop 1.4s;
+}
+@keyframes downtotop {
+    0%{opacity: 0;
+    margin-top: 130px;}
+}
+ #book4 #the_average_ratingfour{
+    position: absolute;
+    color: white;
+    font-size: larger;
+    font-family: 'Gill Sans MT';
+    margin-left: 10px;
+    margin-top: 13px;
+}
+#book4 #ratingfour{
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 65px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 100px;
+    height: 25px;
+}
+#book4 #ratingfour #barfour{
+    overflow: hidden;
+    height: 25px;
+    border-radius: 10px;
+    background-color: green;
+}
+#book4 #imagefour{
+    position: absolute;
+    width: 160px;
+    height: 190px;
+    background-color: gray;
+    margin-left: 10px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+#book4 #imagefour img{
+    height: 190px;
+    width: 160px;
+}
+#book4 #titlefour{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Gill Sans MT';
+    font-weight: bold;
+}
+#book4 #authorfour{
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Gill Sans MT';
+    font-weight: 150;
+}
+#book4 #statefour{
+    position: absolute;
+    margin-top: 305px;
+    margin-left: 12px;
+    font-family: 'Gill Sans MT';
+    font-weight: 180;
+    color: green;
+}
+
+/*the order style for each book*/
+
+ #book1 #yesnoone{
+    position: absolute;
+    margin-top: 295px;
+    margin-left: 100px;
+    font-family: 'Gill Sans MT';
+    width: 70px;
+    height: 40px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+ #yesnoone span{
+    margin-top: 8px;
+}
+
+
+#book2 #yesnotwo{
+    position: absolute;
+    margin-top: 295px;
+    margin-left: 100px;
+    font-family: 'Gill Sans MT';
+    width: 70px;
+    height: 40px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+ #yesnotwo span{
+    margin-top: 8px;
+}
+
+
+#book3 #yesnothree{
+    position: absolute;
+    margin-top: 295px;
+    margin-left: 100px;
+    font-family: 'Gill Sans MT';
+    width: 70px;
+    height: 40px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+ #yesnothree span{
+    margin-top: 8px;
+
+
+}
+#book4 #yesnofour{
+    position: absolute;
+    margin-top: 295px;
+    margin-left: 100px;
+    font-family: 'Gill Sans MT';
+    width: 70px;
+    height: 40px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+ #yesnofour span{
+    margin-top: 8px;
+}
+
+
+/* the 'etes vous sur' question style*/
+ #sur{
+    position: absolute;
+    width: 500px;
+    height: 0px;
+    overflow: hidden;
+    background-color: rgb(18, 255, 255);
+    color: black;
+    font: bold;
+    font-size: 50px;
+    font-family: 'Gill Sans MT';
+    border-radius: 4px;
+    left: 32%;
+    top: 30%;
+}
+#sur #inptic{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+#sur #yes{
+    position: absolute;
+    color: green;
+    font-size: 30px;
+    margin-top: 120px;
+    margin-left: 90px;
+    cursor: pointer;
+}
+#sur #yes:hover{
+    width: 85px;
+    height: 50px;
+    border-radius: 20px;
+    animation: changeone 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes changeone {
+    100%{background-color: rgb(0, 207, 0);
+        color: black;}
+}
+
+
+
+#sur #yes #outone{
+    position: absolute;
+    margin-left: 19px;
+    margin-top: 5px;
+}
+#sur #no{
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    margin-top: 120px;
+    margin-left: 330px;
+    cursor: pointer;
+}
+#sur #no:hover{
+    width: 115px;
+    height: 50px;
+    border-radius: 28px;
+    animation: changetwo 0.5s;
+    animation-fill-mode: forwards;
+}
+#sur #no #outtwo{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+@keyframes changetwo {
+    100%{background-color: red;
+    color: black;}
+}
