@@ -1,0 +1,502 @@
+body{
+    background-image: url("Pattern-BG-EXPLOREdark.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.years{
+    position: relative;
+    border-radius: 3px;
+    width: 1500px;
+    height: 45px;
+    background-color: white;
+    animation: appear 2s;
+}
+@keyframes appear {
+    0%{opacity: 0;}
+}
+.show{
+    position: absolute;
+    margin-top: -4px;
+    margin-left: 9px;
+    transform: rotate(90deg);
+    font-size: xx-large;
+    cursor: pointer;
+}
+.ann{
+    position: relative;
+    display: flex;
+    gap: 160px;
+    margin-left: 100px; ;
+}
+li{
+    margin-top: 3px;
+    font-size: xx-large;
+    font-family: 'Gill Sans MT';
+    cursor: pointer;
+}
+.navbar{
+    position:absolute;
+    overflow: hidden;
+    width: 180px;
+    background-color: white;
+    border-radius: 2px;
+    height: 0vh;
+}
+a{
+    text-decoration: none;
+    font-family: 'Gill Sans MT';
+    font-size: xx-large;
+    color: black;
+    margin-left: 10px;
+}
+.mod1cpi{
+    border-radius: 3px;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    width: 110px;
+    background-color: white;
+    margin-left: 125px;
+}
+.cp1s1{
+    font-size: 20px;
+}
+.cp1s2{
+    font-size: 20px;
+}
+.mod2cpi{
+    border-radius: 3px;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    width: 110px;
+    background-color: white;
+    margin-left: 340px;
+}
+.cp2s1{
+    font-size: 20px;
+}
+.cp2s2{
+    font-size: 20px;
+}
+.mod3cpi{
+    border-radius: 3px;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    width: 110px;
+    background-color: white;
+    margin-left: 560px;
+}
+.cp3s1{
+    font-size: 20px;
+}
+.cp3s2{
+    font-size: 20px;
+}
+.mod4cpi{
+    border-radius: 3px;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    width: 110px;
+    background-color: white;
+    margin-left: 775px;
+}
+.cp4s1{
+    font-size: 20px;
+}
+.cp4s2{
+    font-size: 20px;
+}
+.mod5cpi{
+    border-radius: 3px;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    width: 110px;
+    background-color: white;
+    margin-left: 983px;
+}
+.cp5s1{
+    font-size: 20px;
+}
+.cp5s2{
+    font-size: 20px;
+}
+
+.info{
+    border-style: solid;
+    border-color: orangered;
+    border-radius: 20px;
+    background-color: orangered;
+    height: 230px;
+    margin-top: 80px;
+}
+
+
+.image{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 18px;
+    margin-left: 60px;
+}
+
+.image img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.fullname{
+    position: absolute;
+    color: white;
+    font-size: xx-large;
+    font-family: 'Gill Sans MT';
+    margin-left: 300px;
+    margin-top: 60px;
+}
+
+.useryear{
+    position: absolute;
+    color: white;
+    font-size: xx-large;
+    font-family: 'Gill Sans MT';
+    margin-left: 300px;
+    margin-top: 130px;
+}
+
+form .photo{
+    position: absolute;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(99, 41, 0);
+    border-radius: 10px;
+    background-color: rgb(99, 41, 0);
+    font-size: xx-large;
+    font-family: 'Gill Sans MT';
+    cursor: pointer;
+    margin-top: 80px;
+    margin-left: 1200px;
+}
+
+/* demanded books*/
+
+.orderedbooks{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: orangered;
+    margin-top: 200px;
+    width: 1490px;
+    height: 360px;
+}
+
+.demande{
+    position: absolute;
+    color: gray;
+    font-size: xx-large;
+    font-family: 'Gill Sans MT';
+    margin-left: 30px;
+    transform: translateY(-50px);
+}
+
+.scroll_demanded_books_to_the_left{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(70, 2, 2);
+    color: orangered;
+    margin-top: 150px;
+    transform: translateX(-10px);
+    cursor: pointer;
+}
+
+.scroll_demanded_books_to_the_left span{
+    position: absolute;
+    font-size: xx-large;
+    font-weight:bolder;
+    margin-top: 5px;
+    margin-left: 12px;
+    transform: scaleY(1.5);
+}
+
+.scroll_demanded_books_to_the_right{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(70, 2, 2);
+    color: orangered;
+    margin-top: 150px;
+    margin-left: 1450px;
+    cursor: pointer;
+}
+
+.scroll_demanded_books_to_the_right span{
+    position: absolute;
+    font-size: xx-large;
+    font-weight:bolder;
+    margin-top: 5px;
+    margin-left: 18px;
+    transform: scaleY(1.5);
+}
+
+
+.book1{
+    position: absolute;
+    height: 340px;
+    width: 190px;
+    background-color: rgb(180, 180, 180);
+    margin-top: 10px;
+    margin-left: 70px;
+    border-radius: 10px;
+    animation: downtotop 1.4s;
+}
+ .book1 .the_average_ratingone{
+    position: absolute;
+    color: white;
+    font-size: larger;
+    font-family: 'Gill Sans MT';
+    margin-left: 10px;
+    margin-top: 13px;
+}
+.book1 .ratingone{
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 65px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 100px;
+    height: 25px;
+}
+.book1 .ratingone .barone{
+    overflow: hidden;
+    height: 25px;
+    border-radius: 10px;
+    background-color: green;
+}
+.book1 .imageone{
+    position: absolute;
+    width: 160px;
+    height: 190px;
+    background-color: gray;
+    margin-left: 10px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+.book1 .imageone img{
+    height: 190px;
+    width: 160px;
+}
+.book1 .titleone{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Gill Sans MT';
+    font-weight: bold;
+}
+.book1 .authorone{
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Gill Sans MT';
+    font-weight: 150;
+}
+.book1 .stateone{
+    position: absolute;
+    margin-top: 295px;
+    margin-left: 12px;
+    font-family: 'Gill Sans MT';
+    font-weight: 180;
+    font-size: x-large;
+    color: rgb(255, 255, 47);
+}
+
+.book1 .yesnoone{
+    position: absolute;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: red;
+    height: 50px;
+    width: 55px;
+    cursor: pointer;
+    margin-top: 265px;
+    margin-left: 115px;
+}
+
+.book1 .yesnoone .ifelseone{
+    position: absolute;
+    color: white;
+    font-size: larger;
+    font-family: 'Gill Sans MT';
+    transform: translateY(2px);
+}
+
+
+/*taken books*/
+
+.takenbooks{
+    position: absolute;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: orangered;
+    margin-top: 200px;
+    width: 1490px;
+    height: 360px;
+}
+
+.take{
+    position: absolute;
+    color: rgb(42, 42, 42);
+    font-size: xx-large;
+    font-family: 'Gill Sans MT';
+    margin-left: 30px;
+    transform: translateY(-50px);
+}
+
+.scroll_taken_books_to_the_left{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(70, 2, 2);
+    color: orangered;
+    margin-top: 150px;
+    transform: translateX(-10px);
+    cursor: pointer;
+}
+
+.scroll_taken_books_to_the_left span{
+    position: absolute;
+    font-size: xx-large;
+    font-weight:bolder;
+    margin-top: 5px;
+    margin-left: 12px;
+    transform: scaleY(1.5);
+}
+
+.scroll_taken_books_to_the_right{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(70, 2, 2);
+    color: orangered;
+    margin-top: 150px;
+    margin-left: 1475px;
+    transform: translateX(-25px);
+    cursor: pointer;
+}
+
+.scroll_taken_books_to_the_right span{
+    position: absolute;
+    font-size: xx-large;
+    font-weight:bolder;
+    margin-top: 5px;
+    margin-left: 18px;
+    transform: scaleY(1.5);
+}
+
+.book2{
+    position: absolute;
+    height: 340px;
+    width: 190px;
+    background-color: rgb(180, 180, 180);
+    margin-top: 10px;
+    margin-left: 70px;
+    border-radius: 10px;
+    animation: downtotop 1.4s;
+}
+ .book2 .the_average_ratingtwo{
+    position: absolute;
+    color: white;
+    font-size: larger;
+    font-family: 'Gill Sans MT';
+    margin-left: 10px;
+    margin-top: 13px;
+}
+.book2 .ratingtwo{
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 65px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 100px;
+    height: 25px;
+}
+.book2 .ratingtwo .bartwo{
+    overflow: hidden;
+    height: 25px;
+    border-radius: 10px;
+    background-color: green;
+}
+.book2 .imagetwo{
+    position: absolute;
+    width: 160px;
+    height: 190px;
+    background-color: gray;
+    margin-left: 10px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+.book2 .imagetwo img{
+    height: 190px;
+    width: 160px;
+}
+.book2 .titletwo{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Gill Sans MT';
+    font-weight: bold;
+}
+.book2 .authortwo{
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Gill Sans MT';
+    font-weight: 150;
+}
+.book2 .statetwo{
+    position: absolute;
+    margin-top: 295px;
+    margin-left: 12px;
+    font-family: 'Gill Sans MT';
+    font-weight: 180;
+    font-size: x-large;
+    color: blue;
+}
+
+.book2 .timing{
+    position: absolute;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: aqua;
+    height: 20px;
+    width: 95px;
+    cursor: pointer;
+    margin-top: 295px;
+    margin-left: 80px;
+}
+
+.book2 .timing .timeleft{
+    position: absolute;
+    color: black;
+    font-size: larger;
+    font-family: 'Gill Sans MT';
+    margin-left: 7px;
+}

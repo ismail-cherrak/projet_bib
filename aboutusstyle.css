@@ -1,0 +1,467 @@
+body{
+    background-image: url("Pattern-BG-EXPLOREdark.png");
+}
+
+.Aboutus{
+    position: absolute;
+    font-size: 100px;
+    font-family: 'Gill Sans MT';
+    font-weight:lighter;
+    color: orangered;
+    margin-left: 550px;
+    margin-top: 10px;
+}
+.container{
+    margin-left: 30px;
+    position: absolute;
+    margin-top: 170px;
+    width: 95%;
+    height: 500px;
+    background-color: rgb(223, 223, 223);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imgleft{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 40xpx;
+    height: 40px;
+}
+
+.imgright{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 1400px;
+    width: 40xpx;
+    height: 40px;
+}
+
+.designer{
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 30px;
+    opacity: 0;
+    animation: up linear 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.designer .logo{
+    position: absolute;
+    border-style: solid;
+    border-color: orangered;
+    border-radius: 50%;
+    background-color: orangered;
+    width: 40px;
+    height: 50px;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.designer .fullname{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+.designer .description{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    margin-top: 120px;
+    margin-left: 40px;
+}
+
+.designer .email{
+    position: absolute;
+    padding: 20px;
+    color: white;
+    font-family: 'Gill Sans MT';
+    font-weight: lighter;
+    border-style: solid;
+    border-color: orangered;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: orangered;
+    width: 160px;
+    transform: translateX(-2px);
+    margin-top: 250px;
+}
+
+.designer .email span{
+    cursor: pointer;
+}
+
+
+.stylist{
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 270px;
+    opacity: 0;
+    animation: down linear 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.stylist .logo{
+    position: absolute;
+    border-style: solid;
+    border-color: orangered;
+    border-radius: 50%;
+    background-color: orangered;
+    width: 40px;
+    height: 50px;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.stylist .fullname{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+.stylist .fullname span{
+    position: absolute;
+    width: 200px;
+    transform: translateX(-30px);
+}
+
+.stylist .description{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    margin-top: 120px;
+    margin-left: 40px;
+}
+
+.stylist .email{
+    position: absolute;
+    padding: 20px;
+    color: white;
+    font-family: 'Gill Sans MT';
+    font-weight: lighter;
+    border-style: solid;
+    border-color: orangered;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: orangered;
+    width: 160px;
+    transform: translateX(-2px);
+    margin-top: 250px;
+}
+
+.stylist .email span{
+    cursor: pointer;
+}
+
+/**/
+
+.lifistone{
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 510px;
+    opacity: 0;
+    animation: up linear 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.lifistone .logo{
+    position: absolute;
+    border-style: solid;
+    border-color: orangered;
+    border-radius: 50%;
+    background-color: orangered;
+    width: 40px;
+    height: 50px;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.lifistone .fullname{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+.lifistone .fullname span{
+    position: absolute;
+    width: 200px;
+    transform: translateX(-5px);
+}
+
+.lifistone .description{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    margin-top: 120px;
+    margin-left: 40px;
+}
+
+.lifistone .email{
+    position: absolute;
+    padding: 20px;
+    color: white;
+    font-family: 'Gill Sans MT';
+    font-weight: lighter;
+    border-style: solid;
+    border-color: orangered;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: orangered;
+    width: 160px;
+    transform: translateX(-2px);
+    margin-top: 250px;
+}
+
+.lifistone .email span{
+    cursor: pointer;
+}
+
+/**/
+
+.lifisttwo{
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 750px;
+    opacity: 0;
+    animation: down linear 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.lifisttwo .logo{
+    position: absolute;
+    border-style: solid;
+    border-color: orangered;
+    border-radius: 50%;
+    background-color: orangered;
+    width: 40px;
+    height: 50px;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.lifisttwo .fullname{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+.lifisttwo .fullname span{
+    position: absolute;
+    width: 200px;
+    margin-top: 2px;
+    transform: translateX(-30px);
+}
+
+.lifisttwo .description{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    margin-top: 120px;
+    margin-left: 40px;
+}
+
+.lifisttwo .email{
+    position: absolute;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans MT';
+    font-weight: lighter;
+    border-style: solid;
+    border-color: orangered;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: orangered;
+    width: 160px;
+    transform: translateX(-2px);
+    margin-top: 250px;
+}
+
+.lifisttwo .email span{
+    cursor: pointer;
+}
+
+/**/
+
+.flutter{
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 990px;
+    opacity: 0;
+    animation: up linear 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.flutter .logo{
+    position: absolute;
+    border-style: solid;
+    border-color: orangered;
+    border-radius: 50%;
+    background-color: orangered;
+    width: 40px;
+    height: 50px;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.flutter .fullname{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+.flutter .fullname span{
+    position: absolute;
+    width: 200px;
+    margin-top: 2px;
+    transform: translateX(-15px);
+}
+
+.flutter .description{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    margin-top: 120px;
+    margin-left: 40px;
+}
+
+.flutter .email{
+    position: absolute;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans MT';
+    font-weight: lighter;
+    border-style: solid;
+    border-color: orangered;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: orangered;
+    width: 160px;
+    transform: translateX(-2px);
+    margin-top: 250px;
+}
+
+.flutter .email span{
+    cursor: pointer;
+}
+
+/**/
+
+.anonymous{
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left:1230px;
+    opacity: 0;
+    animation: down linear 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.anonymous .logo{
+    position: absolute;
+    border-style: solid;
+    border-color: orangered;
+    border-radius: 50%;
+    background-color: orangered;
+    width: 40px;
+    height: 50px;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.anonymous .fullname{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+.anonymous .fullname span{
+    position: absolute;
+    width: 200px;
+    margin-top: 2px;
+}
+
+.anonymous .description{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    margin-top: 120px;
+    margin-left: 40px;
+}
+
+.anonymous .email{
+    position: absolute;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans MT';
+    font-weight: lighter;
+    border-style: solid;
+    border-color: orangered;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: orangered;
+    width: 160px;
+    transform: translateX(-2px);
+    margin-top: 250px;
+}
+
+.anonymous .email span{
+    cursor: pointer;
+}
+
+@keyframes up {
+    0%{transform: translateY(70px)}
+    40%{opacity: 1;}
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes down {
+    0%{transform: translateY(-70px);}
+    40%{opacity: 1;}
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
