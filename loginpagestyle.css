@@ -1,0 +1,157 @@
+body{
+    background:linear-gradient(to bottom, rgb(67, 28, 0),black);
+    background-attachment:local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+img{
+    position: absolute;
+    transform: translateY(-70px);
+}
+
+.logoname{
+    position: absolute;
+    color: grey;
+    font-size: 45px;
+    font-family: 'Gill Sans MT';
+    margin-top: 230px;
+    margin-left: 110px;
+}
+
+.intro{
+    position: absolute;
+    color: white;
+    margin-top: 350px;
+    font-size: 50px;
+    font-family: 'Gill Sans MT';
+    margin-left: 50px;
+}
+
+.intro span{
+    margin-left: 30px;
+}
+.container{
+    position: absolute;
+    height: 97vh;
+    width: 780px;
+    margin-left: 730px;
+    background: linear-gradient(to bottom, rgb(116, 51, 4), black);
+    border-right-style:groove;
+    border-left-style: groove;
+    border-radius: 8px;
+    border-color: orangered;
+    display: flex;
+    justify-content: center;
+    animation: show 2s;
+}
+@keyframes show {
+    0%{opacity: 0;}
+    100%{opacity: 0.8;}
+}
+.wel{
+    position: absolute;
+    margin-top: 30px;
+    font-size: 75px;
+    font-family: 'Gill Sans MT';
+    color: orangered;
+}
+.conn{
+    position: absolute;
+    color: wheat;
+    font-size:xx-large;
+    font-family: 'Gill Sans MT';
+    margin-top: 150px;
+    color: #E26400;
+}
+.email{
+    position: absolute;
+    margin-top: 240px;
+    margin-right: 280px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    font-size: x-large;
+}
+.in{
+    position: absolute;
+    margin-top: 280px;
+    width: 310px;
+    height: 35px;
+    margin-right: 25px;
+    border-radius: 4px;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    font-size: larger;
+    border-radius: 10px;
+}
+.pass{
+    position: absolute;
+    color: white;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    margin-top: 370px;
+    margin-right: 210px;
+}
+.in2{
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    font-size: larger;
+    width: 310px;
+    height: 35px;
+    margin-right: 25px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 410px;
+    border-radius: 10px;
+}
+
+.Incorrect{
+    color: red;
+    font-family: 'Gill Sans MT';
+    margin-top: 460px;
+}
+
+.forgot{
+    position: absolute;
+    color: white;
+    font-family: 'Gill Sans MT';
+    margin-top: 460px;
+    margin-left: 140px;
+    cursor: pointer;
+}
+.sign{
+    margin-right: 180px;
+}
+.sub{
+    position: absolute;
+    background-color: orangered;
+    color: white;
+    font-family: 'Gill sans MT';
+    border-radius: 10px;
+    padding: 4px;
+    width: 200px;
+    border-color: orangered;
+    margin-top: 550px;
+    transform: scale(3);
+    cursor: pointer;
+}
+.ques{
+    position: absolute;
+    font-size: x-large;
+    font-family: 'Gill Sans MT';
+    color: grey;
+    margin-top: 630px;
+    margin-right: 240px;
+}
+.insc{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans MT';
+    font-size: x-large;
+    margin-top: 630px;
+    margin-left: 380px;
+    cursor: pointer;
+}
