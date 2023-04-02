@@ -1,6 +1,5 @@
 body{
     background:linear-gradient(to bottom, rgb(129, 60, 10), rgb(59, 25, 1)); 
-    /*background-color: rgb(129, 60, 10); */
     background-attachment:local;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,7 +54,6 @@ img{
 .Register .re{
     position: absolute;
     color: orangered;
-    text-decoration: underline;
     font-size: 90px;
     font-family: 'Gill Sans MT';
     margin-top: 180px;
@@ -220,49 +218,60 @@ img{
     height: 50px;
     margin-top: 400px;
     margin-left: 895px;
-    overflow: hidden;
-    transform: scale(0);
 }
 
 #optcpi #year1{
     position: absolute;
     color: white;
-    width: 85px;
-    height: 35px;
+    width: 70px;
+    height: 40px;
     background-color: chocolate;
-    margin-top: 2px;
-    margin-left: 2px;
     font-size: larger;
     font-family: 'Gill Sans MT';
-    cursor: pointer;
-    border-radius: 8px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
 }
 
 
-#optcpi #year1 span{
-    position: absolute;
-    margin-top: 5px;
-    margin-left: 5px;
-}
 
 #optcpi #year2{
     position: absolute;
     color: white;
-    width: 85px;
-    height: 35px;
+    width: 70px;
+    height: 40px;
     background-color: chocolate;
     font-size: larger;
     font-family: 'Gill Sans MT';
-    margin-top: 2px;
+    border-radius: 20px;
     margin-left: 102px;
-    cursor: pointer;
-    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
 }
 
-#optcpi #year2 span{
-    position: absolute;
-    margin-top: 5px;
-    margin-left: 5px;
+/*SEVERELY IMPORTANT: each animation happens to its year when the user clicks on a CPI option, the duration will be 1 second, and when he clicks on CS, it will be reversed by animation-direction:reverse; also 1 second.*/
+
+
+@keyframes firstyear {
+    0%{transform: translateY(-70px) translateX(50px);
+    opacity: 0;}
+    100%{margin-top: 2px;
+    margin-left: 2px;
+    opacity: 1;
+    cursor: pointer;}
+}
+
+@keyframes secondyear {
+    0%{transform: translateY(-70px) translateX(-50px);
+    opacity: 0;}
+    100%{margin-top: 2px;
+    margin-left: 102px;
+    opacity: 1;
+    cursor: pointer;}
 }
 
 /* cycle superior*/
@@ -273,80 +282,87 @@ img{
     height: 50px;
     margin-top: 400px;
     margin-left: 1050px;
-    transform: scale(0);
-    overflow: hidden;
+    transform: scale(1);
 }
 
 #optcs #year3{
     position: absolute;
     color: white;
-    width: 85px;
-    height: 35px;
+    width: 70px;
+    height: 40px;
     background-color: chocolate;
     font-size: larger;
     font-family: 'Gill Sans MT';
-    margin-top: 2px;
-    margin-left: 2px;
-    cursor: pointer;
-    border-radius: 8px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    opacity: 1;
 }
 
-#optcs #year3 span{
-    position: absolute;
-    margin-top: 5px;
-    margin-left: 5px;
-}
 
 #optcs #year4{
     position: absolute;
     color: white;
-    width: 85px;
-    height: 35px;
+    width: 70px;
+    height: 40px;
     background-color: chocolate;
     font-size: larger;
     font-family: 'Gill Sans MT';
-    margin-top: 2px;
-    margin-left: 102px;
-    cursor: pointer;
-    border-radius: 8px;
+    border-radius: 20px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
 }
 
-#optcs #year4 span{
-    position: absolute;
-    margin-top: 5px;
-    margin-left: 5px;
-}
 
 #optcs #year5{
     position: absolute;
     color: white;
-    width: 85px;
-    height: 35px;
+    width: 70px;
+    height: 40px;
     background-color: chocolate;
     font-size: larger;
     font-family: 'Gill Sans MT';
-    margin-top: 2px;
-    margin-left: 202px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    margin-left: 170px;
+}
+
+/*SEVERELY IMPORTANT: each animation happens to its year when the user clicks on a CS option, the duration will be 1 second, and when he clicks on CPI, it will be reversed by animation-direction:reverse; also 1 second.*/
+
+@keyframes thirdyear {
+    0%{opacity: 0;
+    margin-left: 100px;
+    transform: translateY(-50px);}
+    100%{opacity: 1;
     cursor: pointer;
-    border-radius: 8px;
+    margin-top: 2px;}
 }
 
-#optcs #year5 span{
-    position: absolute;
-    margin-top: 5px;
-    margin-left: 5px;
+@keyframes fourthyear {
+    0%{opacity: 0;
+    transform:translateY(-50px);}
+    100%{opacity: 1;
+    margin-top: 50px;
+    cursor: pointer;}
 }
 
-@keyframes showyearopts {
-    0%{transform: scaleY(0);}
-    95%{transform: scaleY(1);}
-    100%{transform: scaleY(1);}}
-
-
-@keyframes hideyearopts {
-    0%{transform: scaleY(1);}
-    5%{transform: scaleY(0);}
-    100%{transform: scaleY(0);}
+@keyframes fifthyear {
+    0%{opacity: 0;
+        margin-left: 100px;
+        transform: translateY(-50px);}
+    100%{opacity: 1;
+        cursor: pointer;
+        margin-left: 170px;
+        margin-top: 2px;
+    }
 }
 
 #sub{
@@ -414,7 +430,60 @@ img{
     margin-left: 200px;
 }
 
-#sub:active{
-    background-color: yellow;
-    opacity: 0.9;
+/*the email and its input area will be aligned to the bottom by 50px when the user clicks on a cycle option to leave space for the years options*/
+
+
+@keyframes emailslide {
+    100%{transform: translateY(50px);}
+}
+@keyframes emailsslide {
+    100%{transform: translateY(50px);}
+}
+
+
+/*errors: these errors occur when the user doesn't fill the whole page inputs, else their opacity would be simply 0*/
+
+.errorfname{
+    position: absolute;
+    font-size: large;
+    font-family: 'Gill Sans MT';
+    color: yellow;
+    margin-left: 900px;
+    margin-top: 200px;
+}
+
+.errorlname{
+    position: absolute;
+    font-size: large;
+    font-family: 'Gill Sans MT';
+    color: yellow;
+    margin-left: 1100px;
+    margin-top: 200px;
+}
+
+.errorcycle{
+    position: absolute;
+    font-size: large;
+    font-family: 'Gill Sans MT';
+    color: yellow;
+    margin-left: 1000px;
+    margin-top: 380px;
+}
+
+.erroryear{
+    position: absolute;
+    font-size: large;
+    font-family: 'Gill Sans MT';
+    color: yellow;
+    margin-left: 1000px;
+    margin-top: 440px;
+}
+
+.erroremail{
+    position: absolute;
+    font-size: large;
+    font-family: 'Gill Sans MT';
+    color: yellow;
+    margin-left: 970px;
+    margin-top: 570px;
 }
