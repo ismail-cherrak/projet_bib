@@ -1,0 +1,503 @@
+body{
+    background-image: url("Pattern-BG-EXPLORE.png");
+}
+
+#years{
+    position: relative;
+    border-radius: 3px;
+    width: 1500px;
+    height: 45px;
+    background-color: white;
+    animation: appear 2s;
+}
+@keyframes appear {
+    0%{opacity: 0;}
+}
+
+#navbar{
+    position:absolute;
+    overflow: hidden;
+    width: 140px;
+    background-color: white;
+    border-radius: 2px;
+    height: 30vh;
+}
+a{
+    text-decoration: none;
+    font-family: 'Gill Sans MT';
+    font-size: xx-large;
+    color: black;
+    margin-left: 10px;
+}
+
+#mod1cpi{
+    border-radius: 3px;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    width: 110px;
+    height: 80px;
+    background-color: white;
+    margin-left: 125px;
+
+}
+.cp1s1{
+    font-family: 'Gill Sans MT';
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.cp1s2{
+    font-family: 'Gill Sans MT';
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+}
+#mod2cpi{
+    border-radius: 3px;
+    position: absolute;
+    height: 80px;
+    overflow: hidden;
+    width: 110px;
+    background-color: white;
+    margin-left: 340px;
+}
+.cp2s1{
+    font-family: 'Gill Sans MT';
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.cp2s2{
+    font-family: 'Gill Sans MT';
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+}
+#mod3cpi{
+    border-radius: 3px;
+    position: absolute;
+    height: 80px;
+    overflow: hidden;
+    width: 110px;
+    background-color: white;
+    margin-left: 560px;
+    justify-content: center;
+    align-items: center;
+}
+.cp3s1{
+    font-family: 'Gill Sans MT';
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.cp3s2{
+    font-family: 'Gill Sans MT';
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+}
+#mod4cpi{
+    border-radius: 3px;
+    position: absolute;
+    height: 80px;
+    overflow: hidden;
+    width: 110px;
+    background-color: white;
+    margin-left: 775px;
+}
+.cp4s1{
+    font-family: 'Gill Sans MT';
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.cp4s2{
+    font-family: 'Gill Sans MT';
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+}
+#mod5cpi{
+    border-radius: 3px;
+    position: absolute;
+    height: 40px;
+    overflow: hidden;
+    width: 110px;
+    background-color: white;
+    margin-left: 983px;
+}
+.cp5s1{
+    font-family: 'Gill Sans MT';
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.cp5s2{
+    font-family: 'Gill Sans MT';
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+li{
+    margin-top: 3px;
+    font-size: xx-large;
+    font-family: 'Gill Sans MT';
+    cursor: pointer;
+}
+
+#show{
+    position: absolute;
+    margin-top: -4px;
+    margin-left: 9px;
+    transform: rotate(90deg);
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+#ann{
+    position: relative;
+    display: flex;
+    gap: 160px;
+    margin-left: 100px; ;
+}
+
+.container{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 15px;
+    width: 1200px;
+    height:1100px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 15px;
+    opacity: 0.9;
+}
+img{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 260px;
+    height: 335px;
+}
+
+.title{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 300px;
+    margin-top: 60px;
+}
+
+.author{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    font-weight: 150;
+    font-size: xx-large;
+    margin-left: 300px;
+    margin-top: 120px;
+}
+
+.order{
+    position: absolute;
+    height: 80px;
+    width: 230px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 103);
+    margin-left: 400px;
+    margin-top: 280px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order span{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    font-size: 30px;
+    font-weight: 200;
+    color: white;
+}
+
+
+/*IMPORTANT: as the user clicks on 'order' button, the 'cancel order' button will show up instead with these following descriptions: 
+inner HTML: Cancel Order
+background:red
+*/
+
+
+.timer{
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 300px;
+    background-color: rgb(54, 54, 169);
+    margin-left: 750px;
+    font-size: xx-large;
+    font-family: 'Gill Sans MT';
+    width: 130px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container .aratestu{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 200px;
+    background-color: yellow;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.container .studentsaveragerating{
+    display: none; /*in this div you will write the average rating of of the students, then you'll move the rating symbol (the book icon), i made it not diplayed because the student wouldn't see it :) */
+}
+
+.container .aratestu .roundstu{
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 50%;
+    transform: translateY(-6px);
+}
+
+.container .aratestu img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-20px) translateX(-16px);
+}
+
+.container .aratetea{
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 202px;
+    background-color: green;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.container .taechersaveragerating{
+    display: none; /*same for the teachers rating*/
+}
+
+
+.container .aratetea .roundtea{
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    border-style: solid;
+    border-color: green;
+    border-radius: 50%;
+    transform: translateY(-6px);
+}
+
+.container .aratetea img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-20px) translateX(-16px);
+}
+
+.container .how{
+    position: absolute;
+    font-size: xx-large;
+    font-family: 'Gill Sans MT';
+    align-items: center;
+    margin-top: 800px;
+    margin-left: 740px;
+}
+
+.container .rating{
+    position: absolute;
+    border-style:  solid;
+    border-color: yellow;
+    border-radius: 15px;
+    width: 250px;
+    height:30px;
+    margin-top: 901px;
+    margin-left: 719px;
+    background-color: yellow;
+}
+
+
+.container .rating .round{
+    position: relative;
+    height:60px;
+    width: 60px;
+    background-color: yellow;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-15px); /*use the translateX to move the rating bar*/
+
+}
+
+.container .rating .round img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-15px) translateX(-10px);
+}
+
+.container .description{
+    position: absolute;
+    font-size: 45px;
+    font-family: 'Gill Sans MT';
+    margin-top: 400px;
+    margin-left: 745px;
+}
+
+.container .des{
+    position: absolute;
+    font-size: 28px;
+    font-family: 'Gill Sans MT';
+    width: 600px;
+    margin-top: 480px;
+    margin-left: 560px;
+    display: flex;
+    justify-content: center;
+}
+
+.container ul{
+    margin-top: 420px;
+    gap: 50px;
+}
+
+.container .comm {
+    font-size: 40px;
+    font-family: 'Gill Sans MT';
+    font-weight: 300;
+    margin-left: 30px;
+}
+
+.container .commentdisplay{
+    /*the "appear" and "hide" animations that you'll find below will be used here to hide/show new coomments*/
+}
+
+.container .commentatorimage{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.container .commentatorname{
+    position: absolute;
+    font-size: larger;
+    font-family: 'Gill Sans MT';
+    margin-top: 50px;
+    margin-left: 140px;
+}
+.container .comment{
+    position: absolute;
+    font-size: x-large;
+    font-family: 'Gill Sans MT';
+    margin-top: 90px;
+    margin-left: 140px;
+}
+
+.container .commentatorrating{
+    position: absolute;
+    width: 100px;
+    height: 15px;
+    border: solid green;
+    background-color: green;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 240px;
+    overflow: hidden;
+}
+
+/*these animations happen when the user clicks on 'show' more button, we'll show, everytime the user clicks on show more, two more comments, and another button will appear 'show previous' to see the previous comments*/
+
+@keyframes hide {
+    50%{transform: translateY(-30px);
+    opacity: 0;}
+    51%{transform: translateY(30px);
+    opacity: 0;}
+
+}
+
+@keyframes show {
+    51%{transform: translateY(30px);
+        opacity: 0;}
+    100%{transform: translateY(0px);
+    opacity: 1;}
+}
+
+.container .showmore{
+    position: absolute;
+    padding: 15px;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Gill Sans MT';
+    background-color: grey;
+    border-color: grey;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 330px;
+    margin-left: 80px;
+}
+
+.container .showprevious{
+    position: absolute;
+    padding: 15px;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Gill Sans MT';
+    background-color: grey;
+    border-color: grey;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 330px;
+    margin-left: 80px;
+    opacity:0;  /*you can change this opacity to 1 and make the 'margin left' of showmore to 500px to see the show previous button*/
+}
+
+/*IMPORTANT! these animations happen once, when the oldest comments are displayed at the beginning and the user presses 'show more', the 'show previous' button will appear with the 'showpreviousbutton' animation below, and the 'show more' button will be moved by 400px to the right by the 'moveshowmorebutton' animation, unless the user sees the newest comments, the 'show previous' button will disappear by the 'hideshowpreviousbutton' animation and the 'show more' button will go back to its place by 'returnshowmorebutton'*/
+/*do not forget, in javascript, to set the animationfillmode to "forwards" to keep the animation ending appeared*/
+
+@keyframes showpreviousbutton {
+    0%{transform: scale(0);
+    opacity: 0;}
+    50%{transform: scale(1);
+    opacity: 1;}
+}
+
+@keyframes moveshowmorebutton {
+    50%{transform: translateX(300px);}
+}
+
+@keyframes hideshowpreviousbutton {
+    50%{transform: scale(1);
+    opacity: 0;}
+    100%{transform: scale(0);
+    opacity: 0;}
+
+}
+
+@keyframes returnshowmorebutton  {
+    50%{transform: translateX(300px);}
+    100%{transform: translateX(0px)};
+}
