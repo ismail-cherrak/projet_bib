@@ -52,7 +52,7 @@ a{
     color: black;
     margin-left: 10px;
 }
-#mod1cpi{
+.mod1cpi{
     border-radius: 3px;
     position: absolute;
     height: 80px;
@@ -67,7 +67,7 @@ a{
 .cp1s2{
     font-size: 20px;
 }
-#mod2cpi{
+.mod2cpi{
     border-radius: 3px;
     position: absolute;
     height: 80px;
@@ -82,7 +82,7 @@ a{
 .cp2s2{
     font-size: 20px;
 }
-#mod3cpi{
+.mod3cpi{
     border-radius: 3px;
     position: absolute;
     height: 80px;
@@ -97,7 +97,7 @@ a{
 .cp3s2{
     font-size: 20px;
 }
-#mod4cpi{
+.mod4cpi{
     border-radius: 3px;
     position: absolute;
     height: 80px;
@@ -112,7 +112,7 @@ a{
 .cp4s2{
     font-size: 20px;
 }
-#mod5cpi{
+.mod5cpi{
     border-radius: 3px;
     position: absolute;
     height: 80px;
@@ -173,14 +173,14 @@ a{
     margin-top: 130px;
 }
 
-.profile{
+.profilephotoedit{
     position: absolute;
-    color: black;
+    color: rgb(99, 41, 0);
     padding: 10px;
     border-style: solid;
-    border-color: rgb(99, 41, 0);
+    border-color: black;
     border-radius: 10px;
-    background-color: rgb(99, 41, 0);
+    background-color: black;
     font-size: xx-large;
     font-family: 'Gill Sans MT';
     cursor: pointer;
@@ -188,134 +188,13 @@ a{
     margin-left: 1200px;
 }
 
-/*IMPORTANT: this container will appear when the user wants to edit his profile*/
-
-.editcontainer{
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 500px;
-}
-
-.editprofile{
-    position: absolute;
-    width: 550px;
-    height: 340px;
-    background:linear-gradient(to bottom, rgb(78, 78, 78), rgb(204, 204, 204));
-    border-style: solid;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.editprofile span{
-    font-size: x-large;
-    font-weight: 500;
-    font-family: 'Gill Sans MT';
-    margin-top: 15px;
-}
-
- form .picture{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    border-style: solid;
-    border-radius: 50%;
-    border-color: white;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-form .editphoto{
-    position: absolute;
-    width: 120px;
-    height: 40px;
-    color: white;
-    background-color: black;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-top: 150px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Gill Sans MT';
-
-}
-
-form .username{
-    position: absolute;
-    font-size: larger;
-    font-family: 'Gill Sans MT';
-    margin-top: 90px;
-    margin-left: 200px;
-    width: 200px;
-}
-
-form .editthename{
-    position: absolute;
-    border-radius: 10px;
-    height: 25px;
-    width: 200px;
-    font-size: larger;
-    margin-top: 90px;
-    margin-left: 320px;
-}
-
-form .year{
-    position: absolute;
-    font-size: larger;
-    font-family: 'Gill Sans MT';
-    margin-top: 150px;
-    margin-left: 200px;
-}
-form ul li{
-    font-size: 20px;
-    transform: translateX(-35px) translateY(-10px);
-}
-
-form .years_options{
-    position: absolute;
-    font-family: 'Gill Sans MT';
-    background-color: white;
-    border-radius: 10px;
-    width: 130px;
-    height: 160px;
-    margin-top: 150px;
-    margin-left: 300px;
-}
-
-form .years_options span{
-    position: absolute;
-    transform: rotate(90deg) scaleY(1.3);
-    cursor: pointer;
-    margin-left: 20px;
-}
-
-form .submit{
-    position: absolute;
-    background-color: red;
-    height: 30px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    font-family: 'Gill Sans MT';
-    font-size: large;
-    cursor: pointer;
-    margin-top: 300px;
-    margin-left: 175px;
-    color: white;
-    border: solid black;
-}
 /* demanded books*/
 
 .orderedbooks{
     border-radius: 10px;
     border-style: solid;
     border-color: orangered;
-    margin-top: 200px;
+    margin-top: 400px;
     width: 1490px;
     height: 360px;
 }
@@ -643,7 +522,4 @@ form .submit{
     font-size: larger;
     font-family: 'Gill Sans MT';
     margin-left: 7px;
-}
-.hide{
-    display: none;
 }
