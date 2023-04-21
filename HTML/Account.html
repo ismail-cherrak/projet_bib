@@ -4,38 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/Account.css">
+    <link rel="stylesheet" href="Account.css">
     <title>Account</title>
 </head>
 <body>
-    <div id="years"> <!--The upper options-->
-        <span id="show"> &nbsp;  |||</span> <!--shows navigation bar on click-->
+    <div class="years"> <!--The upper options-->
+        <span class="show"> &nbsp;  |||</span> <!--shows navigation bar on click-->
         <ul type="none" class="ann">
-            <li class="annees">1CPI</li>
-            <li class="annees">2CPI</li>
-            <li class="annees">1CS</li>
-            <li class="annees">2CS</li>
-            <li class="annees">3CS</li>
-            <li class="annees">Computer Science</li>
+         <li class="1cpi">1CPI</li>
+         <li class="2cpi">2CPI</li>
+         <li class="1cs">1CS</li>
+         <li class="2cs">2CS</li>
+         <li class="3cs">3CS</li>
+         <li>Computer Science</li>
         </ul>
      </div> 
-     <div id="mod1cpi">
+     <div class="mod1cpi">
              <a href="" class="cp1s1">Semestre1</a> <br> <br>
              <a href="" class="cp1s2">Semestre2</a>
      </div>
-     <div id="mod2cpi">
+     <div class="mod2cpi">
          <a href="" class="cp2s1">Semestre1</a> <br> <br>
          <a href="" class="cp2s2">Semestre2</a>
      </div>
-     <div id="mod3cpi">
+     <div class="mod3cpi">
          <a href="" class="cp3s1">Semestre1</a> <br> <br>
          <a href="" class="cp3s2">Semestre2</a>
      </div>
-     <div id="mod4cpi">
+     <div class="mod4cpi">
          <a href="" class="cp4s1">Semestre1</a> <br> <br>
          <a href="" class="cp4s2">Semestre2</a>
      </div>
-     <div id="mod5cpi">
+     <div class="mod5cpi">
          <a href="" class="cp5s1">Semestre1</a> <br> <br>
      </div>
      <div class="info">
@@ -45,28 +45,10 @@
         <!--when the user has created the account, his fullname and useryear will be shown as such: -->
         <div class="fullname">User fullname</div>
         <div class="useryear">'User year' Student</div>
-        <div class="profile">Edit profile</div>
-        <div class="editcontainer">
-        <div class="editprofile"><span>Edit the profile</span></div>
+
         <form action="">
-        <div class="picture"></div>
-        <div class="editphoto">Edit the photo</div>
-        <div class="username">User Name:</div>
-        <input type="text" class="editthename">
-        <div class="year">Year:</div>
-        <div class="submit">Submit</div>
-    <div class="years_options">Current year &nbsp; <span class="click_for_options">></span> <!--the user must click ONLY on this to show the years--> <br>
-        <ul type="none">
-            <li>1CPI</li>
-            <li>2CPI</li> 
-            <li>1CS</li>
-            <li>2CS</li>
-            <li>3CS</li>
-        </ul>
-    </div>
+        <div class="profilephotoedit">Edit profile photo</div>
         </form>
-        </div>
-    </div>
 
         <!--ordered books container-->
         <div class="orderedbooks">
@@ -113,10 +95,9 @@
             <div class="scroll_taken_books_to_the_right"><span>></span></div>
         </div>
 
-        <div id="navbar" class="hide" >
+        <div id="navbar" >
             <br><br><a href="Aboutus.html">About us</a> <br> <br>
           <br> <br> <a href="Account.html">Account</a>
         </div>
-        <script src="../JS/Account.js"></script>
 </body>
 </html>
