@@ -10,6 +10,7 @@ body{
 img{
     position: absolute;
     transform: translateY(-70px);
+    animation: show linear 1s;
 }
 
 .logoname{
@@ -19,6 +20,7 @@ img{
     font-family: 'Gill Sans MT';
     margin-top: 230px;
     margin-left: 110px;
+    animation: show linear 1s;
 }
 
 .intro{
@@ -26,8 +28,10 @@ img{
     color: white;
     margin-top: 350px;
     font-size: 50px;
-    font-family: 'Gill Sans MT';
-    margin-left: 50px;
+    font-weight: 100;
+    font-family: 'Courier';
+    margin-left: 20px;
+    animation: show linear 1s;
 }
 
 .intro span{
@@ -61,7 +65,7 @@ img{
 .conn{
     position: absolute;
     color: wheat;
-    font-size:xx-large;
+    font-size: 50px;
     font-family: 'Gill Sans MT';
     margin-top: 150px;
     color: #E26400;
@@ -84,28 +88,44 @@ img{
     padding: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT';
     font-size: larger;
-    border-radius: 10px;
+    border-radius: 10px
+
 }
+
+
+.erroremail{
+    position: absolute;
+    color: yellow;
+    font-size: larger;
+    font-family: 'Gill Sans MT';
+    margin-top: 330px;
+    transform: translateX(-90px);
+}
+
+
 .pass{
     position: absolute;
     color: white;
     font-size: x-large;
     font-family: 'Gill Sans', 'Gill Sans MT';
     margin-top: 370px;
-    margin-right: 210px;
+    margin-right: 250px;
 }
 .in2{
     position: absolute;
-    font-family: 'Gill Sans', 'Gill Sans MT';
-    font-size: larger;
+    margin-top: 410px;
+    transform: translateX(-128px);
     width: 310px;
     height: 35px;
     margin-right: 25px;
     border-radius: 4px;
     padding: 5px;
-    margin-top: 410px;
-    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    font-size: larger;
+    border-radius: 10px
 }
+
+/* SEVERELY IMPORTANT: this 'incorrect password' and 'forgot password?' texts can ONLY be displayed when the email is valid*/ 
 
 .Incorrect{
     color: red;
@@ -115,14 +135,17 @@ img{
 
 .forgot{
     position: absolute;
-    color: white;
     font-family: 'Gill Sans MT';
     margin-top: 460px;
     margin-left: 140px;
     cursor: pointer;
 }
+.forgot a{
+    text-decoration: none;
+    color: white;
+}
 .sign{
-    margin-right: 180px;
+    margin-right: 280px;
 }
 .sub{
     position: absolute;
@@ -143,7 +166,7 @@ img{
     font-family: 'Gill Sans MT';
     color: grey;
     margin-top: 630px;
-    margin-right: 240px;
+    margin-right: 280px;
 }
 .insc{
     position: absolute;
@@ -152,6 +175,6 @@ img{
     font-family: 'Gill Sans MT';
     font-size: x-large;
     margin-top: 630px;
-    margin-left: 380px;
+    margin-left: 400px;
     cursor: pointer;
 }

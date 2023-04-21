@@ -48,8 +48,7 @@ body{
     border-radius: 10px;
     margin-top: 150px;
     margin-left: 30px;
-    opacity: 0;
-    animation: up linear 0.4s;
+    animation: design linear 2s;
     animation-fill-mode: forwards;
 }
 
@@ -63,6 +62,14 @@ body{
     height: 50px;
     margin-left: 75px;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.designer .logo img{
+    position: absolute;
+    transform: scale(0.07);
 }
 
 .designer .fullname{
@@ -82,7 +89,6 @@ body{
 .designer .email{
     position: absolute;
     padding: 20px;
-    color: white;
     font-family: 'Gill Sans MT';
     font-weight: lighter;
     border-style: solid;
@@ -92,12 +98,18 @@ body{
     background-color: orangered;
     width: 160px;
     transform: translateX(-2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 250px;
 }
 
-.designer .email span{
-    cursor: pointer;
+.designer .email a{
+    text-decoration: none;
+    color: white;
 }
+
+/**/
 
 
 .stylist{
@@ -110,8 +122,7 @@ body{
     border-radius: 10px;
     margin-top: 100px;
     margin-left: 270px;
-    opacity: 0;
-    animation: down linear 0.4s;
+    animation: styli linear 2s;
     animation-fill-mode: forwards;
 }
 
@@ -125,6 +136,14 @@ body{
     height: 50px;
     margin-left: 75px;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stylist .logo img{
+    position: absolute;
+    transform: scale(0.07);
 }
 
 .stylist .fullname{
@@ -150,7 +169,6 @@ body{
 .stylist .email{
     position: absolute;
     padding: 20px;
-    color: white;
     font-family: 'Gill Sans MT';
     font-weight: lighter;
     border-style: solid;
@@ -160,11 +178,15 @@ body{
     background-color: orangered;
     width: 160px;
     transform: translateX(-2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 250px;
 }
 
-.stylist .email span{
-    cursor: pointer;
+.stylist .email a{
+    text-decoration: none;
+    color: white;
 }
 
 /**/
@@ -179,8 +201,7 @@ body{
     border-radius: 10px;
     margin-top: 150px;
     margin-left: 510px;
-    opacity: 0;
-    animation: up linear 0.4s;
+    animation: lifone linear 2s;
     animation-fill-mode: forwards;
 }
 
@@ -192,8 +213,17 @@ body{
     background-color: orangered;
     width: 40px;
     height: 50px;
+    overflow: hidden;
     margin-left: 75px;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lifistone .logo img{
+    position: absolute;
+    transform: scale(0.03);
 }
 
 .lifistone .fullname{
@@ -219,7 +249,6 @@ body{
 .lifistone .email{
     position: absolute;
     padding: 20px;
-    color: white;
     font-family: 'Gill Sans MT';
     font-weight: lighter;
     border-style: solid;
@@ -229,11 +258,15 @@ body{
     background-color: orangered;
     width: 160px;
     transform: translateX(-2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 250px;
 }
 
-.lifistone .email span{
-    cursor: pointer;
+.lifistone .email a{
+    text-decoration: none;
+    color: white;
 }
 
 /**/
@@ -248,8 +281,7 @@ body{
     border-radius: 10px;
     margin-top: 100px;
     margin-left: 750px;
-    opacity: 0;
-    animation: down linear 0.4s;
+    animation: liftwo linear 2s;
     animation-fill-mode: forwards;
 }
 
@@ -263,6 +295,14 @@ body{
     height: 50px;
     margin-left: 75px;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lifisttwo .logo img{
+    position: absolute;
+    transform: scale(0.07);
 }
 
 .lifisttwo .fullname{
@@ -289,7 +329,6 @@ body{
 .lifisttwo .email{
     position: absolute;
     padding: 20px;
-    color: white;
     font-size: 15px;
     font-family: 'Gill Sans MT';
     font-weight: lighter;
@@ -300,11 +339,15 @@ body{
     background-color: orangered;
     width: 160px;
     transform: translateX(-2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 250px;
 }
 
-.lifisttwo .email span{
-    cursor: pointer;
+.lifisttwo .email a{
+    text-decoration: none;
+    color: white;
 }
 
 /**/
@@ -319,8 +362,7 @@ body{
     border-radius: 10px;
     margin-top: 150px;
     margin-left: 990px;
-    opacity: 0;
-    animation: up linear 0.4s;
+    animation: flut linear 2s;
     animation-fill-mode: forwards;
 }
 
@@ -334,6 +376,15 @@ body{
     height: 50px;
     margin-left: 75px;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.flutter .logo img{
+    position: absolute;
+    transform: scale(0.04);
 }
 
 .flutter .fullname{
@@ -360,7 +411,6 @@ body{
 .flutter .email{
     position: absolute;
     padding: 20px;
-    color: white;
     font-size: 15px;
     font-family: 'Gill Sans MT';
     font-weight: lighter;
@@ -371,11 +421,15 @@ body{
     background-color: orangered;
     width: 160px;
     transform: translateX(-2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 250px;
 }
 
-.flutter .email span{
-    cursor: pointer;
+.flutter .email a{
+    text-decoration: none;
+    color: white;
 }
 
 /**/
@@ -390,8 +444,7 @@ body{
     border-radius: 10px;
     margin-top: 100px;
     margin-left:1230px;
-    opacity: 0;
-    animation: down linear 0.4s;
+    animation: anon linear 2s;
     animation-fill-mode: forwards;
 }
 
@@ -405,6 +458,15 @@ body{
     height: 50px;
     margin-left: 75px;
     margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.anonymous .logo img{
+    position: absolute;
+    transform: scale(0.1);
 }
 
 .anonymous .fullname{
@@ -430,7 +492,6 @@ body{
 .anonymous .email{
     position: absolute;
     padding: 20px;
-    color: white;
     font-size: 15px;
     font-family: 'Gill Sans MT';
     font-weight: lighter;
@@ -441,27 +502,131 @@ body{
     background-color: orangered;
     width: 160px;
     transform: translateX(-2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 250px;
 }
 
-.anonymous .email span{
+.anonymous .email a{
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes design {
+    0%{transform: translateY(30px); opacity: 0;}
+    10%{transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes styli {
+    0%{transform: translateY(-30px); opacity: 0;}
+    17%{transform: translateY(-30px); opacity: 0;}
+    27%{transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes lifone {
+    0%{transform: translateY(30px); opacity: 0;}
+    33%{transform: translateY(30px); opacity: 0;}
+    43%{transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes liftwo {
+    0%{transform: translateY(-30px); opacity: 0;}
+    49%{transform: translateY(-30px); opacity: 0;}
+    59%{transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes flut {
+    0%{transform: translateY(30px); opacity: 0;}
+    65%{transform: translateY(30px); opacity: 0;}
+    75%{transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes anon {
+    0%{transform: translateY(-30px); opacity: 0;}
+    81%{transform: translateY(-30px); opacity: 0;}
+    91%{transform: translateY(0px); opacity: 1;}
+}
+
+
+#title{
+    position: absolute;
+    font-size: 50px;
+    font-family: 'Gill Sans MT';
+    color: white;
+    background-color: orangered;
+    border-radius: 45px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width:300px;
+    height: 90px;
+    left: 40%;
+    transform: translateY(-50px);
     cursor: pointer;
 }
 
-@keyframes up {
-    0%{transform: translateY(70px)}
-    40%{opacity: 1;}
-    100%{
-        transform: translateY(0px);
-        opacity: 1;
-    }
+#title #left{
+    transform: rotate(90deg) scaleY(1.1);
+    font-weight: bold;
+    font-family: 'Gill Sans MT';
+}
+#title #right{
+    transform: rotate(90deg) scaleY(1.1);
+    font-weight: bold;
+    font-family: 'Gill Sans MT';
 }
 
-@keyframes down {
-    0%{transform: translateY(-70px);}
-    40%{opacity: 1;}
-    100%{
-        transform: translateY(0px);
-        opacity: 1;
-    }
+#manager{
+    margin-left: 30px;
+    position: absolute;
+    transform: translateY(-500px);
+    width: 95%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    animation: down 1s ;
+}
+
+#manager .Fullname{
+    position: absolute;
+    background:linear-gradient(to bottom, yellow, orangered);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 55px;
+    margin-top: 80px;
+    font-family: 'Gill Sans MT';
+
+
+}
+
+#manager .description{
+    position: absolute;
+    font-size: 30px;
+    margin-top: 150px;
+    font-family: 'Gill Sans MT';
+}
+
+#manager .email{
+    position: absolute;
+    font-size: 30px;
+    margin-top: 445px;
+    font-family: 'Gill Sans MT';
+}
+
+/*IMPORTANT: when the user clicks on 'Manager' button, the button and the manager description will appear with the titledown and managerdown animation, and the arrows will face downwards with the dwontoup animation, when the user clicks on mnager again the description box will disppear and and manager button will go up*/
+
+@keyframes titledown {
+    100%{transform: translateY(400px);}
+}
+
+@keyframes managerdown {
+    100%{transform: translateY(-50px);}
+}
+
+@keyframes downtoup {
+    100%{transform: rotate(-90deg);}
 }

@@ -10,7 +10,6 @@ body{
 img{
     position: absolute;
     margin-left: 400px;
-
     transform: translatey(-150px);
     animation: logoanimationimage  1.4s ;
 
@@ -79,7 +78,7 @@ img{
     margin-left: 900px;
 }
 
-.names{
+#names{
     position: absolute;
     margin-top: 150px;
     margin-left: 900px;
@@ -99,7 +98,7 @@ img{
     margin-left: 1100px;
 }
 
-.lastnames{
+#lastnames{
     position: absolute;
     margin-top: 150px;
     margin-left: 1100px;
@@ -232,7 +231,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 1;
+    
 }
 
 
@@ -250,28 +249,50 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 1;
-}
+    }
 
-/*SEVERELY IMPORTANT: each animation happens to its year when the user clicks on a CPI option, the duration will be 1 second, and when he clicks on CS, it will be reversed by animation-direction:reverse; also 1 second.*/
-
+    /*IMPORTANT: these animations happen to the year options when the user clicks on the according CYCLE (for exemple of he clicks on CPI the first and second year will appear), and the other year options of the other cycle will disappear with the reverse animations below*/  
+    /*IMPORTANT: if the user clicks on any of the year options, use the "boxShadow="1px 1px 2px yellow, -1px -1px 2px yellow, -1px 1px 2px yellow, 1px -1px 2px yellow";" to lighten up its borders*/
 
 @keyframes firstyear {
     0%{transform: translateY(-70px) translateX(50px);
-    opacity: 0;}
+    opacity: 0;
+    display: none;}
     100%{margin-top: 2px;
     margin-left: 2px;
     opacity: 1;
     cursor: pointer;}
 }
 
+@keyframes reversefirstyear {
+    0%{margin-top: 2px;
+        margin-left: 2px;
+        opacity: 1;
+        cursor: pointer;}
+    100%{transform: translateY(-70px) translateX(50px);
+        opacity: 0;
+        display: none;}
+}
+
 @keyframes secondyear {
     0%{transform: translateY(-70px) translateX(-50px);
-    opacity: 0;}
+    opacity: 0;
+    display: none;}
     100%{margin-top: 2px;
     margin-left: 102px;
     opacity: 1;
     cursor: pointer;}
+}
+
+@keyframes reversesecondyear {
+    0%{margin-top: 2px;
+        margin-left: 102px;
+        opacity: 1;
+        cursor: pointer;}
+    100%{transform: translateY(-70px) translateX(-50px);
+    opacity: 0;
+    display: none;}
+
 }
 
 /* cycle superior*/
@@ -298,7 +319,8 @@ img{
     align-items: center;
     justify-content: center;
     margin-left: 30px;
-    opacity: 1;
+    
+
 }
 
 
@@ -315,7 +337,6 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 1;
 }
 
 
@@ -331,38 +352,70 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 1;
     margin-left: 170px;
 }
-
-/*SEVERELY IMPORTANT: each animation happens to its year when the user clicks on a CS option, the duration will be 1 second, and when he clicks on CPI, it will be reversed by animation-direction:reverse; also 1 second.*/
 
 @keyframes thirdyear {
     0%{opacity: 0;
     margin-left: 100px;
+    display: none;
     transform: translateY(-50px);}
     100%{opacity: 1;
     cursor: pointer;
     margin-top: 2px;}
 }
 
+@keyframes reversethirdyear {
+    0%{opacity: 1;
+        cursor: pointer;
+        margin-top: 2px;}
+    100%{opacity: 0;
+        margin-left: 100px;
+        display: none;
+        transform: translateY(-50px);}
+}
+
 @keyframes fourthyear {
     0%{opacity: 0;
-    transform:translateY(-50px);}
+    transform:translateY(-50px);
+    display: none;}
     100%{opacity: 1;
     margin-top: 50px;
     cursor: pointer;}
 }
 
+@keyframes reversefourthyear {
+    0%{opacity: 1;
+        margin-top: 50px;
+        cursor: pointer;}
+
+    100%{opacity: 0;
+     transform:translateY(-50px);
+       display: none;}
+}
+
 @keyframes fifthyear {
     0%{opacity: 0;
         margin-left: 100px;
-        transform: translateY(-50px);}
+        transform: translateY(-50px);
+        display: none;}
     100%{opacity: 1;
         cursor: pointer;
         margin-left: 170px;
         margin-top: 2px;
     }
+}
+
+@keyframes reversefifthyear {
+    0%{opacity: 1;
+        cursor: pointer;
+        margin-left: 170px;
+        margin-top: 2px;
+    }
+    100%{opacity: 0;
+        margin-left: 100px;
+        transform: translateY(-50px);
+        display: none;}
 }
 
 #sub{
@@ -430,9 +483,6 @@ img{
     margin-left: 200px;
 }
 
-/*the email and its input area will be aligned to the bottom by 50px when the user clicks on a cycle option to leave space for the years options*/
-
-
 @keyframes emailslide {
     100%{transform: translateY(50px);}
 }
@@ -441,49 +491,52 @@ img{
 }
 
 
-/*errors: these errors occur when the user doesn't fill the whole page inputs, else their opacity would be simply 0*/
+/*errors*/
 
-.errorfname{
+#errorfname{
     position: absolute;
     font-size: large;
     font-family: 'Gill Sans MT';
-    color: yellow;
+    color: red;
     margin-left: 900px;
     margin-top: 200px;
 }
 
-.errorlname{
+#errorlname{
     position: absolute;
     font-size: large;
     font-family: 'Gill Sans MT';
-    color: yellow;
+    color: red;
     margin-left: 1100px;
     margin-top: 200px;
 }
 
-.errorcycle{
+#errorcycle{
     position: absolute;
     font-size: large;
     font-family: 'Gill Sans MT';
-    color: yellow;
+    color: red;
     margin-left: 1000px;
     margin-top: 380px;
 }
 
-.erroryear{
+#erroryear{
     position: absolute;
     font-size: large;
     font-family: 'Gill Sans MT';
-    color: yellow;
+    color: red;
     margin-left: 1000px;
     margin-top: 440px;
 }
 
-.erroremail{
+#erroremail{
     position: absolute;
     font-size: large;
     font-family: 'Gill Sans MT';
-    color: yellow;
+    color: red;
     margin-left: 970px;
     margin-top: 570px;
+}
+.hide{
+    display: none;
 }

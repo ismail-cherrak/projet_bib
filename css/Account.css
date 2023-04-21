@@ -36,13 +36,14 @@ li{
     font-family: 'Gill Sans MT';
     cursor: pointer;
 }
-.navbar{
+#navbar{
     position:absolute;
     overflow: hidden;
     width: 180px;
     background-color: white;
     border-radius: 2px;
-    height: 0vh;
+    height: 30vh;
+    transform: translateY(-880px);
 }
 a{
     text-decoration: none;
@@ -51,10 +52,10 @@ a{
     color: black;
     margin-left: 10px;
 }
-.mod1cpi{
+#mod1cpi{
     border-radius: 3px;
     position: absolute;
-    height: 0px;
+    height: 80px;
     overflow: hidden;
     width: 110px;
     background-color: white;
@@ -66,10 +67,10 @@ a{
 .cp1s2{
     font-size: 20px;
 }
-.mod2cpi{
+#mod2cpi{
     border-radius: 3px;
     position: absolute;
-    height: 0px;
+    height: 80px;
     overflow: hidden;
     width: 110px;
     background-color: white;
@@ -81,10 +82,10 @@ a{
 .cp2s2{
     font-size: 20px;
 }
-.mod3cpi{
+#mod3cpi{
     border-radius: 3px;
     position: absolute;
-    height: 0px;
+    height: 80px;
     overflow: hidden;
     width: 110px;
     background-color: white;
@@ -96,10 +97,10 @@ a{
 .cp3s2{
     font-size: 20px;
 }
-.mod4cpi{
+#mod4cpi{
     border-radius: 3px;
     position: absolute;
-    height: 0px;
+    height: 80px;
     overflow: hidden;
     width: 110px;
     background-color: white;
@@ -111,10 +112,10 @@ a{
 .cp4s2{
     font-size: 20px;
 }
-.mod5cpi{
+#mod5cpi{
     border-radius: 3px;
     position: absolute;
-    height: 0px;
+    height: 80px;
     overflow: hidden;
     width: 110px;
     background-color: white;
@@ -172,7 +173,7 @@ a{
     margin-top: 130px;
 }
 
-form .photo{
+.profile{
     position: absolute;
     color: black;
     padding: 10px;
@@ -187,6 +188,127 @@ form .photo{
     margin-left: 1200px;
 }
 
+/*IMPORTANT: this container will appear when the user wants to edit his profile*/
+
+.editcontainer{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+
+.editprofile{
+    position: absolute;
+    width: 550px;
+    height: 340px;
+    background:linear-gradient(to bottom, rgb(78, 78, 78), rgb(204, 204, 204));
+    border-style: solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.editprofile span{
+    font-size: x-large;
+    font-weight: 500;
+    font-family: 'Gill Sans MT';
+    margin-top: 15px;
+}
+
+ form .picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+form .editphoto{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans MT';
+
+}
+
+form .username{
+    position: absolute;
+    font-size: larger;
+    font-family: 'Gill Sans MT';
+    margin-top: 90px;
+    margin-left: 200px;
+    width: 200px;
+}
+
+form .editthename{
+    position: absolute;
+    border-radius: 10px;
+    height: 25px;
+    width: 200px;
+    font-size: larger;
+    margin-top: 90px;
+    margin-left: 320px;
+}
+
+form .year{
+    position: absolute;
+    font-size: larger;
+    font-family: 'Gill Sans MT';
+    margin-top: 150px;
+    margin-left: 200px;
+}
+form ul li{
+    font-size: 20px;
+    transform: translateX(-35px) translateY(-10px);
+}
+
+form .years_options{
+    position: absolute;
+    font-family: 'Gill Sans MT';
+    background-color: white;
+    border-radius: 10px;
+    width: 130px;
+    height: 160px;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+
+form .years_options span{
+    position: absolute;
+    transform: rotate(90deg) scaleY(1.3);
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+form .submit{
+    position: absolute;
+    background-color: red;
+    height: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Gill Sans MT';
+    font-size: large;
+    cursor: pointer;
+    margin-top: 300px;
+    margin-left: 175px;
+    color: white;
+    border: solid black;
+}
 /* demanded books*/
 
 .orderedbooks{
@@ -196,6 +318,17 @@ form .photo{
     margin-top: 200px;
     width: 1490px;
     height: 360px;
+}
+
+@keyframes add_to_ordered_books {  /*this animation will be executed when the user orders a book, the book will be added to the queue of the other ordered books*/
+    0%{opacity: 0;
+    transform: translateX(50px);}
+}
+
+@keyframes remove_from_ordered_books {  /*when the user clicks on cancel order, the book that's in the ordered books will be remived from the queue with this animation*/
+    100%{display: none;
+    opacity: 0;
+    transform: translateX(50px);}
 }
 
 .demande{
@@ -356,6 +489,17 @@ form .photo{
     height: 360px;
 }
 
+@keyframes add_to_taken_books {  /*this animation will be executed when the admin hands the book to the student, the admin will type the student email on his platform along with the book url and as he submits, the book will be added to this queue with this animation*/
+    0%{opacity: 0;
+    transform: translateX(50px);}
+}
+
+@keyframes remove_from_taken_books {  /*when the student returns the book, the admin will look in his platform for the taken books for the book and removes it from the taken book, after that the book will be removed from the student taken books queue with this animation:*/
+    100%{display: none;
+    opacity: 0;
+    transform: translateX(50px);}
+}
+
 .take{
     position: absolute;
     color: rgb(42, 42, 42);
@@ -499,4 +643,7 @@ form .photo{
     font-size: larger;
     font-family: 'Gill Sans MT';
     margin-left: 7px;
+}
+.hide{
+    display: none;
 }

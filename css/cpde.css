@@ -1,5 +1,5 @@
 body{
-    background:linear-gradient(to bottom, rgb(174, 73, 0), rgb(42, 18, 0));
+    background:linear-gradient(to bottom, rgb(118, 49, 0), rgb(42, 18, 0));
     background-attachment:local;
     background-position: center;
     background-repeat: no-repeat;
@@ -148,4 +148,34 @@ body{
     transform: rotate(-188deg); 
     margin-top: 25px;
     margin-left: 200px;
+}
+
+
+/*the error will be shown when the user doesn't enter an correct code*/
+#error{
+    position: absolute;
+    color: yellow;
+    font-size: large;
+    font-family: 'Gill Sans MT';
+    margin-top: 320px;
+    margin-left: 800px;
+}
+
+
+img{
+    position: absolute;
+    transform: translateY(-200px) translateX(-150px) scale(0.4);
+}
+
+
+
+.logoname{
+    position: absolute;
+    color: rgb(174, 174, 174);
+    font-size: 45px;
+    font-family: 'Gill Sans MT';
+    transform: scale(0.4) translateY(150px) translateX(-120px);
+}
+.hide{
+    display: none;
 }
