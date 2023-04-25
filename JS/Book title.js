@@ -11,6 +11,9 @@ years.forEach(function(ele){
         })
         modcpi[years.indexOf(ele)].classList.remove("hide");  
     })
+    ele.addEventListener("mouseleave",function(){
+        modcpi[years.indexOf(ele)].classList.add("hide");
+    })
 });
 
 

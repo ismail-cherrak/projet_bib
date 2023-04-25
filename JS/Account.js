@@ -5,11 +5,14 @@ let years=Array.from(year);
 
 
 years.forEach(function(ele){
-    ele.addEventListener("mouseover" , function(){
+    ele.addEventListener("mouseenter" , function(){
         modcpi.forEach(function(e){
             e.classList.add("hide");
         })
         modcpi[years.indexOf(ele)].classList.remove("hide");  
+    })
+    ele.addEventListener("mouseleave",function(){
+        modcpi[years.indexOf(ele)].classList.add("hide");
     })
 });
 
