@@ -1,5 +1,5 @@
 body{
-    background-image: url("Pattern-BG-EXPLOREdark.png");
+    background-image: url("../photos/Pattern-BG-EXPLORE.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -519,37 +519,6 @@ form .submit{
     margin-top: 150px;
     transform: translateX(-10px);
     cursor: pointer;
-}
-
-.scroll_taken_books_to_the_left span{
-    position: absolute;
-    font-size: xx-large;
-    font-weight:bolder;
-    margin-top: 5px;
-    margin-left: 12px;
-    transform: scaleY(1.5);
-}
-
-.scroll_taken_books_to_the_right{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(70, 2, 2);
-    color: orangered;
-    margin-top: 150px;
-    margin-left: 1475px;
-    transform: translateX(-25px);
-    cursor: pointer;
-}
-
-.scroll_taken_books_to_the_right span{
-    position: absolute;
-    font-size: xx-large;
-    font-weight:bolder;
-    margin-top: 5px;
-    margin-left: 18px;
-    transform: scaleY(1.5);
 }
 
 .book2{
