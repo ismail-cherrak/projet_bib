@@ -127,7 +127,7 @@ img{
 
 /* SEVERELY IMPORTANT: this 'incorrect password' and 'forgot password?' texts can ONLY be displayed when the email is valid*/ 
 
-.Incorrect{
+#Incorrect{
     color: red;
     font-family: 'Gill Sans MT';
     margin-top: 460px;
@@ -177,4 +177,7 @@ img{
     margin-top: 630px;
     margin-left: 400px;
     cursor: pointer;
+}
+.hide{
+    opacity: 0;
 }
