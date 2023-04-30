@@ -152,6 +152,9 @@ img{
     margin-top: 310px;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #cpi:hover{
@@ -182,6 +185,9 @@ img{
     margin-top: 310px;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #cs:hover{
