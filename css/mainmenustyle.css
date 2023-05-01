@@ -210,7 +210,7 @@ a{
     opacity: 0;
     display: none;}
 }
-
+/*scroll right*/
 @keyframes showtoleft {
     50%{display: none;
         opacity: 0;
@@ -282,7 +282,6 @@ a{
     border-radius: 50%;
     background-color: green;
     transform: translateY(-10px);
-    margin-left: 60px;
 }
 
 #book #rating #round img{

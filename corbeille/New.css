@@ -237,7 +237,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    cursor: pointer;
 }
 
 
@@ -255,6 +255,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     }
 
     /*IMPORTANT: these animations happen to the year options when the user clicks on the according CYCLE (for exemple of he clicks on CPI the first and second year will appear), and the other year options of the other cycle will disappear with the reverse animations below*/  
@@ -325,7 +326,7 @@ img{
     align-items: center;
     justify-content: center;
     margin-left: 30px;
-    
+    cursor: pointer;
 
 }
 
@@ -343,6 +344,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 
@@ -359,6 +361,7 @@ img{
     align-items: center;
     justify-content: center;
     margin-left: 170px;
+    cursor: pointer;
 }
 
 @keyframes thirdyear {

@@ -7,6 +7,7 @@ let btncs=document.getElementById("cs");
 
 let cpiyears=[document.getElementById("year1"),document.getElementById("year2")];
 let csyears=[document.getElementById("year3"),document.getElementById("year4"),document.getElementById("year5")];
+let myYears=[document.getElementById("year1"),document.getElementById("year2"),document.getElementById("year3"),document.getElementById("year4"),document.getElementById("year5")];
 let submit=document.getElementById("sub");
 let i=0;
 document.getElementById("email").style.display = 'none';
@@ -53,20 +54,22 @@ document.getElementById("cpi").onclick= function(){
     document.getElementById("year5").style.animation="reversefifthyear";
     document.getElementById("year5").style.animationDuration="1s";
     document.getElementById("year5").style.animationFillMode="forwards";
-++i;
 }
     
     
     
-    //change the first/second year box shadow when clicking on it (the other option will go abck to normal)
-    document.getElementById("year1").onclick= function(){
-        document.getElementById("year1").style.boxShadow="1px 1px 2px yellow, -1px -1px 2px yellow, -1px 1px 2px yellow, 1px -1px 2px yellow";
-        document.getElementById("year2").style.boxShadow="none";
+ // when I click on a year it adds one and changes the style
+   myYears.forEach(function(e){
+    e.onclick= function(){
+        e.style.boxShadow="1px 1px 2px yellow, -1px -1px 2px yellow, -1px 1px 2px yellow, 1px -1px 2px yellow";
+        e.style.boxShadow="none";
+        i++;
+        alert(i);
     }
-    document.getElementById("year2").onclick= function(){
-        document.getElementById("year2").style.boxShadow="1px 1px 2px yellow, -1px -1px 2px yellow, -1px 1px 2px yellow, 1px -1px 2px yellow";
-        document.getElementById("year1").style.boxShadow="none"
-    }
+   })
+
+
+   
     document.getElementById("cs").onclick= function(){
 
         //change the cpi button background to yellow
@@ -109,8 +112,7 @@ document.getElementById("cpi").onclick= function(){
          //fifth year
         document.getElementById("year5").style.animation="fifthyear";
         document.getElementById("year5").style.animationDuration="1s";
-        document.getElementById("year5").style.animationFillMode="forwards";
-    i++    
+        document.getElementById("year5").style.animationFillMode="forwards";   
     }
         
         
@@ -136,6 +138,12 @@ submit.onclick=function(){
 
     if (!regMail.test(mail.value)){
         errors[4].classList.remove("hide");
+    }
+
+    if ((regName.test(nom.value))&&(regName.test(lastNom.value))&&(i==0)&&(regMail.test(mail.value))){
+        errors.forEach(function(e){
+            e.classList.add("hide");
+        })
     }
 
 
