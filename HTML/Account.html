@@ -5,52 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Account.css">
-    
     <title>Account</title>
 </head>
 <body>
-    <div id="years"> <!--The upper options-->
-        <span id="show"> &nbsp;  |||</span> <!--shows navigation bar on click-->
-        <ul type="none" class="ann">
-            <li class="annees">1CPI</li>
-            <li class="annees">2CPI</li>
-            <li class="annees">1CS</li>
-            <li class="annees">2CS</li>
-            <li class="annees">3CS</li>
-            <li class="annees">Computer Science</li>
+  
+  <nav>
+    <div class="menu">
+      <div class="container">
+        <ul class="inner-menu">
+          <li><a href="#">1 CPI</a>
+            <ul class="dropdown">
+              <li><a href="../SemesterPages/sem1cpi1.html" style="background-color: yellow;">Semestre 01</a></li>
+              <li><a href="../SemesterPages/sem2cpi1.html">Semestre 02</a></li>
+            </ul>
+          </li>
+          <li><a href="#">2 CPI</a>
+            <ul class="dropdown">
+              <li><a href="../SemesterPages/sem1cpi2.html">Semestre 01</a></li>
+              <li><a href="../SemesterPages/sem2cpi2 .html">Semestre 02</a></li>
+            </ul>
+          </li>
+          <li><a href="#">1 CS</a>
+            <ul class="dropdown">
+                <li><a href="../SemesterPages/sem1cpi3.html">Semestre 01</a></li>
+                <li><a href="../SemesterPages/sem2cpi3.html">Semestre 02</a></li>
+            </ul>
+          </li>
+          <li><a href="#">2 CS</a>
+            <ul class="dropdown">
+                <li><a href="../SemesterPages/sem1cpi4 .html">Semestre 01</a></li>
+                <li><a href="../SemesterPages/sem2cpi4 .html">Semestre 02</a></li>
+            </ul>
+          </li>
+          <li><a href="#">3 CS</a>
+            <ul class="dropdown">
+                <li><a href="../SemesterPages/sem1cpi5.html">Semestre 01</a></li>
+            </ul>
+          </li>
+          <li><a href="../SemesterPages/Extra.html">Extra</a></li>
+          <li><a href="Aboutus.html">About</a></li>
+          <li><a href="Account.html">Account</a></li>
         </ul>
-     </div> 
-     <div id="mod1cpi" class="hide">
-             <a href="" class="cp1s1">Semestre1</a> <br> <br>
-             <a href="" class="cp1s2">Semestre2</a>
-     </div>
-     <div id="mod2cpi" class="hide">
-         <a href="" class="cp2s1">Semestre1</a> <br> <br>
-         <a href="" class="cp2s2">Semestre2</a>
-     </div>
-     <div id="mod3cpi" class="hide">
-         <a href="" class="cp3s1">Semestre1</a> <br> <br>
-         <a href="" class="cp3s2">Semestre2</a>
-     </div>
-     <div id="mod4cpi" class="hide">
-         <a href="" class="cp4s1">Semestre1</a> <br> <br>
-         <a href="" class="cp4s2">Semestre2</a>
-     </div>
-     <div id="mod5cpi" class="hide">
-         <a href="" class="cp5s1">Semestre1</a> <br> <br>
-     </div>
+      </div>
+    </div>
+  </nav>
     <form>
      <div class="info">
-        <div class="image">
+      <!--<div class="image">
             <img src="C:\Users\SonicMaster M570D\Desktop\PRJ\Account\téléchargement (1).jpg" >
             <form action="">
-            <span>Edit the picture</span>
+            <input type="">
             </form>
+        </div>-->
+        <div id="fullname">User fullname</div>
+        <div id="useryear">'User year' Student</div>
+        <div class="big">
+        <div class="profile-pic">
+          <label class="-label" for="file">
+            <span class="glyphicon glyphicon-camera"></span>
+            <span>Change Image</span>
+          </label>
+          <input id="file" type="file" onchange="loadFile(event)"/>
+          <img src="https://cdn.pixabay.com/photo/2017/08/06/21/01/louvre-2596278_960_720.jpg" id="output" width="200" />
         </div>
-        <!--when the user has created the account, his fullname and useryear will be shown as such: -->
-        <div class="fullname">User fullname</div>
-        <div class="useryear">'User year' Student</div>
-        
+        </div>
     </form>
         </div>
     </div>
@@ -59,45 +77,128 @@
         <div class="orderedbooks">
             <div class="demande">Ordered books</div>
             
-            <div class="bookone">
-                <span>+</span">
+            <div id="bookone">
+                <span>+</span>
             </div>
-            <div class="booktwo">
-                <span>+</span">
+            <div id="booktwo">
+                <span>+</span>
             </div>
-            <div class="bookthree">
-                <span>+</span">
+            <div id="bookthree">
+                <span>+</span>
             </div>
-            <div class="bookfour">
-                <span>+</span">
+            <div id="bookfour">
+                <span>+</span>
             </div>
-            <div class="bookfive">
-                <span>+</span">
+            <div id="bookfive">
+                <span>+</span>
             </div>
         </div>
 
         <div class="takenbooks">
             <div class="take">Already taken books</div>
-            <div class="book2">
-                <span class="the_average_ratingtwo">3</span>
-            <div class="ratingtwo">
-                <span class="bartwo"></span>
+            <div id="bookTaken1">
+              <span class="the_average_rating">3</span>
+          <div class="rating">
+              <div class="round">
+              <img src="../PHOTOS/kisspng-computer-icons-book-open-book-5ac0c3665739a7.0640416515225823743573 (1).png" alt="">
+              </div>
+          </div>
+              <div class="image">
+                  <a href="Book Title.html" target="_blank">
+                  <img src="../photos/1341962810_parallel universes_xl-beta-v2-2-2.png" alt="">
+                  </a>
+              </div>
+              <div class="title">Book Title1</div>
+              <div class="author">Book Author1</div>
+              <div class="timing">
+              <div class="timeleft">Time_left</div>
             </div>
-                <div class="imagetwo">
-                    <a href="">
-                    <img src="C:\Users\SonicMaster M570D\Desktop\PRJ\Account\téléchargement (1).jpg" alt="bookimage">
-                    </a>
-                </div>
-                <div class="titletwo">Book Title1</div>
-                <div class="authortwo">Book Author1</div>
-                    <span class="timing"> <span class="timeleft" >Time_left</span></span>
-            </div>
-        </div>
+          </div>
+     
 
-        <div id="navbar" class="hide" >
-            <br><br><a href="Aboutus.html">About us</a> <br> <br>
-          <br> <br> <a href="Account.html">Account</a>
+         <div id="bookTaken2">
+          <span class="the_average_rating">3</span>
+          <div class="rating">
+              <div class="round">
+              <img src="../PHOTOS/kisspng-computer-icons-book-open-book-5ac0c3665739a7.0640416515225823743573 (1).png" alt="">
+              </div>
+          </div>
+              <div class="image">
+                  <a href="Book Title.html" target="_blank">
+                  <img src="../photos/1341962810_parallel universes_xl-beta-v2-2-2.png" alt="">
+                  </a>
+              </div>
+              <div class="title">Book Title1</div>
+              <div class="author">Book Author1</div>
+              <div class="timing">
+              <div class="timeleft">Time_left</div>
+            </div>
+          </div>
+        <div id="bookTaken3">
+          <span class="the_average_rating">3</span>
+          <div class="rating">
+              <div class="round">
+              <img src="../PHOTOS/kisspng-computer-icons-book-open-book-5ac0c3665739a7.0640416515225823743573 (1).png" alt="">
+              </div>
+          </div>
+              <div class="image">
+                  <a href="Book Title.html" target="_blank">
+                  <img src="../photos/1341962810_parallel universes_xl-beta-v2-2-2.png" alt="">
+                  </a>
+              </div>
+              <div class="title">Book Title3</div>
+              <div class="author">Book Author1</div>
+              <div class="timing">
+              <div class="timeleft">Time_left</div>
+            </div>
+          </div>
+        
+        <div id="bookTaken4">
+          <span class="the_average_rating">3</span>
+          <div class="rating">
+              <div class="round">
+              <img src="../PHOTOS/kisspng-computer-icons-book-open-book-5ac0c3665739a7.0640416515225823743573 (1).png" alt="">
+              </div>
+          </div>
+              <div class="image">
+                  <a href="Book Title.html" target="_blank">
+                  <img src="../photos/1341962810_parallel universes_xl-beta-v2-2-2.png" alt="">
+                  </a>
+              </div>
+              <div class="title">Book Title1</div>
+              <div class="author">Book Author1</div>
+              <div class="timing">
+              <div class="timeleft">Time_left</div>
+            </div>
+          </div>
+
+        <div id="bookTaken5">
+          <span class="the_average_rating">3</span>
+          <div class="rating">
+              <div class="round">
+              <img src="../PHOTOS/kisspng-computer-icons-book-open-book-5ac0c3665739a7.0640416515225823743573 (1).png" alt="">
+              </div>
+          </div>
+              <div class="image">
+                  <a href="Book Title.html" target="_blank">
+                  <img src="../photos/1341962810_parallel universes_xl-beta-v2-2-2.png" alt="">
+                  </a>
+              </div>
+              <div class="title">Book Title1</div>
+              <div class="author">Book Author1</div>
+              <div class="timing">
+              <div class="timeleft">Time_left</div>
+            </div>
+          </div>
         </div>
-        <script src="../JS/Account.js"></script>
+      </div>
+    </div>
+
+        <div id="sur" class="hide">
+          <div id="question"> <span id="inptic"> Are you sure? </span></div>
+          <span id="yes"><span id="outone">yes</span></span>
+          <span id="no"> <span id="outtwo">no</span></span>
+      </div>
+        <script src="Account.js"></script>
 </body>
 </html>

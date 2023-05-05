@@ -1,109 +1,164 @@
-body{
-    background-image: url("../PHOTOS/Pattern-BG-EXPLORE.png");
+@import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
+
+body {
+  background: #ffc38a;
+  font-family: "Sen";
+}
+.menu {
+  padding: 2px;
+  width: 100%;
+  max-width: 100%;
+  height: 60px;
+}
+.menu .container {
+  padding: 10px;
+}
+ul li {
+  max-width: 150px;
+  width: 100%;
+}
+ul {
+  display: flex;
+  column-gap: 5px;
+  list-style: none;
+  margin: auto;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: #fa8207;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+ul li:hover ul.dropdown {
+  display: block;
+  animation-name: mainnav;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+}
+ul li ul.dropdown {
+  display: none;
+  padding: 0;
+  overflow: hidden;
 }
 
-#years{
-    position: relative;
-    border-radius: 3px;
-    width: 1500px;
-    height: 45px;
-    background-color: white;
-    animation: appear 2s;
-}
-@keyframes appear {
-    0%{opacity: 0;}
+/* Mainnav animation */
+
+@keyframes mainnav {
+  0% {
+    height: 0px;
+    background-color: #fa8207;
+  }
+  100% {
+    height: 100px;
+    background-color: transparent;
+  }
 }
 
-#show{
-    position: absolute;
-    margin-top: -4px;
-    margin-left: 9px;
-    transform: rotate(90deg);
-    font-size: xx-large;
-    cursor: pointer;
+ul li ul.dropdown li {
+  margin: 5px 0;
 }
-#ann{
-    position: relative;
-    display: flex;
-    gap: 160px;
-    margin-left: 100px; ;
+.menu ul li ul li:first-child {
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-timing-function: linear;
 }
-li{
-    margin-top: 3px;
-    font-size: xx-large;
-    font-family: 'Gill Sans MT';
-    cursor: pointer;
+.menu ul li ul li:nth-child(2) {
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.1s;
+  animation-timing-function: linear;
+}
+.menu ul li ul li:nth-child(3) {
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.2s;
+  animation-timing-function: linear;
+}
+.menu ul li ul li:nth-child(4) {
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.3s;
+  animation-timing-function: linear;
+}
+.menu ul li ul li:nth-child(5) {
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.4s;
+  animation-timing-function: linear;
+}
+.menu {
+  position: relative;
+  background: rgb(174 90 9);
+  background-blend-mode: overlay;
+  border-radius: 22px 0 22px 0;
+}
+.menu .container > ul:after {
+  height: 39px;
+  max-width: 10%;
+  width: 100%;
+  min-width: 0;
+  background: #fdd635;
+  content: "";
+  position: relative;
+  display: block;
+  border-radius: 0 0 80% / 0 0 99% 0;
+}
+.menu .container > ul:before {
+  height: 39px;
+  max-width: 10%;
+  width: 100%;
+  min-width: 0;
+  background: #fdd635;
+  content: "";
+  position: relative;
+  display: block;
+  border-radius: 80% 0 0 0/ 100% 0 0 0;
 }
 
-/*IMPORTANT: the navbar's height goes from 0vh to 30vh when clicking on the div which id is "show"*/
+/* Navanim animation */
 
-#navbar{
-    position:absolute;
-    overflow: hidden;
-    width: 140px;
-    background-color: white;
-    border-radius: 2px;
-    height: 30vh;
-   transform: translateY(-120px) translateX(-25px);
+@keyframes navanime {
+  0% {
+    transform: rotateY(180deg);
+  }
 }
-a{
-    text-decoration: none;
-    font-family: 'Gill Sans MT';
-    font-size: xx-large;
-    color: black;
-    margin-left: 10px;
+ul li a {
+  transition: all 0.2s linear;
+  position: relative;
+  z-index: 1;
 }
-
-/*IMPORTANT: the mod1,2,3,4,5cpi height changes from 0px to 80px when clicking on one of the years above, only the last year (3cs) will its height will change to 40px*/
-
-#mod1cpi{
-    border-radius: 3px;
-    position: absolute;
-    overflow: hidden;
-    width: 110px;
-    height: 80px;
-    background-color: white;
-    margin-left: 125px;
+ul li > a:after {
+  content: "";
+  background-color: #ffba07;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s linear;
+  z-index: -1;
 }
-.cp{
-    font-size: 20px;
-}
-
-#mod2cpi{
-    border-radius: 3px;
-    position: absolute;
-    height: 80px;
-    overflow: hidden;
-    width: 110px;
-    background-color: white;
-    margin-left: 340px;
-}
-#mod3cpi{
-    border-radius: 3px;
-    position: absolute;
-    height: 80px;
-    overflow: hidden;
-    width: 110px;
-    background-color: white;
-    margin-left: 560px;
-}
-#mod4cpi{
-    border-radius: 3px;
-    position: absolute;
-    height: 80px;
-    overflow: hidden;
-    width: 110px;
-    background-color: white;
-    margin-left: 775px;
-}
-#mod5cpi{
-    border-radius: 3px;
-    position: absolute;
-    height: 40px;
-    overflow: hidden;
-    width: 110px;
-    background-color: white;
-    margin-left: 983px;
+ul li:hover > a:after {
+  color: #fffb00;
+  content: "";
+  background-color: #ffba07;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 #search{
     margin-top: 20px;
@@ -148,7 +203,7 @@ a{
 }
 /*scrolling to the left or the right*/
 
-#scroll{
+.scroll{
     position:absolute;
     width: 1480px;
     height: 450px;
@@ -157,8 +212,9 @@ a{
     background-color: gray;
     border-radius: 10px;
     animation: appear 0.3s;
-}
-#scroll_left{
+    overflow: hidden;
+  }
+.scroll_left{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -172,7 +228,7 @@ a{
     opacity: 1;
 }
 
-#scroll_left span{
+.scroll_left span{
     font-family: 'Gill Sans MT';
     font-weight: 200;
     margin-right: 5px;
@@ -180,7 +236,7 @@ a{
     margin-top: 23px;
 }
 
-#scroll_right{
+.scroll_right{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -193,7 +249,7 @@ a{
     cursor: pointer;
 }
 
-#scroll_right span{
+.scroll_right span{
     font-family: 'Gill Sans MT';
     font-weight: 200;
     margin-left: 2px;
@@ -201,53 +257,14 @@ a{
     margin-top: 23px;
 }
 
-@keyframes fadetoleft {
-    0%{transform: translateX(0px);
-    opacity: 1;
-    display: block;}
-
-100%{transform: translateX(-50px);
-    opacity: 0;
-    display: none;}
-}
-/*scroll right*/
-@keyframes showtoleft {
-    50%{display: none;
-        opacity: 0;
-    transform: translateX(0px);}
-
-    100%{transform: translateX(50px);
-    opacity: 1;
-    display: block;}
-}
-
-@keyframes fadetoright {
-    0%{transform: translateX(50px);
-        opacity: 1;
-        display: block;}
-    
-    100%{transform: translateX(100px);
-        opacity: 0;
-        display: none;}
-    }
-
-@keyframes showtoright {
-    0%{transform: translateX(50px);
-        opacity: 0;
-        display: none;}
-    
-    50%{transform: translateX(50px);
-        opacity: 0;
-        display: none;}
-    
-    100%{transform: translateX(0px);
-        opacity: 1;
-        display: block;}
-}
-
 /*these are the status of each book*/
 
-#book{
+.sld{
+    display: flex;
+    gap: 300px;
+}
+
+ li .book{
     position: absolute;
     height: 355px;
     width: 190px;
@@ -256,8 +273,9 @@ a{
     margin-left: 190px;
     border-radius: 10px;
     animation: downtotop 1.4s;
+    transform: translateX(-150px);
 }
- #book #the_average_rating{
+ li .book #the_average_rating{
     position: absolute;
     color: white;
     font-size: larger;
@@ -265,7 +283,7 @@ a{
     margin-left: 10px;
     margin-top: 13px;
 }
-#book #rating{
+ li .book #rating{
     position: absolute;
     margin-top: 13px;
     margin-left: 65px;
@@ -276,34 +294,35 @@ a{
     height: 20px;
 }
 
-#book #rating #round{
+ li .book #rating #round{
     width:40px;
     height:40px;
     border-radius: 50%;
     background-color: green;
     transform: translateY(-10px);
+    margin-left: 60px;
 }
 
-#book #rating #round img{
+ li .book #rating #round img{
     width: 27px;
     height: 27px;
     transform: translateY(5px) translateX(5px);
 }
 
-#book #image{
+ li .book #image a{
     position: absolute;
     width: 160px;
     height: 190px;
-    background-color: gray;
-    margin-left: 10px;
-    margin-top: 50px;
+    background-color: rgb(180, 180, 180);
+    margin-left: 5px;
+    margin-top: 40px;
     border-radius: 8px;
 }
-#book #image img{
+li .book #image img{
     height: 190px;
     width: 160px;
 }
-#book #title{
+.book #title{
     position: absolute;
     margin-top: 250px;
     margin-left: 10px;
@@ -311,7 +330,7 @@ a{
     font-family: 'Gill Sans MT';
     font-weight: bold;
 }
-#book #author{
+.book #author{
     position: absolute;
     margin-top: 270px;
     margin-left: 10px;
@@ -320,9 +339,8 @@ a{
     font-weight: lighter;
 }
 
-/*SEVERELY IMPORTANT: if the user clicks on 'order' when there are available copies, the 'are you sure' box will appear, set its height to 250px and the body's opacity to 0.9 (the id of body is bod), id he cancels the order then the box will disappear and nothing else will happen, else the 'order' button will turn to 'cancel order' with red background and its height will be 50px, however if it isn't available then the order will turn to 'can't order' with a grey background*/
 
-#book #state{
+.book #state{
     position: absolute;
     margin-top: 305px;
     margin-left: 12px;
@@ -336,7 +354,7 @@ a{
 }
 /*the order style for each book*/
 
- #book #yesno{
+.book #yesno{
     position: absolute;
     margin-top: 295px;
     margin-left: 100px;
@@ -437,3 +455,46 @@ a{
 .hide{
     display: none;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+  margin-left: 20px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #00ff00;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #00ff00;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #095228;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */

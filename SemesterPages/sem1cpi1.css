@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
+
+body {
+  background-image: url(../Semesterphotos/Pattern-BG-EXPLORE.png);
+  font-family: "Sen";
+}
+.menu {
+  padding: 2px;
+  width: 100%;
+  max-width: 100%;
+  height: 60px;
+}
+.menu .container {
+  padding: 10px;
+}
+ul li {
+  max-width: 150px;
+  width: 100%;
+}
+ul {
+  display: flex;
+  column-gap: 5px;
+  list-style: none;
+  margin: auto;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: #fa8207;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+ul li:hover ul.dropdown {
+  display: block;
+  animation-name: mainnav;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+}
+ul li ul.dropdown {
+  display: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Mainnav animation */
+
+@keyframes mainnav {
+  0% {
+    height: 0px;
+    background-color: #fa8207;
+  }
+  100% {
+    height: 100px;
+    background-color: transparent;
+  }
+}
+
+ul li ul.dropdown li {
+  margin: 5px 0;
+}
+.menu ul li ul li:first-child {
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+}
+.menu ul li ul li:nth-child(2) {
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.1s;
+  animation-timing-function: linear;
+}
+.menu ul li ul li:nth-child(3) {
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.2s;
+  animation-timing-function: linear;
+}
+.menu ul li ul li:nth-child(4) {
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.3s;
+  animation-timing-function: linear;
+}
+.menu ul li ul li:nth-child(5) {
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.4s;
+  animation-timing-function: linear;
+}
+.menu {
+  position: relative;
+  background: rgb(174 90 9);
+  background-blend-mode: overlay;
+  border-radius: 22px 0 22px 0;
+}
+.menu .container > ul:after {
+  height: 39px;
+  max-width: 10%;
+  width: 100%;
+  min-width: 0;
+  background: #fdd635;
+  content: "";
+  position: relative;
+  display: block;
+  border-radius: 0 0 80% / 0 0 99% 0;
+}
+.menu .container > ul:before {
+  height: 39px;
+  max-width: 10%;
+  width: 100%;
+  min-width: 0;
+  background: #fdd635;
+  content: "";
+  position: relative;
+  display: block;
+  border-radius: 80% 0 0 0/ 100% 0 0 0;
+}
+
+/* Navanim animation */
+
+@keyframes navanime {
+  0% {
+    transform: rotateY(180deg);
+  }
+}
+ul li a {
+  transition: all 0.2s linear;
+  position: relative;
+  z-index: 1;
+}
+ul li > a:after {
+  content: "";
+  background-color: #ffba07;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s linear;
+  z-index: -1;
+}
+ul li:hover > a:after {
+  color: #fffb00;
+  content: "";
+  background-color: #ffba07;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+#search{
+    margin-top: 20px;
+    margin-left: 1075px;
+    height: 40px;
+    width: 280px;
+    position: absolute;
+    font-size: x-large;
+    font-family: 'Gill Sans MT';
+    border-radius: 17px;
+    border-color: rgb(14, 14, 14);
+    background:linear-gradient(to left, rgb(111, 111, 111), rgb(30, 30, 30));
+    color: wheat;
+}
+#sub{
+    background-color: orangered;
+    width: 130px;
+    height: 50px;
+    color: white;
+    padding: 5px;
+    margin-top: 17px;
+    margin-left: 1370px;
+    position:absolute;
+    border-radius: 22px;
+    font-size: large;
+    font-family: 'Gill Sans MT';
+}
+
+.categories{
+  display: block;
+}
+
+/*Category*/
+
+.category{
+    position: absolute;
+    width: 600px;
+    height: 50px;
+    font-size: xx-large;
+    font-family: 'Gill Sans MT';
+    border-radius: 8px;
+    margin-left: 30px;
+    margin-top: 65px;
+    animation: appear 2s;
+}
+/*scrolling to the left or the right*/
+
+.scrollone, .scrolltwo, .scrollthree, .scrollfour{
+    position:absolute;
+    width: 1480px;
+    height: 450px;
+    margin-top: 115px;
+    transform: translateX(25px);
+    background-color: gray;
+    border-radius: 10px;
+    animation: appear 0.3s;
+    overflow: hidden;
+}
+.scroll_leftone, .scroll_lefttwo, .scroll_leftthree, .scroll_leftfour{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 50%;
+    margin-top: 180px;
+    margin-left: -10px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.scroll_leftone span , .scroll_lefttwo span, .scroll_leftthree span, .scroll_leftfour span{
+    font-family: 'Gill Sans MT';
+    font-weight: 200;
+    margin-right: 5px;
+    transform: scaleY(3) rotateY(180deg);
+    margin-top: 23px;
+}
+
+.scroll_rightone, .scroll_righttwo, .scroll_rightthree, .scroll_rightfour{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 50%;
+    margin-top: 180px;
+    margin-left: 97.5%;
+    cursor: pointer;
+}
+
+.scroll_rightone span, .scroll_righttwo span, .scroll_rightthree span, .scroll_rightfour span{
+    font-family: 'Gill Sans MT';
+    font-weight: 200;
+    margin-left: 2px;
+    transform: scaleY(3);
+    margin-top: 23px;
+}
+
+
+/*these are the status of each book*/
+
+.sldone, .sldtwo, .sldthree, .sldfour{
+    display: flex;
+    gap: 300px;
+}
+
+  .bookone, .booktwo, .bookthree, .bookfour{
+    position: absolute;
+    height: 355px;
+    width: 190px;
+    background-color: rgb(180, 180, 180);
+    margin-top: 50px;
+    margin-left: 190px;
+    border-radius: 10px;
+    animation: downtotop 1.4s;
+}
+  .bookone .the_average_rating, .booktwo .the_average_rating, .bookthree .the_average_rating, .bookfour .the_average_rating{
+    position: absolute;
+    color: white;
+    font-size: larger;
+    font-family: 'Gill Sans MT';
+    margin-left: 10px;
+    margin-top: 13px;
+}
+  .bookone .rating, .booktwo .rating, .bookthree .rating, .bookfour .rating{
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 65px;
+    background-color: green;
+    border-radius: 10px;
+    display: flex;
+    width: 100px;
+    height: 20px;
+}
+
+  .bookone .round, .booktwo .round, .bookthree .round, .bookfour .rating .round{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: green;
+    transform: translateY(-10px);
+    margin-left: 60px;
+}
+
+  .bookone .rating .round img, .booktwo .rating .round img, .bookthree .rating .round img, .bookfour .rating .round img{
+    width: 27px;
+    height: 27px;
+    transform: translateY(5px) translateX(5px);
+}
+
+  .bookone .image a, .booktwo .image a, .bookthree .image a, .bookfour .image a{
+    position: absolute;
+    width: 160px;
+    height: 190px;
+    background-color: rgb(180, 180, 180);
+    margin-left: 5px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+ .bookone .image img, .booktwo .image img, .bookthree .image img, .bookfour .image img{
+    height: 190px;
+    width: 160px;
+}
+.bookone .title, .booktwo .title, .bookthree .title, .bookfour .title{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Gill Sans MT';
+    font-weight: bold;
+}
+.bookone .author, .booktwo .author, .bookthree .author, .bookfour .author{
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Gill Sans MT';
+    font-weight: lighter;
+}
+
+
+.bookone .state, .booktwo .state, .bookthree .state, .bookfour .state{
+    position: absolute;
+    margin-top: 305px;
+    margin-left: 12px;
+    font-family: 'Gill Sans MT';
+    font-weight: 180;
+}
+
+@keyframes downtotop {
+    0%{opacity: 0;
+    margin-top: 100px;}
+}
+/*the order style for each bookone, .booktwo, .bookthree, .bookfour*/
+
+.bookone .yesno, .booktwo .yesno, .bookthree .yesno, .bookfour .yesno{
+    position: absolute;
+    margin-top: 295px;
+    margin-left: 100px;
+    font-family: 'Gill Sans MT';
+    width: 70px;
+    height: 40px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+ .yesno span{
+    margin-top: 8px;
+}
+
+/* the 'are you sure' question style*/
+
+ #sur{
+    position: absolute;
+    width: 500px;
+    height: 230px;
+    overflow: hidden;/* to hide yes and no from the div box*/
+    background-color: chocolate;
+    color: black;
+    font: bold;
+    font-size: 50px;
+    font-family: 'Gill Sans MT';
+    border-radius: 4px;
+    left: 32%;
+    top: 30%;
+}
+#sur #inptic{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+#sur #yes{
+    width: 85px;
+    height: 50px;
+    position: absolute;
+    color: green;
+    font-size: 30px;
+    margin-top: 120px;
+    margin-left: 90px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sur #yes:hover{
+    width: 85px;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: change 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes change {
+    100%{background-color: rgb(0, 207, 0);
+        color: black;}
+}
+
+#sur #no{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    margin-top: 120px;
+    margin-left: 330px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sur #no:hover{
+    width: 100px;
+    height: 50px;
+    border-radius: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: changetwo 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes changeone {
+    100%{background-color: green;
+    color: black;}
+}
+@keyframes changetwo {
+    100%{background-color: red;
+    color: black;}
+}
+.hide{
+    display: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+  margin-left: 20px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #00ff00;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #00ff00;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #095228;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */

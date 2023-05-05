@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
     <link rel="stylesheet" href="../CSS/loginpagestyle.css">
+    <title>Document</title>
 </head>
 <body>
-    <img src="../PHOTOS/istockphoto-1197901679-612x612-removebg-preview.png" alt="">
-    <div class="logoname">Esi &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; books</div>
-    <div class="intro"> <span> Your book library</span> <br> Make your own space</div>
-    <div class="container">
-        <div class="wel">Welcome</div>
-        <div class="conn">Log in to the account</div>
-        <div class="email">E-mail</div>
-        <form action="">
-        <input class="in" type="text" placeholder=" Email">  <!--SEVEEERELY IMPORTANT: the email MUST be valid (he had his email in the queue of 'registred students' from the administrator) so the user can login, else he will be sent to the 'not valid' page-->
+    <img src="../photos/istockphoto-1197901679-612x612-removebg-preview.png" alt="">
+    <div class="logoname">ESI &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; Books</div>
+    <div class="login-box">
+        <h2>Login to your account</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Email</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="" required="">
+            <label>Password</label>
+          </div>
+          <div class="incr">Incorrect password!</div>
+          <a href="" class="frg">Forgot Password?</a>
+          <a href="#" class="lgn">
+            Login
+          </a>
         </form>
-        <div class="pass">Password</div>
-        <div class="Incorrect">Incorrect password</div>
-        <div class="forgot"> <a href="code.html">Forgot password?</a></div>
-        <form action="">
-        <input class="in2" type="password" placeholder=" *********">
-        </form>
-        <a href="Main menu.html" target="_blank" class="sign"> <button class="sub" type="submit" >Log in</button> </a>
-        <script src="../JS/login.js"></script>
-    </body>
+      </div>
+</body>
 </html>

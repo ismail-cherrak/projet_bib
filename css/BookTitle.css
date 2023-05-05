@@ -1,182 +1,173 @@
-body{
-    background-image: url("Pattern-BG-EXPLORE.png");
+@import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
+
+body {
+  background: #ffc38a;
+  font-family: "Sen";
+}
+.menu {
+  position: sticky;
+  padding: 2px;
+  width: 100%;
+  max-width: 100%;
+  height: 60px;
+}
+.menu .container {
+  padding: 10px;
+}
+ul li {
+  max-width: 150px;
+  width: 100%;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  list-style: none;
+  margin: auto;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: #fa8207;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+ul li:hover ul.dropdown {
+  display: block;
+  animation-name: mainnav;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+}
+ul li ul.dropdown {
+  display: none;
+  padding: 0;
+  overflow: hidden;
 }
 
-#years{
-    position: relative;
-    border-radius: 3px;
-    width: 1500px;
-    height: 45px;
-    background-color: white;
-    animation: appear 2s;
-}
-@keyframes appear {
-    0%{opacity: 0;}
-}
+/* Mainnav animation */
 
-#navbar{
-    position:absolute;
-    overflow: hidden;
-    width: 140px;
-    background-color: white;
-    border-radius: 2px;
-    height: 30vh;
-}
-a{
-    text-decoration: none;
-    font-family: 'Gill Sans MT';
-    font-size: xx-large;
-    color: black;
-    margin-left: 10px;
-}
-
-#mod1cpi{
-    border-radius: 3px;
-    position: absolute;
+@keyframes mainnav {
+  0% {
     height: 0px;
-    overflow: hidden;
-    width: 110px;
-    height: 80px;
-    background-color: white;
-    margin-left: 125px;
-
-}
-.cp1s1{
-    font-family: 'Gill Sans MT';
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    margin-left: 15px;
-}
-.cp1s2{
-    font-family: 'Gill Sans MT';
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    margin-left: 15px;
-}
-#mod2cpi{
-    border-radius: 3px;
-    position: absolute;
-    height: 80px;
-    overflow: hidden;
-    width: 110px;
-    background-color: white;
-    margin-left: 340px;
-}
-.cp2s1{
-    font-family: 'Gill Sans MT';
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    margin-left: 15px;
-}
-.cp2s2{
-    font-family: 'Gill Sans MT';
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    margin-left: 15px;
-}
-#mod3cpi{
-    border-radius: 3px;
-    position: absolute;
-    height: 80px;
-    overflow: hidden;
-    width: 110px;
-    background-color: white;
-    margin-left: 560px;
-    justify-content: center;
-    align-items: center;
-}
-.cp3s1{
-    font-family: 'Gill Sans MT';
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    margin-left: 15px;
-}
-.cp3s2{
-    font-family: 'Gill Sans MT';
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    margin-left: 15px;
-}
-#mod4cpi{
-    border-radius: 3px;
-    position: absolute;
-    height: 80px;
-    overflow: hidden;
-    width: 110px;
-    background-color: white;
-    margin-left: 775px;
-}
-.cp4s1{
-    font-family: 'Gill Sans MT';
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    margin-left: 15px;
-}
-.cp4s2{
-    font-family: 'Gill Sans MT';
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    margin-left: 15px;
-}
-#mod5cpi{
-    border-radius: 3px;
-    position: absolute;
-    height: 40px;
-    overflow: hidden;
-    width: 110px;
-    background-color: white;
-    margin-left: 983px;
-}
-.cp5s1{
-    font-family: 'Gill Sans MT';
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    margin-left: 15px;
-}
-.cp5s2{
-    font-family: 'Gill Sans MT';
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    margin-left: 15px;
+    background-color: #fa8207;
+  }
+  100% {
+    height: 100px;
+    background-color: transparent;
+  }
 }
 
-li{
-    margin-top: 3px;
-    font-size: xx-large;
-    font-family: 'Gill Sans MT';
-    cursor: pointer;
+ul li ul.dropdown li {
+  margin: 5px 0;
+}
+.menu ul li ul li:first-child {
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+}
+.menu ul li ul li:nth-child(2) {
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.1s;
+  animation-timing-function: linear;
+}
+.menu ul li ul li:nth-child(3) {
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.2s;
+  animation-timing-function: linear;
+}
+.menu ul li ul li:nth-child(4) {
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.3s;
+  animation-timing-function: linear;
+}
+.menu ul li ul li:nth-child(5) {
+  animation-name: navanime;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0.4s;
+  animation-timing-function: linear;
+}
+.menu {
+  position: relative;
+  background: rgb(174 90 9);
+  background-blend-mode: overlay;
+  border-radius: 22px 0 22px 0;
+}
+.menu .container > ul:after {
+  height: 39px;
+  max-width: 10%;
+  width: 100%;
+  min-width: 0;
+  background: #fdd635;
+  content: "";
+  position: relative;
+  display: block;
+  border-radius: 0 0 80% / 0 0 99% 0;
+}
+.menu .container > ul:before {
+  height: 39px;
+  max-width: 10%;
+  width: 100%;
+  min-width: 0;
+  background: #fdd635;
+  content: "";
+  position: relative;
+  display: block;
+  border-radius: 80% 0 0 0/ 100% 0 0 0;
 }
 
-#show{
-    position: absolute;
-    margin-top: -4px;
-    margin-left: 9px;
-    transform: rotate(90deg);
-    font-size: xx-large;
-    cursor: pointer;
+/* Navanim animation */
+
+@keyframes navanime {
+  0% {
+    transform: rotateY(180deg);
+  }
+}
+ul li a {
+  transition: all 0.2s linear;
+  position: relative;
+  z-index: 1;
+}
+ul li > a:after {
+  content: "";
+  background-color: #ffba07;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s linear;
+  z-index: -1;
+}
+ul li:hover > a:after {
+  color: #fffb00;
+  content: "";
+  background-color: #ffba07;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
-#ann{
-    position: relative;
-    display: flex;
-    gap: 160px;
-    margin-left: 100px; ;
-}
 
-.container{
+.containertwo{
     position: absolute;
     margin-left: 10%;
-    margin-top: 15px;
+    margin-top: 100px;
     width: 1200px;
     height:1100px;
     background-color: rgb(223, 223, 223);
@@ -253,7 +244,7 @@ background:red
     justify-content: center;
 }
 
-.container .aratestu{
+.containertwo .aratestu{
     position: absolute;
     margin-left: 400px;
     margin-top: 200px;
@@ -263,11 +254,17 @@ background:red
     border-radius: 15px;
 }
 
-.container .studentsaveragerating{
-    display: none; /*in this div you will write the average rating of of the students, then you'll move the rating symbol (the book icon), i made it not diplayed because the student wouldn't see it :) */
+.containertwo .studentsaveragerating{
+  position: absolute;
+  transform: translate(350px,-375px); 
+  font-size: x-large;
 }
 
-.container .aratestu .roundstu{
+.carac{
+  display: block;
+  font-size: 15px;
+}
+.containertwo .aratestu .roundstu{
     width: 40px;
     height: 40px;
     background-color: yellow;
@@ -277,14 +274,14 @@ background:red
     transform: translateY(-6px);
 }
 
-.container .aratestu img{
+.containertwo .aratestu img{
     position: relative;
     width: 30px;
     height: 30px;
     transform: translateY(-20px) translateX(-16px);
 }
 
-.container .aratetea{
+.containertwo .aratetea{
     position: absolute;
     margin-left: 750px;
     margin-top: 202px;
@@ -294,12 +291,14 @@ background:red
     border-radius: 15px;
 }
 
-.container .taechersaveragerating{
-    display: none; /*same for the teachers rating*/
+.containertwo .teachersaveragerating{
+    position: absolute;
+    transform: translate(700px,-375px); /*same for the teachers rating*/
+    font-size: x-large;
 }
 
 
-.container .aratetea .roundtea{
+.containertwo .aratetea .roundtea{
     width: 40px;
     height: 40px;
     background-color: green;
@@ -309,14 +308,14 @@ background:red
     transform: translateY(-6px);
 }
 
-.container .aratetea img{
+.containertwo .aratetea img{
     position: relative;
     width: 30px;
     height: 30px;
     transform: translateY(-20px) translateX(-16px);
 }
 
-.container .how{
+.containertwo .how{
     position: absolute;
     font-size: xx-large;
     font-family: 'Gill Sans MT';
@@ -325,7 +324,7 @@ background:red
     margin-left: 740px;
 }
 
-.container .rating{
+.containertwo .rating{
     position: absolute;
     border-style:  solid;
     border-color: yellow;
@@ -338,7 +337,7 @@ background:red
 }
 
 
-.container .rating .round{
+.containertwo .rating .round{
     position: relative;
     height:60px;
     width: 60px;
@@ -349,14 +348,14 @@ background:red
 
 }
 
-.container .rating .round img{
+.containertwo .rating .round img{
     position: absolute;
     width: 40px;
     height: 40px;
     transform: translateY(-15px) translateX(-10px);
 }
 
-.container .description{
+.containertwo .description{
     position: absolute;
     font-size: 45px;
     font-family: 'Gill Sans MT';
@@ -364,7 +363,7 @@ background:red
     margin-left: 745px;
 }
 
-.container .des{
+.containertwo .des{
     position: absolute;
     font-size: 28px;
     font-family: 'Gill Sans MT';
@@ -375,23 +374,23 @@ background:red
     justify-content: center;
 }
 
-.container ul{
+.containertwo .carac{
     margin-top: 420px;
     gap: 50px;
 }
 
-.container .comm {
+.containertwo .comm {
     font-size: 40px;
     font-family: 'Gill Sans MT';
     font-weight: 300;
     margin-left: 30px;
 }
 
-.container .commentdisplay{
+.containertwo .commentdisplay{
     /*the "appear" and "hide" animations that you'll find below will be used here to hide/show new coomments*/
 }
 
-.container .commentatorimage{
+.containertwo .commentatorimage{
     position: absolute;
     width: 100px;
     height: 100px;
@@ -402,14 +401,14 @@ background:red
     margin-top: 40px;
 }
 
-.container .commentatorname{
+.containertwo .commentatorname{
     position: absolute;
     font-size: larger;
     font-family: 'Gill Sans MT';
     margin-top: 50px;
     margin-left: 140px;
 }
-.container .comment{
+.containertwo .comment{
     position: absolute;
     font-size: x-large;
     font-family: 'Gill Sans MT';
@@ -417,7 +416,7 @@ background:red
     margin-left: 140px;
 }
 
-.container .commentatorrating{
+.containertwo .commentatorrating{
     position: absolute;
     width: 100px;
     height: 15px;
@@ -446,7 +445,7 @@ background:red
     opacity: 1;}
 }
 
-.container .showmore{
+.containertwo .showmore{
     position: absolute;
     padding: 15px;
     font-size: xx-large;
@@ -456,11 +455,11 @@ background:red
     border-color: grey;
     border-radius: 15px;
     cursor: pointer;
-    margin-top: 330px;
+    margin-top: 950px;
     margin-left: 80px;
 }
 
-.container .showprevious{
+.containertwo .showprevious{
     position: absolute;
     padding: 15px;
     font-size: xx-large;
@@ -470,7 +469,7 @@ background:red
     border-color: grey;
     border-radius: 15px;
     cursor: pointer;
-    margin-top: 330px;
+    margin-top: 950px;
     margin-left: 80px;
     opacity:0;  /*you can change this opacity to 1 and make the 'margin left' of showmore to 500px to see the show previous button*/
 }
@@ -503,4 +502,118 @@ background:red
 }
 .hide{
     display: none;
+}
+.subrate{
+  position: absolute;
+  padding: 10px;
+  width: 200px;
+  color: white;
+  background-color: black;
+  border-style: solid;
+  border-color: black;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: 'sen';
+  transform: translate(760px,1000px) scale(0.8);
+}
+
+.subrate:hover{
+  color: white;
+  background-color: orange;
+  border-style: solid;
+  border-color: orange;
+  box-shadow: 0px 0px 5px orangered, 0px 0px 10px orangered, 0px 0px 15px orangered;
+}
+
+input[type=range] {
+  position: absolute;
+  height: 10px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 20%;
+  transform: translate(735px,900px);
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 13px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 2px orange;
+  background: yellow;
+  border-radius: 50px;
+  border: 0px solid yellow;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 10px orange;
+  border: 0px solid #83E584;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background: yellow;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -18.5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: yellow;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 13px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #002200;
+  background: #205928;
+  border-radius: 50px;
+  border: 0px solid #18D501;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 10px #00AA00;
+  border: 0px solid #83E584;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background: #439643;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 13px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #205928;
+  border: 0px solid #18D501;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #002200;
+}
+input[type=range]::-ms-fill-upper {
+  background: #205928;
+  border: 0px solid #18D501;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #002200;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 10px #00AA00;
+  border: 0px solid #83E584;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background: #439643;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #205928;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #205928;
 }

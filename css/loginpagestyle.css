@@ -1,183 +1,125 @@
-body{
+html {
+    height: 100%;
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
     background:linear-gradient(to bottom, rgb(67, 28, 0),black);
-    background-attachment:local;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-img{
+  }
+  img{
     position: absolute;
-    transform: translateY(-70px);
-    animation: show linear 1s;
-}
-
-.logoname{
+    margin-left: 480px;
+    transform: translateY(-150px);
+    animation: open 1s;
+  }
+  .logoname{
     position: absolute;
     color: grey;
-    font-size: 45px;
-    font-family: 'Gill Sans MT';
-    margin-top: 230px;
-    margin-left: 110px;
-    animation: show linear 1s;
-}
+    font-size: 40px;
+    margin-left: 585px;
+    transform: translateY(150px);
+    animation: name 1s;
+  }
 
-.intro{
+  @keyframes name {
+    0%{transform: scaleX(0) translateY(150px);}
+    100%{transform: scaleX(1) translateY(150px);}
+  }
+  @keyframes open {
+    0%{transform: scaleX(0) translateY(-150px); opacity: 0;}
+    100%{transform: scaleX(1)translateY(-150px) ; opacity: 1;}
+  }
+  .login-box {
     position: absolute;
-    color: white;
-    margin-top: 350px;
-    font-size: 50px;
-    font-weight: 100;
-    font-family: 'Courier';
-    margin-left: 20px;
-    animation: show linear 1s;
-}
-
-.intro span{
-    margin-left: 30px;
-}
-.container{
-    position: absolute;
-    height: 97vh;
-    width: 780px;
-    margin-left: 730px;
-    background: linear-gradient(to bottom, rgb(116, 51, 4), black);
-    border-right-style:groove;
-    border-left-style: groove;
-    border-radius: 8px;
-    border-color: orangered;
-    display: flex;
-    justify-content: center;
-    animation: show 2s;
-}
-@keyframes show {
-    0%{opacity: 0;}
-    100%{opacity: 0.8;}
-}
-.wel{
-    position: absolute;
-    margin-top: 30px;
-    font-size: 75px;
-    font-family: 'Gill Sans MT';
-    color: orangered;
-}
-.conn{
-    position: absolute;
-    color: wheat;
-    font-size: 50px;
-    font-family: 'Gill Sans MT';
-    margin-top: 150px;
-    color: #E26400;
-}
-.email{
-    position: absolute;
-    margin-top: 240px;
-    margin-right: 280px;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT';
-    font-size: x-large;
-}
-.in{
-    position: absolute;
-    margin-top: 280px;
-    width: 310px;
-    height: 35px;
-    margin-right: 25px;
-    border-radius: 4px;
-    padding: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT';
-    font-size: larger;
-    border-radius: 10px
-
-}
-
-
-.erroremail{
-    position: absolute;
-    color: yellow;
-    font-size: larger;
-    font-family: 'Gill Sans MT';
-    margin-top: 330px;
-    transform: translateX(-90px);
-}
-
-
-.pass{
-    position: absolute;
-    color: white;
-    font-size: x-large;
-    font-family: 'Gill Sans', 'Gill Sans MT';
-    margin-top: 370px;
-    margin-right: 250px;
-}
-.in2{
-    position: absolute;
-    margin-top: 410px;
-    transform: translateX(-128px);
-    width: 310px;
-    height: 35px;
-    margin-right: 25px;
-    border-radius: 4px;
-    padding: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT';
-    font-size: larger;
-    border-radius: 10px
-}
-
-/* SEVERELY IMPORTANT: this 'incorrect password' and 'forgot password?' texts can ONLY be displayed when the email is valid*/ 
-
-#Incorrect{
-    color: red;
-    font-family: 'Gill Sans MT';
-    margin-top: 460px;
-}
-
-.forgot{
-    position: absolute;
-    font-family: 'Gill Sans MT';
-    margin-top: 460px;
-    margin-left: 140px;
-    cursor: pointer;
-}
-.forgot a{
-    text-decoration: none;
-    color: white;
-}
-.sign{
-    margin-right: 280px;
-}
-.sub{
-    position: absolute;
-    background-color: orangered;
-    color: white;
-    font-family: 'Gill sans MT';
+    top: 55%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom, rgb(116, 51, 4),black black);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
-    padding: 4px;
-    width: 200px;
-    border-color: orangered;
-    margin-top: 550px;
-    transform: scale(3);
-    cursor: pointer;
-}
-.ques{
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: orangered;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+
+  .login-box .user-box label {
     position: absolute;
-    font-size: x-large;
-    font-family: 'Gill Sans MT';
-    color: grey;
-    margin-top: 630px;
-    margin-right: 280px;
-}
-.insc{
-    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: orangered;
+    font-size: 12px;
+  }
+  
+  .login-box form .lgn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: orange;
+    font-size: 16px;
     text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    transform: translateX(100px);
+  }
+  
+  .login-box .lgn:hover {
+    background: rgb(255, 120, 0);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(255, 221, 0),
+                0 0 25px rgb(255, 150, 0),
+                0 0 50px rgb(255, 100, 0),
+                0 0 100px rgb(255, 50, 0);
+  }
+
+.incr{
+    position: relative;
+    color: red;
+    transform: translateY(-15px);
+  }
+
+.frg{
+    position: absolute;
     color: white;
-    font-family: 'Gill Sans MT';
-    font-size: x-large;
-    margin-top: 630px;
-    margin-left: 400px;
+    text-decoration: none;
+    transform: translate(200px,-33px);
     cursor: pointer;
-}
-.hide{
-    opacity: 0;
 }
