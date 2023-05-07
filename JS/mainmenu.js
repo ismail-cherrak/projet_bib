@@ -1,35 +1,41 @@
-const slider = document.querySelector('.scroll');
-const sliderWrapper = slider.querySelector('.sld');
-const slides = slider.querySelectorAll('.book');
-const prevBtn = slider.querySelector('.scroll_left');
-const nextBtn = slider.querySelector('.scroll_right');
-const slideWidth = slides[0].offsetWidth;
-const totalSlides = slides.length;
-let currentIndex = 0;
-prevBtn.style.display="none";
+let mod= [document.getElementById("mod1cpi"),document.getElementById("mod2cpi"),document.getElementById("mod3cpi"),document.getElementById("mod4cpi"),document.getElementById("mod5cpi"),];
+let modcpi=Array.from(mod);
+let year=document.getElementsByClassName("annees");
+let tab=[0,0,0,0,0];
+let years=Array.from(year);
+let j=0;
 
-sliderWrapper.style.transition = 'transform 0.3s ease';
-
-nextBtn.addEventListener('click', () => {
-    currentIndex++;
-    prevBtn.style.display="flex";
-
-  sliderWrapper.style.transform = `translateX(${-slideWidth * currentIndex}px)`;
+//when you click on years they appear
+years.forEach(function(ele){
+    ele.addEventListener("click" , function(){
+    tab[years.indexOf(ele)]++;
+    if (tab[years.indexOf(ele)] % 2 === 0){
+        modcpi.forEach(function(e){
+            e.classList.add("hide");
+        })
+    }
+    else{
+        modcpi.forEach(function(e){
+            e.classList.add("hide");
+        })
+        modcpi[years.indexOf(ele)].classList.remove("hide");
+    }
+      
+        
+    })
 });
+let i=1;
 
-prevBtn.addEventListener('click', () => {
+//navbar
+document.getElementById("show").addEventListener("click",function(){
+    i++;
+    if(i % 2 ===0){document.getElementById("navbar").classList.remove("hide");}
+    else{document.getElementById("navbar").classList.add("hide");};
+    
+   
+}); 
 
-    currentIndex--;
-if(currentIndex==0){
-    prevBtn.style.display="none";
-}
-  
-  sliderWrapper.style.transform = `translateX(${-slideWidth * currentIndex}px)`;
-});
-
-
-
-//book state 
+//book state and function
 
 let etat=0;//availabel=0;notavailable=1;waiting=2;ready to take=3;taken=4
 
@@ -123,34 +129,75 @@ let booksRating =0.0;
 
 function putRating(r){
     
-    switch(Math.round(r,round,rating)){
+    switch(Math.round(r)){
         case 0 :
-            round.style.marginLeft="00px";
-            rating.innerHTML=Math.round(r); 
+            document.getElementById("round").style.marginLeft="00px";
+            document.getElementById("the_average_rating").innerHTML=Math.round(r); 
         break;
         case 1 :
-            round.style.marginLeft="12px";
-            rating.innerHTML=Math.round(r);
+            document.getElementById("round").style.marginLeft="12px";
+            document.getElementById("the_average_rating").innerHTML=Math.round(r);
         break;
         case 2 :
-            round.style.marginLeft="24px";
-            rating.innerHTML=Math.round(r);
+            document.getElementById("round").style.marginLeft="24px";
+            document.getElementById("the_average_rating").innerHTML=Math.round(r);
         break;
         case 3 :
-            round.style.marginLeft="36px";
-            rating.innerHTML=Math.round(r);
+            document.getElementById("round").style.marginLeft="36px";
+            document.getElementById("the_average_rating").innerHTML=Math.round(r);
         break;
         case 4 :
-            round.style.marginLeft="48px";
-            rating.innerHTML=Math.round(r);
+            document.getElementById("round").style.marginLeft="48px";
+            document.getElementById("the_average_rating").innerHTML=Math.round(r);
         break;
         case 5 :
-            round.style.marginLeft="60px";
-            rating.innerHTML=Math.round(r);
+            document.getElementById("round").style.marginLeft="60px";
+            document.getElementById("the_average_rating").innerHTML=Math.round(r);
         break;
         
     }
     
 }
-//putRating(4,document.getElementById("round"),document.getElementById("the_average_rating"));
-alert("hi");
+putRating(4);
+
+let booksNumber=7;
+let sl=document.getElementById("scroll_left");
+let sr=document.getElementById("scroll_right");
+
+
+    if (booksNumber <=4){
+        sl.style.opacity=0;
+        sr.style.opacity=0;
+    }
+    else{
+        sl.style.opacity=0;
+    }
+
+   let nn=booksNumber; 
+
+
+
+sr.onclick=function(){
+    booksNumber-=4;
+    
+    if (booksNumber <=4){
+        sr.style.opacity=0;
+        sl.style.opacity=1;
+    }
+    else{
+        sl.style.opacity=1;
+    }
+}
+sl.onclick=function(){
+    booksNumber+=4;
+    if (booksNumber <nn){
+        sl.style.opacity=1;
+        sr.style.opacity=1;
+    }
+    else{
+        sr.style.opacity=1;
+        sl.style.opacity=0;
+    }
+}
+
+    
