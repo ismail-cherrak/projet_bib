@@ -9,7 +9,7 @@ html {
   }
   img{
     position: absolute;
-    margin-left: 480px;
+    margin-left: 512px;
     transform: translateY(-150px);
     animation: open 1s;
   }
@@ -17,7 +17,7 @@ html {
     position: absolute;
     color: grey;
     font-size: 40px;
-    margin-left: 585px;
+    margin-left: 617px;
     transform: translateY(150px);
     animation: name 1s;
   }
@@ -88,27 +88,35 @@ html {
   .login-box form .lgn {
     position: relative;
     display: inline-block;
+    background:transparent;
     padding: 10px 20px;
     color: orange;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
-    transition: .5s;
     margin-top: 40px;
     letter-spacing: 2px;
     transform: translateX(100px);
+    cursor: pointer;
   }
   
   .login-box .lgn:hover {
-    background: rgb(255, 120, 0);
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgb(255, 221, 0),
-                0 0 25px rgb(255, 150, 0),
-                0 0 50px rgb(255, 100, 0),
-                0 0 100px rgb(255, 50, 0);
+    animation: iden 0.8s forwards;
   }
+
+  @keyframes iden {
+    100%{background: rgb(255, 120, 0);
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgb(255, 221, 0),
+                  0 0 25px rgb(255, 150, 0),
+                  0 0 50px rgb(255, 100, 0),
+                  0 0 100px rgb(255, 50, 0);}
+            
+  }
+
+
 
 .incr{
     position: relative;
@@ -123,3 +131,4 @@ html {
     transform: translate(200px,-33px);
     cursor: pointer;
 }
+

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
 
 body {
-  background-image: url(../Semesterphotos/Pattern-BG-EXPLORE.png);
+  background-image: url(../photos/Pattern-BG-EXPLORE.png);
   font-family: "Sen";
 }
 .menu {
@@ -462,41 +462,27 @@ li .bookone{
   margin-top: 50px;
   margin-left: 190px;
   border-radius: 10px;
+  overflow: hidden;
+}
+.green{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background-color: green;
+  transform: rotate(-45deg) translate(165px,30px);
 }
 
-li .bookone .the_average_rating{
+
+.the_average_ratingone{
   position: absolute;
   color: white;
-  font-size: larger;
+  font-size: x-large;
   font-family: 'Gill Sans MT';
-  margin-left: 10px;
-  margin-top: 13px;
-}
-li .bookone .rating{
-  position: absolute;
-  margin-top: 13px;
-  margin-left: 65px;
-  background-color: green;
-  border-radius: 10px;
-  display: flex;
-  width: 100px;
-  height: 20px;
+  margin-left: 170px;
+  margin-top: 5px;
 }
 
-li .bookone .rating .round{
-  width:40px;
-  height:40px;
-  border-radius: 50%;
-  background-color: green;
-  transform: translateY(-10px);
-  margin-left: 60px;
-}
 
-li .bookone .rating .round img{
-  width: 27px;
-  height: 27px;
-  transform: translateY(5px) translateX(5px);
-}
 
 li .bookone .image a{
   position: absolute;
@@ -529,7 +515,7 @@ li .bookone .image img{
 }
 
 
-.bookone .state{
+.bookone .stateone{
   position: absolute;
   margin-top: 305px;
   margin-left: 12px;
@@ -557,14 +543,23 @@ li .bookone .image img{
   border-radius: 10px;
 }
 
-
-
-
-
-
-
-
-
+.yesnooneCancel{
+  position: absolute;
+  margin-top: 295px;
+  margin-left: 100px;
+  font-family: 'Gill Sans MT';
+  width: 70px;
+  height: 40px;
+  background-color: rgb(24, 24, 24);
+  color: red;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.yesnooneCancel span{
+  margin-top: 10px;
+}
 
 
 
@@ -580,41 +575,27 @@ li .bookthree{
   margin-top: 50px;
   margin-left: 190px;
   border-radius: 10px;
+  overflow: hidden;
+}
+.green{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background-color: green;
+  transform: rotate(-45deg) translate(165px,30px);
 }
 
-li .bookthree .the_average_rating{
+
+.the_average_ratingthree{
   position: absolute;
   color: white;
-  font-size: larger;
+  font-size: x-large;
   font-family: 'Gill Sans MT';
-  margin-left: 10px;
-  margin-top: 13px;
-}
-li .bookthree .rating{
-  position: absolute;
-  margin-top: 13px;
-  margin-left: 65px;
-  background-color: green;
-  border-radius: 10px;
-  display: flex;
-  width: 100px;
-  height: 20px;
+  margin-left: 170px;
+  margin-top: 5px;
 }
 
-li .bookthree .rating .round{
-  width:40px;
-  height:40px;
-  border-radius: 50%;
-  background-color: green;
-  transform: translateY(-10px);
-  margin-left: 60px;
-}
 
-li .bookthree .rating .round img{
-  width: 27px;
-  height: 27px;
-  transform: translateY(5px) translateX(5px);
-}
 
 li .bookthree .image a{
   position: absolute;
@@ -647,7 +628,7 @@ li .bookthree .image img{
 }
 
 
-.bookthree .state{
+.bookthree .statethree{
   position: absolute;
   margin-top: 305px;
   margin-left: 12px;
@@ -675,7 +656,23 @@ li .bookthree .image img{
   border-radius: 10px;
 }
 
-
+.yesnothreeCancel{
+  position: absolute;
+  margin-top: 295px;
+  margin-left: 100px;
+  font-family: 'Gill Sans MT';
+  width: 70px;
+  height: 40px;
+  background-color: rgb(24, 24, 24);
+  color: red;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.yesnothreeCancel span{
+  margin-top: 10px;
+}
 
 
 
@@ -704,41 +701,27 @@ li .booktwo{
   margin-top: 50px;
   margin-left: 190px;
   border-radius: 10px;
+  overflow: hidden;
+}
+.green{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background-color: green;
+  transform: rotate(-45deg) translate(165px,30px);
 }
 
-li .booktwo .the_average_rating{
+
+.the_average_ratingtwo{
   position: absolute;
   color: white;
-  font-size: larger;
+  font-size: x-large;
   font-family: 'Gill Sans MT';
-  margin-left: 10px;
-  margin-top: 13px;
-}
-li .booktwo .rating{
-  position: absolute;
-  margin-top: 13px;
-  margin-left: 65px;
-  background-color: green;
-  border-radius: 10px;
-  display: flex;
-  width: 100px;
-  height: 20px;
+  margin-left: 170px;
+  margin-top: 5px;
 }
 
-li .booktwo .rating .round{
-  width:40px;
-  height:40px;
-  border-radius: 50%;
-  background-color: green;
-  transform: translateY(-10px);
-  margin-left: 60px;
-}
 
-li .booktwo .rating .round img{
-  width: 27px;
-  height: 27px;
-  transform: translateY(5px) translateX(5px);
-}
 
 li .booktwo .image a{
   position: absolute;
@@ -771,7 +754,7 @@ li .booktwo .image img{
 }
 
 
-.booktwo .state{
+.booktwo .statetwo{
   position: absolute;
   margin-top: 305px;
   margin-left: 12px;
@@ -799,6 +782,23 @@ li .booktwo .image img{
   border-radius: 10px;
 }
 
+.yesnotwoCancel{
+  position: absolute;
+  margin-top: 295px;
+  margin-left: 100px;
+  font-family: 'Gill Sans MT';
+  width: 70px;
+  height: 40px;
+  background-color: rgb(24, 24, 24);
+  color: red;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.yesnotwoCancel span{
+  margin-top: 10px;
+}
 
 
 
@@ -830,41 +830,27 @@ li .bookfour{
   margin-top: 50px;
   margin-left: 190px;
   border-radius: 10px;
+  overflow: hidden;
+}
+.green{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background-color: green;
+  transform: rotate(-45deg) translate(165px,30px);
 }
 
-li .bookfour .the_average_rating{
+
+.the_average_ratingfour{
   position: absolute;
   color: white;
-  font-size: larger;
+  font-size: x-large;
   font-family: 'Gill Sans MT';
-  margin-left: 10px;
-  margin-top: 13px;
-}
-li .bookfour .rating{
-  position: absolute;
-  margin-top: 13px;
-  margin-left: 65px;
-  background-color: green;
-  border-radius: 10px;
-  display: flex;
-  width: 100px;
-  height: 20px;
+  margin-left: 170px;
+  margin-top: 5px;
 }
 
-li .bookfour .rating .round{
-  width:40px;
-  height:40px;
-  border-radius: 50%;
-  background-color: green;
-  transform: translateY(-10px);
-  margin-left: 60px;
-}
 
-li .bookfour .rating .round img{
-  width: 27px;
-  height: 27px;
-  transform: translateY(5px) translateX(5px);
-}
 
 li .bookfour .image a{
   position: absolute;
@@ -897,7 +883,7 @@ li .bookfour .image img{
 }
 
 
-.bookfour .state{
+.bookfour .statefour{
   position: absolute;
   margin-top: 305px;
   margin-left: 12px;
@@ -924,8 +910,23 @@ li .bookfour .image img{
   justify-content: center;
   border-radius: 10px;
 }
-.yesno span{
-  margin-top: 8px;
+
+.yesnofourCancel{
+  position: absolute;
+  margin-top: 295px;
+  margin-left: 100px;
+  font-family: 'Gill Sans MT';
+  width: 70px;
+  height: 40px;
+  background-color: rgb(24, 24, 24);
+  color: red;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.yesnofourCancel span{
+  margin-top: 10px;
 }
 
 /* the 'are you sure' question style*/

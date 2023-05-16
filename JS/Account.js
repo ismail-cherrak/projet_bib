@@ -2,8 +2,8 @@ var loadFile = function (event) {
     var image = document.getElementById("output");
     image.src = URL.createObjectURL(event.target.files[0]);
   };
-let username="ismail";
-let useryear="2 CPI";
+let username="";
+let useryear="";
 // had les variables anis khaldi 7ot fihom name w year bsh ybanou 
 document.getElementById("fullname").innerHTML=username;
 document.getElementById("useryear").innerHTML=useryear + " Student";
@@ -42,7 +42,7 @@ for (let j = 0; j < n; j++) {
 }
 }
 }
-afficheCommande(2);
+afficheCommande(nbreBooksCommande);
 
 
 

@@ -253,7 +253,7 @@ ul li:hover > a:after {
     cursor: pointer;
 }
 
-.orderedbooks #bookone span{
+.orderedbooks #bookone a{
     position: absolute;
     width: 100px;
     height: 100px;
@@ -283,7 +283,7 @@ ul li:hover > a:after {
     cursor: pointer;
 }
 
-.orderedbooks #booktwo span{
+.orderedbooks #booktwo a{
     position: absolute;
     width: 100px;
     height: 100px;
@@ -313,7 +313,7 @@ ul li:hover > a:after {
     cursor: pointer;
 }
 
-.orderedbooks #bookthree span{
+.orderedbooks #bookthree a{
     position: absolute;
     width: 100px;
     height: 100px;
@@ -343,7 +343,7 @@ ul li:hover > a:after {
     cursor: pointer;
 }
 
-.orderedbooks #bookfour span{
+.orderedbooks #bookfour a{
     position: absolute;
     width: 100px;
     height: 100px;
@@ -373,7 +373,7 @@ ul li:hover > a:after {
     cursor: pointer;
 }
 
-.orderedbooks #bookfive span{
+.orderedbooks #bookfive a{
     position: absolute;
     width: 100px;
     height: 100px;
@@ -400,17 +400,6 @@ ul li:hover > a:after {
     height: 360px;
 }
 
-@keyframes add_to_taken_books {  /*this animation will be executed when the admin hands the book to the student, the admin will type the student email on his platform along with the book url and as he submits, the book will be added to this queue with this animation*/
-    0%{opacity: 0;
-    transform: translateX(50px);}
-}
-
-@keyframes remove_from_taken_books {  /*when the student returns the book, the admin will look in his platform for the taken books for the book and removes it from the taken book, after that the book will be removed from the student taken books queue with this animation:*/
-    100%{display: none;
-    opacity: 0;
-    transform: translateX(50px);}
-}
-
 .take{
     position: absolute;
     color: gray;
@@ -433,7 +422,17 @@ ul li:hover > a:after {
   margin-top: 5px;
   margin-left: 2.5%;
   border-radius: 10px;
-  animation: downtotop 1.4s;
+  overflow: hidden;
+}
+
+
+.green{
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: green;
+  transform: rotate(-45deg) translate(145px,40px);
+
 }
 
 #bookTaken2{
@@ -444,7 +443,7 @@ ul li:hover > a:after {
   margin-top: 5px;
   margin-left: 22.5%;
   border-radius: 10px;
-  animation: downtotop 1.4s;
+  overflow: hidden;
 }
 
 #bookTaken3{
@@ -456,6 +455,8 @@ ul li:hover > a:after {
   margin-left: 43.5%;
   border-radius: 10px;
   animation: downtotop 1.4s;
+  overflow: hidden;
+
 }
 
 #bookTaken4{
@@ -467,6 +468,8 @@ ul li:hover > a:after {
   margin-left: 65%;
   border-radius: 10px;
   animation: downtotop 1.4s;
+  overflow: hidden;
+
 }
 
 #bookTaken5{
@@ -478,48 +481,26 @@ ul li:hover > a:after {
   margin-left: 85%;
   border-radius: 10px;
   animation: downtotop 1.4s;
+  overflow: hidden;
+
 }
 
 .the_average_rating{
   position: absolute;
   color: white;
-  font-size: larger;
+  font-size: x-large;
   font-family: 'Gill Sans MT';
-  margin-left: 10px;
-  margin-top: 13px;
+  margin-left: 160px;
+  margin-top: 8px;
 }
- .rating{
-  position: absolute;
-  margin-top: 13px;
-  margin-left: 65px;
-  background-color: green;
-  border-radius: 10px;
-  display: flex;
-  width: 100px;
-  height: 20px;
-}
-
-.rating .round{
-  width:40px;
-  height:40px;
-  border-radius: 50%;
-  background-color: green;
-  transform: translateY(-10px);
-  margin-left: 60px;
-}
-
-.rating .round img{
-  width: 27px;
-  height: 27px;
-  transform: translateY(5px) translateX(5px);
-}
+ 
 
  .image{
   position: absolute;
   width: 160px;
   height: 190px;
   background-color: rgb(180, 180, 180);
-  margin-left: 5px;
+  margin-left: 15px;
   margin-top: 50px;
   border-radius: 8px;
 }

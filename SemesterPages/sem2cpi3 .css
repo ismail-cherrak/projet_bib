@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
 
 body {
-  background-image: url(../Semesterphotos/Pattern-BG-EXPLORE.png);
-    font-family: "Sen";
+  background-image: url(../photos/Pattern-BG-EXPLORE.png);
+  font-family: "Sen";
 }
 .menu {
   padding: 2px;
@@ -193,22 +193,21 @@ ul li:hover > a:after {
   display: block;
 }
 
-/*Category*/
-
 .category{
-    position: absolute;
-    width: 600px;
-    height: 50px;
-    font-size: xx-large;
-    font-family: 'Gill Sans MT';
-    border-radius: 8px;
-    margin-left: 30px;
-    margin-top: 65px;
-    animation: appear 2s;
+  position: absolute;
+  width: 600px;
+  height: 50px;
+  font-size: xx-large;
+  font-family: 'Gill Sans MT';
+  border-radius: 8px;
+  margin-left: 30px;
+  margin-top: 65px;
+  animation: appear 2s;
 }
+
 /*scrolling to the left or the right*/
 
-.scrollone, .scrolltwo, .scrollthree, .scrollfour{
+.scrollone{
   position:absolute;
   width: 1480px;
   height: 450px;
@@ -219,7 +218,43 @@ ul li:hover > a:after {
   animation: appear 0.3s;
   overflow: hidden;
 }
-.scroll_leftone, .scroll_lefttwo, .scroll_leftthree, .scroll_leftfour{
+
+.scrollfour{
+  position:absolute;
+  width: 1480px;
+  height: 450px;
+  margin-top: 115px;
+  transform: translateX(25px);
+  background-color: gray;
+  border-radius: 10px;
+  animation: appear 0.3s;
+  overflow: hidden;
+}
+
+.scrolltwo{
+  position:absolute;
+  width: 1480px;
+  height: 450px;
+  margin-top: 115px;
+  transform: translateX(25px);
+  background-color: gray;
+  border-radius: 10px;
+  animation: appear 0.3s;
+  overflow: hidden;
+}
+
+.scrollthree{
+  position:absolute;
+  width: 1480px;
+  height: 450px;
+  margin-top: 115px;
+  transform: translateX(25px);
+  background-color: gray;
+  border-radius: 10px;
+  animation: appear 0.3s;
+  overflow: hidden;
+}
+.scroll_leftone{
   position: absolute;
   display: flex;
   justify-content: center;
@@ -233,7 +268,7 @@ ul li:hover > a:after {
   opacity: 1;
 }
 
-.scroll_leftone span , .scroll_lefttwo span, .scroll_leftthree span, .scroll_leftfour span{
+.scroll_leftone span{
   font-family: 'Gill Sans MT';
   font-weight: 200;
   margin-right: 5px;
@@ -241,7 +276,7 @@ ul li:hover > a:after {
   margin-top: 23px;
 }
 
-.scroll_rightone, .scroll_righttwo, .scroll_rightthree, .scroll_rightfour{
+.scroll_rightone{
   position: absolute;
   display: flex;
   justify-content: center;
@@ -254,7 +289,141 @@ ul li:hover > a:after {
   cursor: pointer;
 }
 
-.scroll_rightone span, .scroll_righttwo span, .scroll_rightthree span, .scroll_rightfour span{
+.scroll_rightone span{
+  font-family: 'Gill Sans MT';
+  font-weight: 200;
+  margin-left: 2px;
+  transform: scaleY(3);
+  margin-top: 23px;
+}
+
+
+.scroll_lefttwo{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(200, 200, 200);
+  border-radius: 50%;
+  margin-top: 180px;
+  margin-left: -10px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.scroll_lefttwo span{
+  font-family: 'Gill Sans MT';
+  font-weight: 200;
+  margin-right: 5px;
+  transform: scaleY(3) rotateY(180deg);
+  margin-top: 23px;
+}
+
+.scroll_righttwo{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(200, 200, 200);
+  border-radius: 50%;
+  margin-top: 180px;
+  margin-left: 97.5%;
+  cursor: pointer;
+}
+
+.scroll_righttwo span{
+  font-family: 'Gill Sans MT';
+  font-weight: 200;
+  margin-left: 2px;
+  transform: scaleY(3);
+  margin-top: 23px;
+}
+
+
+
+.scroll_leftthree{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(200, 200, 200);
+  border-radius: 50%;
+  margin-top: 180px;
+  margin-left: -10px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.scroll_leftthree span{
+  font-family: 'Gill Sans MT';
+  font-weight: 200;
+  margin-right: 5px;
+  transform: scaleY(3) rotateY(180deg);
+  margin-top: 23px;
+}
+
+.scroll_rightthree{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(200, 200, 200);
+  border-radius: 50%;
+  margin-top: 180px;
+  margin-left: 97.5%;
+  cursor: pointer;
+}
+
+.scroll_rightthree span{
+  font-family: 'Gill Sans MT';
+  font-weight: 200;
+  margin-left: 2px;
+  transform: scaleY(3);
+  margin-top: 23px;
+}
+
+
+
+.scroll_leftfour{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(200, 200, 200);
+  border-radius: 50%;
+  margin-top: 180px;
+  margin-left: -10px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.scroll_leftfour span{
+  font-family: 'Gill Sans MT';
+  font-weight: 200;
+  margin-right: 5px;
+  transform: scaleY(3) rotateY(180deg);
+  margin-top: 23px;
+}
+
+.scroll_rightfour{
+  position: absolute;
+  display: block;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(200, 200, 200);
+  border-radius: 50%;
+  margin-top: 180px;
+  margin-left: 97.5%;
+  cursor: pointer;
+}
+
+.scroll_rightfour span{
   font-family: 'Gill Sans MT';
   font-weight: 200;
   margin-left: 2px;
@@ -265,12 +434,27 @@ ul li:hover > a:after {
 
 /*these are the status of each book*/
 
-.sldone, .sldtwo, .sldthree, .sldfour{
+.sldone{
   display: flex;
   gap: 300px;
 }
 
-.bookone, .booktwo, .bookthree, .bookfour{
+.sldtwo{
+  display: flex;
+  gap: 300px;
+}
+
+.sldthree{
+  display: flex;
+  gap: 300px;
+}
+
+.sldfour{
+  display: flex;
+  gap: 300px;
+}
+
+li .bookone{
   position: absolute;
   height: 355px;
   width: 190px;
@@ -278,43 +462,29 @@ ul li:hover > a:after {
   margin-top: 50px;
   margin-left: 190px;
   border-radius: 10px;
-  animation: downtotop 1.4s;
+  overflow: hidden;
 }
-.bookone .the_average_rating, .booktwo .the_average_rating, .bookthree .the_average_rating, .bookfour .the_average_rating{
+.green{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background-color: green;
+  transform: rotate(-45deg) translate(165px,30px);
+}
+
+
+.the_average_ratingone{
   position: absolute;
   color: white;
-  font-size: larger;
+  font-size: x-large;
   font-family: 'Gill Sans MT';
-  margin-left: 10px;
-  margin-top: 13px;
-}
-.bookone .rating, .booktwo .rating, .bookthree .rating, .bookfour .rating{
-  position: absolute;
-  margin-top: 13px;
-  margin-left: 65px;
-  background-color: green;
-  border-radius: 10px;
-  display: flex;
-  width: 100px;
-  height: 20px;
+  margin-left: 170px;
+  margin-top: 5px;
 }
 
-.bookone .round, .booktwo .round, .bookthree .round, .bookfour .rating .round{
-  width:40px;
-  height:40px;
-  border-radius: 50%;
-  background-color: green;
-  transform: translateY(-10px);
-  margin-left: 60px;
-}
 
-.bookone .rating .round img, .booktwo .rating .round img, .bookthree .rating .round img, .bookfour .rating .round img{
-  width: 27px;
-  height: 27px;
-  transform: translateY(5px) translateX(5px);
-}
 
-.bookone .image a, .booktwo .image a, .bookthree .image a, .bookfour .image a{
+li .bookone .image a{
   position: absolute;
   width: 160px;
   height: 190px;
@@ -323,11 +493,11 @@ ul li:hover > a:after {
   margin-top: 40px;
   border-radius: 8px;
 }
-.bookone .image img, .booktwo .image img, .bookthree .image img, .bookfour .image img{
+li .bookone .image img{
   height: 190px;
   width: 160px;
 }
-.bookone .title, .booktwo .title, .bookthree .title, .bookfour .title{
+.bookone .title{
   position: absolute;
   margin-top: 250px;
   margin-left: 10px;
@@ -335,7 +505,7 @@ ul li:hover > a:after {
   font-family: 'Gill Sans MT';
   font-weight: bold;
 }
-.bookone .author, .booktwo .author, .bookthree .author, .bookfour .author{
+.bookone .author{
   position: absolute;
   margin-top: 270px;
   margin-left: 10px;
@@ -345,7 +515,7 @@ ul li:hover > a:after {
 }
 
 
-.bookone .state, .booktwo .state, .bookthree .state, .bookfour .state{
+.bookone .stateone{
   position: absolute;
   margin-top: 305px;
   margin-left: 12px;
@@ -357,9 +527,9 @@ ul li:hover > a:after {
   0%{opacity: 0;
   margin-top: 100px;}
 }
-/*the order style for each bookone, .booktwo, .bookthree, .bookfour*/
+/*the order style for each book*/
 
-.bookone .yesno, .booktwo .yesno, .bookthree .yesno, .bookfour .yesno{
+.bookone .yesno{
   position: absolute;
   margin-top: 295px;
   margin-left: 100px;
@@ -372,8 +542,391 @@ ul li:hover > a:after {
   justify-content: center;
   border-radius: 10px;
 }
- .yesno span{
-    margin-top: 8px;
+
+.yesnooneCancel{
+  position: absolute;
+  margin-top: 295px;
+  margin-left: 100px;
+  font-family: 'Gill Sans MT';
+  width: 70px;
+  height: 40px;
+  background-color: rgb(24, 24, 24);
+  color: red;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.yesnooneCancel span{
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+li .bookthree{
+  position: absolute;
+  height: 355px;
+  width: 190px;
+  background-color: rgb(180, 180, 180);
+  margin-top: 50px;
+  margin-left: 190px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.green{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background-color: green;
+  transform: rotate(-45deg) translate(165px,30px);
+}
+
+
+.the_average_ratingthree{
+  position: absolute;
+  color: white;
+  font-size: x-large;
+  font-family: 'Gill Sans MT';
+  margin-left: 170px;
+  margin-top: 5px;
+}
+
+
+
+li .bookthree .image a{
+  position: absolute;
+  width: 160px;
+  height: 190px;
+  background-color: rgb(180, 180, 180);
+  margin-left: 5px;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+li .bookthree .image img{
+  height: 190px;
+  width: 160px;
+}
+.bookthree .title{
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 10px;
+  color: black;
+  font-family: 'Gill Sans MT';
+  font-weight: bold;
+}
+.bookthree .author{
+  position: absolute;
+  margin-top: 270px;
+  margin-left: 10px;
+  color: black;
+  font-family: 'Gill Sans MT';
+  font-weight: lighter;
+}
+
+
+.bookthree .statethree{
+  position: absolute;
+  margin-top: 305px;
+  margin-left: 12px;
+  font-family: 'Gill Sans MT';
+  font-weight: 180;
+}
+
+@keyframes downtotop {
+  0%{opacity: 0;
+  margin-top: 100px;}
+}
+/*the order style for each book*/
+
+.bookthree .yesno{
+  position: absolute;
+  margin-top: 295px;
+  margin-left: 100px;
+  font-family: 'Gill Sans MT';
+  width: 70px;
+  height: 40px;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.yesnothreeCancel{
+  position: absolute;
+  margin-top: 295px;
+  margin-left: 100px;
+  font-family: 'Gill Sans MT';
+  width: 70px;
+  height: 40px;
+  background-color: rgb(24, 24, 24);
+  color: red;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.yesnothreeCancel span{
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+li .booktwo{
+  position: absolute;
+  height: 355px;
+  width: 190px;
+  background-color: rgb(180, 180, 180);
+  margin-top: 50px;
+  margin-left: 190px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.green{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background-color: green;
+  transform: rotate(-45deg) translate(165px,30px);
+}
+
+
+.the_average_ratingtwo{
+  position: absolute;
+  color: white;
+  font-size: x-large;
+  font-family: 'Gill Sans MT';
+  margin-left: 170px;
+  margin-top: 5px;
+}
+
+
+
+li .booktwo .image a{
+  position: absolute;
+  width: 160px;
+  height: 190px;
+  background-color: rgb(180, 180, 180);
+  margin-left: 5px;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+li .booktwo .image img{
+  height: 190px;
+  width: 160px;
+}
+.booktwo .title{
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 10px;
+  color: black;
+  font-family: 'Gill Sans MT';
+  font-weight: bold;
+}
+.booktwo .author{
+  position: absolute;
+  margin-top: 270px;
+  margin-left: 10px;
+  color: black;
+  font-family: 'Gill Sans MT';
+  font-weight: lighter;
+}
+
+
+.booktwo .statetwo{
+  position: absolute;
+  margin-top: 305px;
+  margin-left: 12px;
+  font-family: 'Gill Sans MT';
+  font-weight: 180;
+}
+
+@keyframes downtotop {
+  0%{opacity: 0;
+  margin-top: 100px;}
+}
+/*the order style for each book*/
+
+.booktwo .yesno{
+  position: absolute;
+  margin-top: 295px;
+  margin-left: 100px;
+  font-family: 'Gill Sans MT';
+  width: 70px;
+  height: 40px;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.yesnotwoCancel{
+  position: absolute;
+  margin-top: 295px;
+  margin-left: 100px;
+  font-family: 'Gill Sans MT';
+  width: 70px;
+  height: 40px;
+  background-color: rgb(24, 24, 24);
+  color: red;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.yesnotwoCancel span{
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+li .bookfour{
+  position: absolute;
+  height: 355px;
+  width: 190px;
+  background-color: rgb(180, 180, 180);
+  margin-top: 50px;
+  margin-left: 190px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.green{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background-color: green;
+  transform: rotate(-45deg) translate(165px,30px);
+}
+
+
+.the_average_ratingfour{
+  position: absolute;
+  color: white;
+  font-size: x-large;
+  font-family: 'Gill Sans MT';
+  margin-left: 170px;
+  margin-top: 5px;
+}
+
+
+
+li .bookfour .image a{
+  position: absolute;
+  width: 160px;
+  height: 190px;
+  background-color: rgb(180, 180, 180);
+  margin-left: 5px;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+li .bookfour .image img{
+  height: 190px;
+  width: 160px;
+}
+.bookfour .title{
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 10px;
+  color: black;
+  font-family: 'Gill Sans MT';
+  font-weight: bold;
+}
+.bookfour .author{
+  position: absolute;
+  margin-top: 270px;
+  margin-left: 10px;
+  color: black;
+  font-family: 'Gill Sans MT';
+  font-weight: lighter;
+}
+
+
+.bookfour .statefour{
+  position: absolute;
+  margin-top: 305px;
+  margin-left: 12px;
+  font-family: 'Gill Sans MT';
+  font-weight: 180;
+}
+
+@keyframes downtotop {
+  0%{opacity: 0;
+  margin-top: 100px;}
+}
+/*the order style for each book*/
+
+.bookfour .yesno{
+  position: absolute;
+  margin-top: 295px;
+  margin-left: 100px;
+  font-family: 'Gill Sans MT';
+  width: 70px;
+  height: 40px;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.yesnofourCancel{
+  position: absolute;
+  margin-top: 295px;
+  margin-left: 100px;
+  font-family: 'Gill Sans MT';
+  width: 70px;
+  height: 40px;
+  background-color: rgb(24, 24, 24);
+  color: red;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.yesnofourCancel span{
+  margin-top: 10px;
 }
 
 /* the 'are you sure' question style*/
@@ -465,41 +1018,6 @@ ul li:hover > a:after {
   margin: 0;
   padding: 0;
 }
-.rate {
-  float: left;
-  height: 46px;
-  padding: 0 10px;
-  margin-left: 20px;
-}
-.rate:not(:checked) > input {
-  position:absolute;
-  top:-9999px;
-}
-.rate:not(:checked) > label {
-  float:right;
-  width:1em;
-  overflow:hidden;
-  white-space:nowrap;
-  cursor:pointer;
-  font-size:30px;
-  color:#ccc;
-}
-.rate:not(:checked) > label:before {
-  content: '★ ';
-}
-.rate > input:checked ~ label {
-  color: #00ff00;    
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-  color: #00ff00;  
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-  color: #095228;
-}
+
 
 /* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */

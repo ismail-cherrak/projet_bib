@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
 
 body {
-  background: #ffc38a;
+  background: rgb(223, 223, 223);
   font-family: "Sen";
 }
 .menu {
-  position: sticky;
+  position: fixed;
   padding: 2px;
   width: 100%;
   max-width: 100%;
@@ -166,9 +166,8 @@ ul li:hover > a:after {
 
 .containertwo{
     position: absolute;
-    margin-left: 10%;
     margin-top: 100px;
-    width: 1200px;
+    width: 99%;
     height:1100px;
     background-color: rgb(223, 223, 223);
     border-radius: 15px;
@@ -201,7 +200,7 @@ img{
     margin-top: 120px;
 }
 
-.order{
+#order{
     position: absolute;
     height: 80px;
     width: 230px;
@@ -215,7 +214,7 @@ img{
     align-items: center;
 }
 
-.order span{
+#order span{
     position: absolute;
     font-family: 'Gill Sans MT';
     font-size: 30px;
@@ -230,89 +229,55 @@ background:red
 */
 
 
-.timer{
+#stateone{
     border-radius: 10px;
     position: absolute;
     margin-top: 300px;
-    background-color: rgb(54, 54, 169);
     margin-left: 750px;
-    font-size: xx-large;
+    font-size: 40px;
     font-family: 'Gill Sans MT';
-    width: 130px;
+    width: 330px;
     height: 50px;
     display: flex;
-    justify-content: center;
 }
 
-.containertwo .aratestu{
-    position: absolute;
-    margin-left: 400px;
-    margin-top: 200px;
-    background-color: yellow;
-    width: 200px;
-    height: 30px;
-    border-radius: 15px;
-}
 
-.containertwo .studentsaveragerating{
+
+.studentsaveragerating{
   position: absolute;
-  transform: translate(350px,-375px); 
+  transform: translate(550px,-430px); 
   font-size: x-large;
+}
+
+.stuicon{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: solid;
+  transform: translate(480px,180px);
 }
 
 .carac{
   display: block;
   font-size: 15px;
 }
-.containertwo .aratestu .roundstu{
-    width: 40px;
-    height: 40px;
-    background-color: yellow;
-    border-style: solid;
-    border-color: yellow;
-    border-radius: 50%;
-    transform: translateY(-6px);
-}
 
-.containertwo .aratestu img{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    transform: translateY(-20px) translateX(-16px);
-}
 
-.containertwo .aratetea{
+
+
+.teachersaveragerating{
     position: absolute;
-    margin-left: 750px;
-    margin-top: 202px;
-    background-color: green;
-    width: 200px;
-    height: 30px;
-    border-radius: 15px;
-}
-
-.containertwo .teachersaveragerating{
-    position: absolute;
-    transform: translate(700px,-375px); /*same for the teachers rating*/
+    transform: translate(900px,-430px); /*same for the teachers rating*/
     font-size: x-large;
 }
 
 
-.containertwo .aratetea .roundtea{
-    width: 40px;
-    height: 40px;
-    background-color: green;
-    border-style: solid;
-    border-color: green;
-    border-radius: 50%;
-    transform: translateY(-6px);
-}
-
-.containertwo .aratetea img{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    transform: translateY(-20px) translateX(-16px);
+.teaicon{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: solid;
+  transform: translate(830px,180px);
 }
 
 .containertwo .how{
@@ -320,7 +285,7 @@ background:red
     font-size: xx-large;
     font-family: 'Gill Sans MT';
     align-items: center;
-    margin-top: 800px;
+    margin-top: 600px;
     margin-left: 740px;
 }
 
@@ -331,52 +296,41 @@ background:red
     border-radius: 15px;
     width: 250px;
     height:30px;
-    margin-top: 901px;
+    margin-top: 950px;
     margin-left: 719px;
     background-color: yellow;
 }
 
 
-.containertwo .rating .round{
-    position: relative;
-    height:60px;
-    width: 60px;
-    background-color: yellow;
-    border-radius: 50%;
-    cursor: pointer;
-    transform: translateY(-15px); /*use the translateX to move the rating bar*/
-
-}
-
-.containertwo .rating .round img{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    transform: translateY(-15px) translateX(-10px);
-}
 
 .containertwo .description{
     position: absolute;
     font-size: 45px;
     font-family: 'Gill Sans MT';
-    margin-top: 400px;
-    margin-left: 745px;
+    margin-top: 600px;
+    margin-left: 30px;
 }
 
 .containertwo .des{
     position: absolute;
     font-size: 28px;
     font-family: 'Gill Sans MT';
-    width: 600px;
-    margin-top: 480px;
-    margin-left: 560px;
+    width: 400px;
+    margin-top: 700px;
+    margin-left: 30px;
     display: flex;
     justify-content: center;
 }
 
 .containertwo .carac{
-    margin-top: 420px;
+    margin-top: 480px;
     gap: 50px;
+}
+
+.containertwo .comments{
+  display: block;
+  transform: translateY(300px);
+
 }
 
 .containertwo .comm {
@@ -384,11 +338,10 @@ background:red
     font-family: 'Gill Sans MT';
     font-weight: 300;
     margin-left: 30px;
+    transform: translateY(300px);
 }
 
-.containertwo .commentdisplay{
-    /*the "appear" and "hide" animations that you'll find below will be used here to hide/show new coomments*/
-}
+
 
 .containertwo .commentatorimage{
     position: absolute;
@@ -416,90 +369,6 @@ background:red
     margin-left: 140px;
 }
 
-.containertwo .commentatorrating{
-    position: absolute;
-    width: 100px;
-    height: 15px;
-    border: solid green;
-    background-color: green;
-    border-radius: 10px;
-    margin-top: 50px;
-    margin-left: 240px;
-    overflow: hidden;
-}
-
-/*these animations happen when the user clicks on 'show' more button, we'll show, everytime the user clicks on show more, two more comments, and another button will appear 'show previous' to see the previous comments*/
-
-@keyframes hide {
-    50%{transform: translateY(-30px);
-    opacity: 0;}
-    51%{transform: translateY(30px);
-    opacity: 0;}
-
-}
-
-@keyframes show {
-    51%{transform: translateY(30px);
-        opacity: 0;}
-    100%{transform: translateY(0px);
-    opacity: 1;}
-}
-
-.containertwo .showmore{
-    position: absolute;
-    padding: 15px;
-    font-size: xx-large;
-    font-weight: bold;
-    font-family: 'Gill Sans MT';
-    background-color: grey;
-    border-color: grey;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-top: 950px;
-    margin-left: 80px;
-}
-
-.containertwo .showprevious{
-    position: absolute;
-    padding: 15px;
-    font-size: xx-large;
-    font-weight: bold;
-    font-family: 'Gill Sans MT';
-    background-color: grey;
-    border-color: grey;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-top: 950px;
-    margin-left: 80px;
-    opacity:0;  /*you can change this opacity to 1 and make the 'margin left' of showmore to 500px to see the show previous button*/
-}
-
-/*IMPORTANT! these animations happen once, when the oldest comments are displayed at the beginning and the user presses 'show more', the 'show previous' button will appear with the 'showpreviousbutton' animation below, and the 'show more' button will be moved by 400px to the right by the 'moveshowmorebutton' animation, unless the user sees the newest comments, the 'show previous' button will disappear by the 'hideshowpreviousbutton' animation and the 'show more' button will go back to its place by 'returnshowmorebutton'*/
-/*do not forget, in javascript, to set the animationfillmode to "forwards" to keep the animation ending appeared*/
-
-@keyframes showpreviousbutton {
-    0%{transform: scale(0);
-    opacity: 0;}
-    50%{transform: scale(1);
-    opacity: 1;}
-}
-
-@keyframes moveshowmorebutton {
-    50%{transform: translateX(300px);}
-}
-
-@keyframes hideshowpreviousbutton {
-    50%{transform: scale(1);
-    opacity: 0;}
-    100%{transform: scale(0);
-    opacity: 0;}
-
-}
-
-@keyframes returnshowmorebutton  {
-    50%{transform: translateX(300px);}
-    100%{transform: translateX(0px)};
-}
 .hide{
     display: none;
 }
@@ -515,7 +384,7 @@ background:red
   border-radius: 10px;
   font-size: 25px;
   font-family: 'sen';
-  transform: translate(760px,1000px) scale(0.8);
+  transform: translate(760px,770px) scale(0.8);
 }
 
 .subrate:hover{
@@ -532,7 +401,7 @@ input[type=range] {
   -webkit-appearance: none;
   margin: 10px 0;
   width: 20%;
-  transform: translate(735px,900px);
+  transform: translate(735px,700px);
 }
 input[type=range]:focus {
   outline: none;
@@ -617,3 +486,93 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: #205928;
 }
+
+
+
+#surone{
+  position: absolute;
+  width: 500px;
+  height: 230px;
+  overflow: hidden;/* to hide yes and no from the div box*/
+  background-color: chocolate;
+  color: black;
+  font: bold;
+  font-size: 50px;
+  font-family: 'Gill Sans MT';
+  border-radius: 4px;
+  left: 32%;
+  top: 30%;
+}
+
+
+
+#surone #inptic{
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#surone #yes{
+  width: 85px;
+  height: 50px;
+  position: absolute;
+  color: green;
+  font-size: 30px;
+  margin-top: 120px;
+  margin-left: 90px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+#surone #yes:hover{
+  width: 85px;
+  height: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: change 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes change {
+  100%{background-color: rgb(0, 207, 0);
+      color: black;}
+}
+
+#surone #no{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  color: red;
+  font-size: 30px;
+  margin-top: 120px;
+  margin-left: 330px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#surone #no:hover{
+  width: 100px;
+  height: 50px;
+  border-radius: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: changetwo 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes changeone {
+  100%{background-color: green;
+  color: black;}
+}
+@keyframes changetwo {
+  100%{background-color: red;
+  color: black;}
+}
+.hide{
+  display: none;
+}
+

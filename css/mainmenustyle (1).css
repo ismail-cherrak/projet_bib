@@ -231,29 +231,6 @@ ul li:hover > a:after {
   overflow: hidden;
 }
 
-.scrolltwo{
-  position:absolute;
-  width: 1480px;
-  height: 450px;
-  margin-top: 115px;
-  transform: translateX(25px);
-  background-color: gray;
-  border-radius: 10px;
-  animation: appear 0.3s;
-  overflow: hidden;
-}
-
-.scrollthree{
-  position:absolute;
-  width: 1480px;
-  height: 450px;
-  margin-top: 115px;
-  transform: translateX(25px);
-  background-color: gray;
-  border-radius: 10px;
-  animation: appear 0.3s;
-  overflow: hidden;
-}
 .scroll_leftone{
   position: absolute;
   display: flex;
@@ -462,6 +439,7 @@ li .bookone{
   margin-top: 50px;
   margin-left: 190px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 
@@ -507,23 +485,22 @@ li .bookfour{
 }
 
 
-
-
-
-
-
-
-
+.green{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background-color: green;
+  transform: rotate(-45deg) translate(166px,50px);
+}
 
 
  .the_average_ratingone{
   position: absolute;
   color: white;
-  background-color: yellow;
-  font-size: larger;
+  font-size: x-large;
   font-family: 'Gill Sans MT';
-  margin-left: 10px;
-  margin-top: 13px;
+  margin-left: 170px;
+  margin-top: 5px;
 }
 
 
@@ -610,10 +587,6 @@ li .bookfour{
   font-weight: 180;
 }
 
-@keyframes downtotop {
-  0%{opacity: 0;
-  margin-top: 100px;}
-}
 /*the order style for each book*/
 
  .yesnoone{
