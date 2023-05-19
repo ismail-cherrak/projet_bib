@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>adminaddstudentpage</title>
+   <style media="screen">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+ body{
+margin: 0;
+ min-height: 100vh;
+ background: 
+#36190E;
+ color: white;
+ background-size: cover;
+ background-position: center;
+    }  
+    .btn{
+box-sizing: border-box;
+position: absolute;
+width: 319px;
+height: 67px;
+left: 973px;
+top: 565px;
+background: #D05C00;
+border: 3px solid #FFC403;
+border-radius: 20px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 48px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF; 
+cursor: pointer;  
+}  
+   .btn:hover{
+    background-color:yellow ;
+   }
+   .img{
+position: absolute;
+width: 358px;
+height: 502px;
+left: 50px;
+top: 40px;
+background: #FFFFFF;
+   }
+.stu{
+position: absolute;
+width: 265px;
+height: 45px;
+left: 777px;
+top: 50px;
+background: #FEFCFC;
+box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.stue{
+position: absolute;
+width: 265px;
+height: 403px;
+left: 0px;
+top: 0px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+color: #000000;
+}
+.categ
+{
+position: absolute;
+width: 641px;
+height: 449px;
+left: 500px;
+top: 40px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+text-transform: capitalize;
+color: #FFFFFF;
+
+}
+
+.lname{
+position: absolute;
+width: 265px;
+height: 45px;
+left: 737px;
+top: 170px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+display: flex;
+align-items: center;
+color: #C4C4C4;
+}
+.auth{
+position: absolute;
+width: 641px;
+height: 449px;
+left: 500px;
+top: 158px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+text-transform: capitalize;
+color: #FFFFFF;
+
+}
+.npage{
+position: absolute;
+width: 265px;
+height: 45px;
+left: 948px;
+top: 285px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+display: flex;
+align-items: center;
+color: #C4C4C4;
+}
+
+.npages{
+ position: absolute;
+width: 641px;
+height: 449px;
+left: 500px;
+top: 275px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+text-transform: capitalize;
+color: #FFFFFF;
+
+}
+.des{
+position: absolute;
+width: 778px;
+height: 139px;
+left: 500px;
+top: 410px;
+background: #FFFFFF;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 48px;
+} 
+.desc{
+position: absolute;
+width: 641px;
+height: 449px;
+left: 500px;
+top: 350px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+input{
+    width: 100%;
+    top:300px;
+}
+.profile-pic {
+  color: rgb(7, 7, 7);
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+  transform: translate(-500px,20px);
+}
+.profile-pic input {
+  display: none;
+}
+.profile-pic img {
+    background-color: #FFFFFF;
+  position: absolute;
+  object-fit: cover;
+  width: 300px;
+  height: 500px;
+  top:12px;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.35);
+  z-index: 0;
+}
+.profile-pic .-label {
+  cursor: pointer;
+  height: 512px;
+  width: 300px;
+  top: 12px;
+}
+.profile-pic:hover .-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(49, 48, 48, 0.8);
+  z-index: 10000;
+  color: #0e0d0d;
+  transition: background-color 0.2s ease-in-out;
+  margin-bottom: 0;
+}
+.profile-pic span {
+  display: inline-flex;
+  padding: 0.2em;
+  height: 2em;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <form action="#">
+            <label for="catego" class="categ">Categorey:</label>
+            <select name="student" class="stu">
+                <option value="stue" disabled selected></option>
+                <option class="stue">1CPI</option>
+                <option class="stue">2CPI</option>
+                <option class="stue">1CS</option>
+                <option class="stue" >2CS</option>
+                <option class="stue">3CS</option>
+                <option class="stue">Computer Science</option>  
+            </select>
+<label for="lname" class="auth">Author:</label>
+<input type="text" style="color: #0c0c0c" class="lname" name="lname" placeholder="............................">
+<label for="lname" class="npages">Number of pages:</label>
+<input type="text" class="npage" name="lname"  style="color: #0c0c0c" placeholder=".......................................">
+<label for="lname" class="desc">Description</label>
+<input type="text" class="des"  style="color: #0c0c0c" placeholder="........................">
+<input	type="submit" value="Add" class="btn">
+<div class="profile-pic">
+    <label class="-label" for="file">
+      <span class="glyphicon glyphicon-camera"></span>
+      <span>photo de livre </span>
+    </label>
+    <input id="file" type="file" onchange="loadFile(event)"/>
+    <img src="" id="output" width="200" />
+  </div>
+</div>
+</form>
+</body>
+    </html>

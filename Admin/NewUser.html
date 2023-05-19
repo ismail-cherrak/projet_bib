@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a new account</title>
+    <link rel="stylesheet" href="NewUser.css">
+</head>
+<body>
+    <img src="..//PHOTOS/istockphoto-1197901679-612x612-removebg-preview.png" alt="">
+    <div class="logoname">Esi &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Books</div>
+<div class="Register">
+    <span class="re">Register</span>
+    <span class="cr">Create a new account</span>
+</div>
+    <form action="" onsubmit="return validerForm()">
+        <div class="name">First Name</div>
+        <input type="text" id="names" >
+        <div class="lastname">Last Name</div>
+        <input type="text" id="lastnames">
+
+
+        <div class="typee">Type</div>
+        <select id="typeSelect" onchange="showcycle()" required>
+            <option value="Selectionner type de l'utilisateur"></option>
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+        </select> 
+
+        <div id="cycle" class="hiddenn">Cycle</div>
+        <select class="hiddenn" id="cycleSelect" onchange="showCycleType()">
+            <option value="Selectionner le cycle"></option>
+            <option value="CPI">CPI</option>
+            <option value="CS">CS</option>
+        </select> 
+        
+        <div id="cycleTypeDiv" class="hidden">
+            <span>Year</span>
+            <select id="cycleTypeSelect">
+              <option value="">-- Select --</option>
+            </select>
+        </div>
+        <div id="email">E-mail</div>
+        <input type="email" id="emails" placeholder="*********@esi-sba.dz">
+        
+        <div id="password">Password</div>
+        <input type="password" name="" placeholder="***********"  id="passwords">
+
+        <input type="submit" value="Add user">
+
+    </form>
+   
+    
+    <div id="errorfname" class="hide">You didn't type your <br> first name!</div>
+    <div id="errorlname" class="hide">You didn't type your <br> last name!</div>
+    <div id="errorcycle" class="hide">You didn't select a Cycle!</div>
+    <div id="erroryear"  class="hide"> You didn't select a year!</div>
+    <div id="erroremail" class="hide">You didn't write your email</div>
+    <div id="errorpassword" class="hide">Enter a password</div>
+    <script src="New.js"></script>
+</body>
+</html>
