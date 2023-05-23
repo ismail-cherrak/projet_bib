@@ -19,7 +19,7 @@ margin: 0;
     .btn{
 box-sizing: border-box;
 position: absolute;
-width: 319px;
+width: 320px;
 height: 67px;
 left: 973px;
 top: 565px;
@@ -32,6 +32,7 @@ font-weight: 500;
 font-size: 32px;
 line-height: 48px;
 display: flex;
+justify-content: center;
 align-items: center;
 text-align: center;
 color: #FFFFFF; 
@@ -162,6 +163,8 @@ font-weight: 500;
 font-size: 32px;
 line-height: 48px;
 } 
+
+
 .desc{
 position: absolute;
 width: 641px;
@@ -188,7 +191,9 @@ input{
   align-items: center;
   position: relative;
   transition: all 0.3s ease;
-  transform: translate(-500px,20px);
+  width: 300px;
+  height: 500px;
+  transform: translate(50px,50px);
 }
 .profile-pic input {
   display: none;
@@ -199,13 +204,12 @@ input{
   object-fit: cover;
   width: 300px;
   height: 500px;
-  top:12px;
   box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.35);
   z-index: 0;
 }
 .profile-pic .-label {
   cursor: pointer;
-  height: 512px;
+  height: 500px;
   width: 300px;
   top: 12px;
 }
@@ -230,7 +234,7 @@ input{
     <body>
         <div class="wrapper">
             <form action="#">
-            <label for="catego" class="categ">Categorey:</label>
+            <label for="catego" class="categ">Category:</label>
             <select name="student" class="stu">
                 <option value="stue" disabled selected></option>
                 <option class="stue">1CPI</option>
@@ -253,9 +257,15 @@ input{
       <span>photo de livre </span>
     </label>
     <input id="file" type="file" onchange="loadFile(event)"/>
-    <img src="" id="output" width="200" />
+    <img src="../photos/kisspng-computer-icons-book-open-book-5ac0c3665739a7.0640416515225823743573 (1).png" id="output" width="200" />
   </div>
 </div>
 </form>
 </body>
+<script>
+  var loadFile = function (event) {
+    var image = document.getElementById("output");
+    image.src = URL.createObjectURL(event.target.files[0]);
+  };
+</script>
     </html>

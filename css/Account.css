@@ -541,7 +541,6 @@ ul li:hover > a:after {
     background-color: aqua;
     height: 20px;
     width: 95px;
-    cursor: pointer;
     margin-top: 295px;
     margin-left: 40px;
 }

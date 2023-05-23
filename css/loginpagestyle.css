@@ -122,6 +122,7 @@ html {
     position: relative;
     color: red;
     transform: translateY(-15px);
+    opacity: 0;
   }
 
 .frg{

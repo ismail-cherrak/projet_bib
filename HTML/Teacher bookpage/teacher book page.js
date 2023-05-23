@@ -1,5 +1,5 @@
-let booksRanking;
-let booksProfRanding;
+let booksRanking=0;
+let booksProfRanding=0;
 
 function afficheRanking(r,place,averageNum){
     switch(Math.round(r)){
@@ -31,5 +31,5 @@ function afficheRanking(r,place,averageNum){
     }
 }
 
-afficheRanking(2.5,document.getElementsByClassName("roundstu")[0],document.getElementsByClassName("studentsaveragerating")[0]);
- afficheRanking(3.5,document.getElementsByClassName("roundtea")[0],document.getElementsByClassName("teachersaveragerating")[0]);
+afficheRanking(booksRanking,document.getElementsByClassName("roundstu")[0],document.getElementsByClassName("studentsaveragerating")[0]);
+ afficheRanking(booksProfRanding,document.getElementsByClassName("roundtea")[0],document.getElementsByClassName("teachersaveragerating")[0]);

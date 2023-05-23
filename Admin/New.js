@@ -10,6 +10,7 @@ function showcycle(){
     document.getElementById("passwords").style.marginTop="740px"    
     document.getElementById("email").style.marginTop="550px"
     document.getElementById("emails").style.marginTop="600px"
+    document.querySelector(".createauser").style.marginTop="850px";
     }
 }
 function showCycleType() {
