@@ -247,15 +247,14 @@ background:red
   position: absolute;
   transform: translate(550px,-430px); 
   font-size: x-large;
+  width: 40px;
+  border-radius: 32%;
+  background: linear-gradient(to right, yellow, rgb(223, 223, 223));
+  display: flex;
+  justify-content: center;
 }
 
-.stuicon{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border: solid;
-  transform: translate(480px,180px);
-}
+
 
 .carac{
   display: block;
@@ -269,16 +268,14 @@ background:red
     position: absolute;
     transform: translate(900px,-430px); /*same for the teachers rating*/
     font-size: x-large;
+    width: 40px;
+    border-radius: 32%;
+    background: linear-gradient(to right, green, rgb(223, 223, 223));
+    display: flex;
+    justify-content: center;
 }
 
 
-.teaicon{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border: solid;
-  transform: translate(830px,180px);
-}
 
 .containertwo .how{
     position: absolute;

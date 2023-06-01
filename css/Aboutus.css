@@ -83,7 +83,8 @@ body{
     position: absolute;
     font-family: 'Gill Sans MT';
     margin-top: 120px;
-    margin-left: 40px;
+    margin-left: 14px;
+    width: 170px;
 }
 
 .designer .email{
@@ -163,7 +164,8 @@ body{
     position: absolute;
     font-family: 'Gill Sans MT';
     margin-top: 120px;
-    margin-left: 40px;
+    margin-left: 14px;
+    width: 170px;
 }
 
 .stylist .email{
@@ -243,7 +245,8 @@ body{
     position: absolute;
     font-family: 'Gill Sans MT';
     margin-top: 120px;
-    margin-left: 40px;
+    margin-left: 14px;
+    width: 170px;
 }
 
 .lifistone .email{
@@ -323,7 +326,8 @@ body{
     position: absolute;
     font-family: 'Gill Sans MT';
     margin-top: 120px;
-    margin-left: 40px;
+    margin-left: 14px;
+    width: 170px;
 }
 
 .lifisttwo .email{

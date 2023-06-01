@@ -234,37 +234,4 @@ function a(n){
 }
 
 
-a(etatone);
-
-//rating 
-let booksRatingone =4;
-
-
-
-function putRatingone(r,roundone){
-    
-    switch(Math.round(r)){
-        case 0 :
-            roundone.style.marginLeft="00px"; 
-        break;
-        case 1 :
-            roundone.style.marginLeft="12px";
-        break;
-        case 2 :
-            roundone.style.marginLeft="24px";
-        break;
-        case 3 :
-            roundone.style.marginLeft="400px";
-        break;
-        case 4 :
-            roundone.style.marginLeft="48px";
-        break;
-        case 5 :
-            roundone.style.marginLeft="60px";
-        break;
-        
-    }
-    
-}
-putRatingone(document.getElementsByClassName("the_average_ratingone")[0],document.getElementsByClassName("roundone")[0]);
 
