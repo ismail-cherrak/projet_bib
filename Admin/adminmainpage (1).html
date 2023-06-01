@@ -137,7 +137,6 @@ header{
   width: 100%;
   background-color: #F4F4F4;;
   position: absolute;
-width: 1365px;
 height: 71px;
 left: 0px;
 top: 0px;
@@ -147,7 +146,7 @@ top: 0px;
 position: absolute;
 width: 400px;
 height: 517px;
-left: 40px;
+left: 100px;
 top: 108px;
 bottom: 108px;
 background: #D05C00;
@@ -158,7 +157,7 @@ overflow-y: auto;
 position: absolute;
 width: 400px;
 height: 517px;
-left: 479px;
+left: 539px;
 top: 108px;
 bottom: 108px;
 background: #D05C00;
@@ -170,7 +169,7 @@ overflow-y: auto;
 position:absolute;
 width: 400px;
 height: 517px;
-left: 917px;
+left: 977px;
 top: 108px;
 bottom: 108px;
 bottom: 108px;
@@ -248,12 +247,11 @@ color: #000000;
   position: absolute;
   width: 25px;
   height: 50px;
-  left: 1320px;
+  left: 1500px;
   top: 318px;
   flex-shrink: 0;
   display: grid ;
   place-items: center;
-
   color: #131212;
   background: #f8fafa;
   border: none;
@@ -275,7 +273,7 @@ color: #000000;
   display: block ;
   width: 560px;
   height: 570px;
-  left: 787px;
+  left: 967px;
   top: 70px;
  overflow-y:auto;
   flex-shrink:0; 
@@ -375,6 +373,8 @@ background: rgba(255, 255, 255, 0.5);
 display: none;
 
 }
+
+
 .list2-group li:hover .list2btns{
   display: block;
 }
@@ -423,20 +423,17 @@ width: 93px;
 height: 19px;
 left: 15px;
 top: 1px;
-
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
 font-size: 13px;
 line-height: 20px;
 text-align: center;
-
 color: #FFFFFF;
 
 }
 
 .list2btns .list-btn{
-position: absolute;
 position: absolute;
 width: 122px;
 height: 24px;
@@ -462,12 +459,48 @@ color: #FFFFFF;
 }
 
 .list3-group{
-width: 400px;
+position: relative;
+  width: 400px;
 height: 49px;
 left: 0px;
-top: 52px;
+top: 0px;
 background: #FFA930;
 }
+.list3-group li .list3btns{ 
+position: absolute;
+width: 100%;
+height: 50px;
+left: 0px;
+top: 0px;
+background: rgba(255, 255, 255, 0.5);
+display: none;
+
+}
+
+
+.list3-group li:hover .list3btns{
+  display: block;
+}
+
+.list3-group li{
+position: relative;
+width: 100%;
+height: 50px;
+left: 0px;
+top: 0px;
+background: #FFA930;
+font-family: 'Pattaya';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+color: #000000;
+white-space:pre;
+}
+
+
 .list3-group hr{
   display: block;
   width: 400px;
@@ -476,34 +509,61 @@ background: #FFA930;
   top: 47px;
   border: 1px solid #000000;
 }
-.list3-group li .list3btn {
+.list3btns .list3btn{
+position: absolute;
 width: 122px;
 height: 24px;
-left: 263px;
-top: 9px;
+left: 248px;
+top: 13px;
 background: linear-gradient(180deg, #FE0808 47.92%, #FFFFFF 100%);
 border-radius: 15px;
-margin-left: 40px;
 cursor: pointer;
+}
+
+.list3btns .list3btn span{
+position: absolute;
+width: 93px;
+height: 19px;
+left: 15px;
+top: 1px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+text-align: center;
+color: #FFFFFF;
+
+}
+
+.list3btns .list-btn{
+position: absolute;
+width: 122px;
+height: 24px;
+left: 39px;
+top: 13px;
+background: linear-gradient(180deg, #2F70AF 47.92%, #FFFFFF 100%);
+border-radius: 15px;
+cursor: pointer;
+}
+.list3btns .list-btn span{
+position: absolute;
+width: 93px;
+height: 19px;
+left: 15px;
+top: 1px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+text-align: center;
 color: #FFFFFF;
 }
-.list3-group li{
-width: 400px;
-height: 50px;
-left: 4px;
-top: 0px;
-font-family: 'Pattaya';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 22px;
-display: flex;
-align-items: center;
-background: #FFA930;
-color: #000000;
-}
- 
-.side-panel .list-title{
+
+
+
+ .side-panel .list-title{
 position: absolute;
 width: 126px;
 height: 30px;
@@ -697,6 +757,8 @@ line-height: 48px;
 display: flex;
 color: #D9D9D9;
 text-align: center;
+display: flex;
+justify-content: center;
 }
 .delete-page .delete-btn:hover{
 background-color: yellow;
@@ -840,105 +902,19 @@ color: #000000;
           </div>
         </div>
    <!--the list of demanded books-->
-   <div class ="demande "> 
+   <div class ="demande"> 
     <a> Books demanded </a> 
       <ul class="list1-group">
         <div class="space"></div>
         <li>
-         <span> Titre </span> demande par <span> username </span>
+         <span id="titre1">Titre</span> demande par <span> username </span>
 
         <button class="listbtn" type="button">  
           <span>Allow</span>
         </button>
         </li>
         <hr>
-        <li>
-          <span> Titre </span> demande par <span> username </span>
-         <button class="listbtn" type="button"> 
-           <span>Allow</span>
-         </button>
-         </li>
-         <hr>
-         <li>
-          <span> Titre </span> demande par <span> username </span>
  
-         <button class="listbtn" type="button">  
-           <span>Allow</span>
-         </button>
-         </li>
-         <hr>
-         <li>
-          <span> Titre </span> demande par <span> username </span>
- 
-         <button class="listbtn" type="button">  
-           <span>Allow</span>
-         </button>
-         </li>
-         <hr>
-         <li>
-          <span> Titre </span> demande par <span> username </span>
- 
-         <button class="listbtn" type="button">  
-           <span>Allow</span>
-         </button>
-         </li>
-         <hr>
-         <li>
-          <span> Titre </span> demande par <span> username </span>
- 
-         <button class="listbtn" type="button">  
-           <span>Allow</span>
-         </button>
-         </li>
-         <hr>
-         <li>
-          <span> Titre </span> demande par <span> username </span>
- 
-         <button class="listbtn" type="button">  
-           <span>Allow</span>
-         </button>
-         </li>
-         <hr>
-         <li>
-          <span> Titre </span> demande par <span> username </span>
- 
-         <button class="listbtn" type="button">  
-           <span>Allow</span>
-         </button>
-         </li>
-         <hr>
-         <li>
-          <span> Titre </span> demande par <span> username </span>
- 
-         <button class="listbtn" type="button">  
-           <span>Allow</span>
-         </button>
-         </li>
-         <hr>
-         <li>
-          <span> Titre </span> demande par <span> username </span>
- 
-         <button class="listbtn" type="button">  
-           <span>Allow</span>
-         </button>
-         </li>
-         <hr>
-         <li>
-          <span> Titre </span> demande par <span> username </span>
- 
-         <button class="listbtn" type="button">  
-           <span>Allow</span>
-         </button>
-         </li>
-         <hr>
-         <li>
-          <span> Titre </span> demande par <span> username </span>
- 
-         <button class="listbtn" type="button">  
-           <span>Allow</span>
-         </button>
-         </li>
-         <hr>
       </ul>
    </div>
    <!--the list of  on hold books-->
@@ -947,7 +923,7 @@ color: #000000;
     <ul class="list2-group">
       <div class="space"></div>
       <li>
-       <span> Titre </span> en attente de <span>username       </span> <span>Delai:</span> 
+       <span id="titre2">Titre</span> en attente de <span>username       </span> <span>Delai:</span> 
      <div class="list2btns">
        <button class="list2btn" type="button"> 
         <span> Send an alert</span>
@@ -958,19 +934,7 @@ color: #000000;
     </div>
     </li>
       <hr>
-      <li>
-        <span> Titre </span> en attente de <span>username       </span> <span>Delai:</span>
-         <div class="list2btns">
-          <button class="list2btn" type="button"> 
-            <span> Send an alert</span>
-          </button>
-          <button class="list-btn" type="button">
-            <span>Add to taken</span>
-          </button>
-       </div>
-      </button>  
-    </li>
-      <hr>
+
     </ul> 
   </div>
    <!--the list of  taken books-->
@@ -979,22 +943,18 @@ color: #000000;
     <ul class="list3-group">
       <div class="space"></div>
       <li>
-       Titre en attente de username <br>
-        Delai:
-      <button class="list3btn" type="button"> 
-        <span>Send an alert</span>
+       <span id="titre3">Titreeee</span> pris par <span>username       </span> <span>Delai:</span> 
+     <div class="list3btns">
+       <button class="list3btn" type="button"> 
+        <span> Send an alert</span>
       </button>
-      </li>
-      <hr>
-      
-      <li>
-       Titre en attente de username <br>
-        Delai:
-      <button class="list3btn" type="button"> 
-        <span>send an alert</span>
+      <button class="list-btn" type="button">
+        <span>Return</span>
       </button>
-      </li>
+    </div>
+    </li>
       <hr>
+
     </ul> 
    </div>
   
@@ -1003,13 +963,13 @@ color: #000000;
     <div class="close-btn">
       <i class="fas fa-times"></i>
     </div>
-    <img src="images.png" alt="">
+    <img src="../photos/istockphoto-1197901679-612x612-removebg-preview.png" alt="">
          <h1>Library Panel </h1>
        </header>
     <div class="menu">
-      <div class="item"><a href="../HTML/adminaddastudent.html"><i class="fa fa-book"></i>Add a Book </a></div>
+      <div class="item"><a href="../Admin/addabook.html"><i class="fa fa-book"></i>Add a Book </a></div>
       <div class="item"><a href="#" onclick="toggle()"><i class="fa fa-trash"></i>Delete a book </a></div>
-      <div class="item"><a href="#"><i class="fa fa-graduation-cap"></i>Add a user </a></div>
+      <div class="item"><a href="../Admin/NewUser.html"><i class="fa fa-graduation-cap"></i>Add a user </a></div>
     </div>
   </div>
 </div>
@@ -1029,12 +989,7 @@ color: #000000;
   <button class="list4btn2" type="button"><span>Remove</span></button>
 </li>
 <hr>
-<li>
- <span> hichem guezzen <br>
- <b>h.guzzen@esi-dz </b></span>
-  <button class="list4btn2" type="button"><span>Remove</span></button>
-</li>
-<hr>
+
 </ul>
 </div>
 </div>
@@ -1088,6 +1043,20 @@ function toggle(){
 blur.classList.toggle('active')
 var popup=document.getElementById('popup')
 popup.classList.toggle('active')}
+
+
+
+function truncateString(string, maxLength) {
+  if (string.length > maxLength) {
+    string = string.substring(0, maxLength) + "...";
+  }
+  return string;
+}
+
+document.getElementById("titre1").innerHTML= truncateString(String(document.getElementById("titre1").innerHTML), 5);
+document.getElementById("titre2").innerHTML = truncateString(String(document.getElementById("titre2").innerHTML), 5);
+document.getElementById("titre3").innerHTML = truncateString(String(document.getElementById("titre3").innerHTML), 5);
+
     </script>
  
  </body>
